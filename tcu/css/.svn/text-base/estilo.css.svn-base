@@ -1,0 +1,1390 @@
+@charset "utf-8";
+/*	Indice
+	
+	[0]Definções Gerais
+		[0.1]Reset de navegador
+		
+	[1]Especificações tipográficas
+		[1.1]Tamanho das fontes e margens de texto
+		[1.2]Margens e preenchimentos tipográficos adicionais
+		[1.3]Pesos
+		[1.4]Altura das linhas e indentações
+		[1.5]Cor das fontes
+		[1.6]Decoração de texto
+		[1.7]Estilo de lista
+		
+	[2] Especificações gerais
+		[2.1]Displays
+		[2.2]Alturas,larguras,margens,paddings e overflows
+		[2.3]Posições,alinhamentos e floats
+		[2.4]Fundos,sombras,bordas e cursores
+			[2.4.1]Acessibilidade - Alto contraste
+			
+	[3]Alturas,larguras,margens e paddings específicos
+		[3.1]Cabeçalho
+		[3.2]Navegação Auxiliar
+		[3.3]Conteúdo Principal
+			[3.3.1]Modulos
+			[3.3.2]Exeções de modulos	
+				[3.3.2.1]Redes sociais
+				[3.3.2.2]Parcerias
+				[3.3.2.3]Menu unidades
+		[3.4]Conteúdo Final
+			[3.4.1]Pré-Rodapé
+				[3.4.1.1]Mapa do site
+				[3.4.1.2]Sobre o portal
+			[3.4.2]rodapé
+	
+	[5]Media querries
+	
+	[6]Adaptação para navegadores mais antigos
+	
+	[7]Estilos adicionais de plugins	
+		[7.1]Frame "minha página
+		[7.2]Agenda de eventos
+		[7.3]Carosel
+		[7.4]Painel Lumis
+__________________________________________________________________*/
+
+/*	[0]Definções Gerais
+
+	[0.1]reset de navegador
+__________________________________________________________________*/
+* {
+	font:1em/1.35 sans-serif;
+	font-family: "Trebuchet MS",Helvetica,Arial,sans-serif!important;
+	border:none;
+	color:#444;
+	font-style:normal;
+	text-align:left;
+	margin:0;
+	padding:0
+}
+html {
+	min-width:323px
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
+	display:block
+}
+audio,canvas,video {
+	display:inline-block
+}
+audio:not([controls]) {
+	display:none;
+	height:0
+}
+[hidden],template {
+	display:none
+}
+html {
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%
+}
+a {
+	background:transparent
+}
+a:focus {
+	outline:thin dotted
+}
+a:active,a:hover {
+	outline:0
+}
+b,strong {
+	color:#333
+}
+dfn,i,em {
+	font-style:italic
+}
+hr {
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
+	height:0
+}
+mark {
+	background:#ff0;
+	color:#000
+}
+code,kbd,pre,samp {
+	font-family:monospace,serif;
+	font-size:1em
+}
+pre {
+	white-space:pre-wrap
+}
+q {
+	quotes:\201C \201D \2018 \2019
+}
+small {
+	font-size:80%
+}
+sub,sup {
+	font-size:75%;
+	line-height:0;
+	vertical-align:baseline
+}
+sup {
+	top:-.5em
+}
+sub {
+	bottom:-.25em
+}
+img {
+	border:0
+}
+svg:not(:root) {
+	overflow:hidden
+}
+figure {
+	margin:0
+}
+fieldset {
+	border:1px solid silver;
+	margin:0 2px;
+	padding:.35em .625em .75em
+}
+button,input,select,textarea {
+	font-family:inherit;
+	font-size:100%;
+	margin:0
+}
+button,input {
+	line-height:normal
+}
+button,select {
+	text-transform:none
+}
+button,html input[type=button],input[type=reset],input[type=submit] {
+	-webkit-appearance:button;
+	cursor:pointer
+}
+button[disabled],html input[disabled] {
+	cursor:default
+}
+input[type=checkbox],input[type=radio] {
+	box-sizing:border-box;
+	padding:0
+}
+input[type=search] {
+	-webkit-appearance:textfield;
+	-moz-box-sizing:content-box;
+	-webkit-box-sizing:content-box;
+	box-sizing:content-box
+}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration {
+	-webkit-appearance:none
+}
+textarea {
+	overflow:auto;
+	vertical-align:top
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0
+}
+legend,button::-moz-focus-inner,input::-moz-focus-inner {
+	border:0;
+	padding:0
+}
+
+/*
+	[1]Especificações tipográficas
+	
+	[1.1]Tamanho das fontes e margens de texto
+	_________________________________________________________
+*/
+body {
+	font-size:.8125em;
+}
+table,span,div,input,select,textarea,td,a,pre {
+	font-size: inherit;
+}
+h1 {
+	font-size:1.35em;
+	margin:1.35em 0 1em
+}
+h2 {
+	font-size:1.25em;
+	margin:1.25em 0 .875em
+}
+div#prerodape h1{
+	font-size:1.2em
+}
+h3,.titulo {
+	font-size:1.175em
+}
+th,
+#subpagina.noticia article .datapub {
+	font-size:1.1em
+}
+h3,h4,h5,h6,a,dd,li,p,span,div#menuar>ul.mapasite>li>ul>li>a,div#menuar>ul.mapasite h1{
+	font-size:1em
+}
+div#cabecalho,
+ul.aba li,
+ul#breadcrumb,
+div#acessorapido,
+.borda a>p,
+.degrade a>p,
+div.menu,
+div#prerodape,
+p#contato{
+	font-size:.85em
+}
+#btnar {
+	font-size:.74em	
+}
+.textholder {
+	font-size:small
+}
+/*
+	[1.2]Margens e preenchimentos tipográficos adicionais
+	_________________________________________________________
+*/
+#frmPesquisaPortal input[type=text] {
+	margin-left:20px;
+	padding:3px 5px
+}
+h3,h4,h5,h6 {
+	margin:1em 0 .75em
+}
+.titulo h1 {
+	margin:.9em;	
+}
+
+/*
+	[1.3]Pesos
+	_________________________________________________________
+*/
+ul#breadcrumb li>a  {
+	font-weight:400
+}
+div.aba ul a,ul#breadcrumb li,h1,h2,h3,h4,b,strong{
+	font-weight:700
+}
+div.menu div a.altocontraste.ativada,div.menu div a.altocontraste:active{
+	font-weight:700!important
+}
+
+/*
+	[1.4]Altura das linhas e indentações
+	_________________________________________________________
+*/
+h1,h2,h3,h4,h5,h6,div#menuar>ul.mapasite h1 {
+	line-height:1!important
+}
+div#menuar>ul.mapasite h1,ul.mapasite>li>ul>li>a{
+	line-height:1.1
+}
+nav *,ul[role=navigation] *{
+	line-height:1.5
+}
+div.aba ul a{
+	line-height:1.7
+}
+nav *,ul[role=navigation] *{
+	text-indent:0
+}
+
+/*
+	[1.5]Cor das fontes
+	_________________________________________________________
+*/
+a {color:darkBlue}
+.verde h1,.verde h1>a{color:green!important}
+.amarelo h1,.amarelo h1>a{color:#FFA200!important}
+.azul h1,.azul h1>a,#tituloredes,div#parcerias h1 {color:darkBlue!important}
+.vermelho h1,.vermelho h1>a{color:#903!important}
+div.menu div a.altocontraste.ativada,div.menu div a.altocontraste:active{
+	color:#000!important
+}
+tfoot td,
+#subpagina.noticia article .datapub{
+	color:#999
+}
+.degrade {
+	color:#666!important
+}
+*.altocontraste {
+	color:#ddd!important
+}
+div#loginintegrado *,div.aba ul a,#btnar {
+	color:#fff
+}
+a.altocontraste,div.aba ul>li>a.altocontraste:hover,div.aba ul>li>a.ativada.altocontraste{
+	color:#fff!important
+}
+div#prerodape h1{
+	color:#336
+}
+ul.mapasite>li>ul>li>a {
+	color:#103787
+}
+select,input {
+	color:#435C81
+}
+a.ativada,a.ativada:hover,a.ativada:focus {
+	color:#435C81!important
+}
+div[role=main] a {
+	color:#6D85B4
+}
+
+/*
+	[1.6]Decoração de texto
+	_________________________________________________________
+*/
+a,.azul h1>a:hover,div.aba ul a:hover,div.aba ul a:focus,div.menu div a:hover,div.menu div a:focus,div.menu div a:active,li.ativo>a,li.ativo>a:hover,li.ativo>a:focus,#btnar:hover {
+	text-decoration:none
+}
+a:hover,a:focus {
+	text-decoration:underline	
+}
+a.altocontraste,div.aba ul>li>a.altocontraste:hover,div.aba ul>li>a.ativada.altocontraste{
+	text-decoration:underline!important
+}
+
+/*
+	[1.7]Estilo de lista
+	_________________________________________________________
+*/
+nav *,ul[role=navigation] *,ul#breadcrumb li:first-child,ul#noticias,#slider ul,div#parcerias>div * {
+	list-style:none
+}
+li.subconteudo {
+	list-style:url(img/seta-direita.png)!important
+}
+ul#breadcrumb li {
+	list-style:url(img/divisor-migalhas.png)
+}
+.verde ul{
+	list-style:inside url(img/marcador_verde.png)
+}
+.amarelo ul{
+	list-style:inside url(img/marcador_laranja.png)
+}
+.azul ul{
+	list-style:inside url(img/marcador_azul.png)
+}
+.vermelho ul{
+	list-style:inside url(img/marcador_vermelho.png)
+}
+li.ativo {
+	list-style-image:url(img/seta-baixo.png)!important
+}
+li.subconteudo ul {
+	list-style-image:none
+}
+
+/*
+	[2] Especificações gerais
+	[2.1]Displays
+	_________________________________________________________
+*/
+.falar,li.subconteudo ul {
+	display:none
+}
+a#logocabecalho,div#acessibilidade button,button#btpesquisa,a#btnar,a.degrade>span,a.borda>span,div#parcerias a,div.menu a,div.aba ul li,ul.mapasite,ul.mapasite a,a#logofooter {
+	display:block
+}
+div#idiomas *,div#menuar>ul.mapasite,div#sobre * {
+	display:inline
+}
+.borda,.degrade,#listaredes a,div#parcerias>div li,.grid>div,.modular>div,hr,ul.mapasite li{
+	display:inline-block
+}
+div#loginintegrado a,div.aba ul a,p#contato {
+	display:table-cell
+}
+@media aural,speech {
+	.falar {
+		display:inline
+	}
+}
+
+/*
+	[2.2]Alturas,larguras,margens,paddings e overflows
+	_________________________________________________________
+*/
+hr,div#preconteudo,div#corpo,ul.mapasite,div#prerodape,div#rodape,div#listaacess,div#cabecalho,div#fundoazul,div#fundorodape,div#parcerias>div,.sitemap,.semborda.modular,#bannerrotativo .borda{
+	width:100%
+}
+.altura4 {min-height:320px;margin-right:1.7%!important}
+.altura3 {min-height:213px}
+.altura2 {min-height:115px}
+.altura1 {min-height:100px}
+.altura4>div{min-height:320px}
+.altura3>div{min-height:150px}
+.altura2>div{min-height:102px}
+.largura4,.titulo {width:99.7%}
+#home .modular.largura4>div {width:20%}
+.largura3 {width:74.2%}
+#home .modular.largura3>div {width:27.5%}
+.largura2 {width:48.9%}
+.largura1 {width:23.5%}
+.modular img,.modular>div>div,.semborda.largura2.modular>div {
+	max-width:100%	
+}
+div#preconteudo,div#corpo,ul.mapasite,div#prerodape,div#rodape {
+	max-width:970px
+}
+#bannerrotativo .borda {
+	max-width:465px;
+    max-height:213px	
+}
+div#listaacess {
+	padding:20px;
+	max-width:949px
+}
+div#listaacess,
+div#preconteudo,
+div#corpo,div.grid,
+div#prerodape,
+div#rodape,
+#bannerrotativo>div {
+	margin:0 auto
+}
+div#acessibilidade li:first-child,
+div.aba ul li,
+div.aba ul a,
+div#acessorapido>h1,
+div#menuar,
+div#menuar>ul.mapasite>li>ul>li>a,
+div#menuar>ul.mapasite h1
+.verde ul li,
+.amarelo ul li,
+.azul ul li,
+.vermelho ul li,
+#slider ul,
+#slider li,
+#listaredes a,
+ul.mapasite>li>ul>li>a,
+div#sobre * {
+	margin:0
+}
+div#cabecalho,
+div#menuar>ul.mapasite,
+ul.mapasite {
+	margin:0 auto 10px
+}
+td {
+	padding:5px 5px
+}
+th {
+	padding:5px 5px 0
+}
+.borda>div,.degrade>div,.borda>span,.degrade>span {
+	padding:16px 8px 0	
+}
+div.grid .semborda.largura4,
+div.aba ul a,
+#pgunidade .semborda.modular>div>div,
+#slider,
+#slider ul,
+#slider li,
+#bannerrotativo,
+bannerrotativo>div {
+	padding:0	
+}
+.semaltura,div#cabecalho>div  {
+	overflow-y:auto
+}
+div#menuar {
+	overflow-y:scroll
+}
+div#cabecalhodir {
+	overflow-y:visible !important
+}
+#slider,div.aba,div#parcerias,div#parcerias>div {
+	overflow:hidden
+}
+div#prerodape,ul.mapasite,div#sobre,div#sobre nav,div#fundorodape,div#rodape {
+	overflow:auto
+}
+
+/*
+	[2.3]Posições,alinhamentos e floats
+	_________________________________________________________
+*/
+div#menuar {
+	position:absolute
+}
+sub,sup,div#listaacess,div#preconteudo,div#acessorapido,.borda,.titulo,.degrade,div.aba ul a   {
+	position:relative
+}
+body,div.aba ul a,div#conteudo,div#fundoazul,div#fundoazul,div#fundorodape,#bannerrotativo {
+	text-align:center
+}
+#subpagina .semborda.modular>.largura1 {
+	text-align:right
+}
+body *,nav *,ul[role=navigation] *,div#fundorodape *,div#parcerias>div ul{
+	text-align:left
+}
+div.grid,.modular,#subpagina .semborda.modular>.largura2,#prerodape ul.mapasite {
+	text-align:justify
+}
+div#loginintegrado a,div.aba ul a,p#contato {
+	vertical-align:middle
+}
+div.grid>*,div#parcerias li,.modular>div,ul.mapasite li  {
+	vertical-align:text-top
+}
+.largura1.altura4,div#idiomas,a#logocabecalho,a#logofooter,address,div#acessibilidade,div#acessibilidade li,form#frmPesquisaPortal,#btpesquisa,div.aba ul li,ul#breadcrumb,ul#breadcrumb li,semborda,.borda img,.semborda>div,#slider,#slider li,#listaredes li,div#parcerias>div h1,.sitemap {
+	float:left
+}
+div#loginintegrado,div#cabecalhodir,div#acessorapido {
+	float:right
+}
+div#sobre nav{
+	float:right !important
+}
+div#menuar>ul.mapasite>li,.semborda>div {
+	float:none
+}
+
+/*
+	[2.4]Fundos,sombras,bordas e cursores
+	_________________________________________________________
+*/
+div#listaacess {
+	background:url(img/listaacess.png) repeat-y #fff
+}
+.degrade {
+	background:url(img/degradebox.png) left bottom repeat-x #fff
+}
+a#logocabecalho.altocontraste,button#btpesquisa.altocontraste,div.aba ul>li>a.altocontraste,div.aba ul>li>a.altocontraste:hover,div.aba ul>li>a.ativada.altocontraste,a#logofooter.altocontraste,div#parcerias a.altocontraste,#invertercontraste.altocontraste {
+	background-image:url(img/bgac.png)!important	
+}
+div#cabecalho,div#acessibilidade button,a#logocabecalho,a#logofooter,button#btpesquisa,#listaredes a,div#parcerias a,.titulo  {
+	background-image:url(img/bg.png);
+	background-repeat:no-repeat
+}
+div#cabecalho {background-position:0 -20px}
+a.ativada,a.ativada:hover,a.ativada:focus {
+	background-position:-181px -192px!important
+}
+button#menosletra {background-position:-888px -184px!important}
+button#resetletra {background-position:-905px -184px!important}
+button#maisletra {background-position:-922px -184px!important}
+button#invertercontraste {background-position:-954px -184px!important}
+a#logocabecalho {background-position:-548px -121px}
+a#logofooter {background-position:-548px -179px}
+button#btpesquisa {background-position:-939px -184px}
+a#btnar {background-position:0 -222px}
+a#parceiro1{background-position:0 -121px;width:30px;height:31px}
+a#parceiro1:hover,a#parceiro1:focus{background-position:0 -158px}
+a#parceiro2{background-position:-30px -121px;width:30px;height:31px}
+a#parceiro2:hover,a#parceiro1:focus{background-position:-30px -158px}
+a#parceiro3{background-position:-60px -121px;width:67px;height:34px;margin-top:-3px}
+a#parceiro3:hover,a#parceiro1:focus{background-position:-60px -158px}
+a#parceiro4{background-position:-128px -121px;width:60px;height:31px}
+a#parceiro4:hover,a#parceiro1:focus{background-position:-128px -158px}
+a#parceiro5{background-position:-188px -121px;width:47px;height:31px}
+a#parceiro5:hover,a#parceiro1:focus{background-position:-188px -158px}
+a#parceiro6{background-position:-235px -121px;width:59px;height:31px}
+a#parceiro6:hover,a#parceiro1:focus{background-position:-235px -158px}
+a#parceiro7{background-position:-294px -121px;width:43px;height:30px}
+a#parceiro7:hover,a#parceiro1:focus{background-position:-294px -158px}
+a#parceiro8{background-position:-337px -121px;width:62px;height:16px;margin-top:6px}
+a#parceiro8:hover,a#parceiro1:focus{background-position:-337px -158px}
+a#parceiro9{background-position:-399px -121px;width:49px;height:28px}
+a#parceiro9:hover,a#parceiro1:focus{background-position:-399px -158px}
+a#parceiro10{background-position:-448px -121px;width:44px;height:33px;margin-top:-2px}
+a#parceiro10:hover,a#parceiro1:focus{background-position:-448px -158px}
+a#parceiro11{background-position:-491px -121px;width:57px;height:16px;margin-top:6px}
+a#parceiro11:hover,a#parceiro1:focus{background-position:-491px -158px}
+.azul h1>a{background:url(img/mais1.png) right center no-repeat;padding-right:20px}
+a#rss {background-position:-759px -180px}
+a#twitter {background-position:-789px -180px}
+a#youtube {background-position:-819px -180px}
+a#facebook {background-position:-849px -180px}
+.titulo.azul {background-position:right -216px}
+.titulo.amarelo {background-position:right -276px}
+.titulo.vermelho {background-position:right -336px}
+.titulo.vermelho {background-position:right -396px}
+div#loginintegrado {
+	background-color:#97a8c2
+}
+body {
+	background-color:#b2becf
+}
+div#fundoazul,div#prerodape,div#prerodape {
+	background-color:#C4CDDA
+}
+div#parcerias h1{
+	background-color:#DAE2EA
+}
+div.menu ul a:active,li.ativo>a,li.ativo>a:hover,li.ativo>a:focus{
+	background:#DFDFDF
+}
+div#menuar {
+	background:#EFF0F4
+}
+div.menu ul a:hover,div.menu ul a:focus{
+	background:#F0F0F0
+}
+div#conteudo {
+	background-color:#f2f3f7
+}
+div#fundorodape,div#fundorodape *,div#corpo,div.aba ul a.ativada,div.aba ul a.ativada:hover {
+	background-color:#fff
+}
+div#loginintegrado,.borda,.titulo,div.aba ul a,div#acessorapido>h1,.degrade,#slider
+ {
+	border-style:solid;
+	border-width:1px
+}
+div.aba ul a {
+	background-color:#cadbe7;
+	-pie-background:linear-gradient(to bottom,#cadbe7,#a6b9cd);
+	background-image:linear-gradient(rgb(202,219,231),rgb(173,190,208));
+	border-color:#a6b9cd;
+	z-index:-1
+}
+div.aba ul a:hover {
+	background-color:#49739a;
+	-pie-background:linear-gradient(to bottom,#a6b9cd,#49739a);
+	background-image:linear-gradient(rgb(173,190,208),rgb(73,115,154));
+}
+div.aba ul a.ativada,div.aba ul a.ativada:hover {
+	
+	background-image:none;
+	border-color:#fff;
+}
+#acessorapido h1 {
+	background-color:#49739a;
+	-pie-background:linear-gradient(to bottom,#a6b9cd,#49739a);
+	background-image:linear-gradient(rgb(173,190,208),rgb(73,115,154));
+}
+table{
+	border-collapse:collapse
+}
+.degrade {
+	box-shadow:0 0 0 2px white inset;
+	-moz-box-shadow:0 0 0 2px white inset;
+	-webkit-box-shadow:0 0 0 2px white inset
+}
+div#loginintegrado,.borda,.titulo,.degrade,#acessorapido h1,#slider,div.aba ul a,select,input {
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px
+}
+.textholder {
+	-moz-border-radius:6px 6px 0 0;
+	-webkit-border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px
+}
+.borda,.titulo,.degrade,#slider{
+	border-color:#cecece
+}
+div#loginintegrado {
+	border-color:#64749
+}
+select,input {
+	border-color:#a1abc0
+}
+div#menuar,div#acessorapido>h1  {
+	border-color:#A2ABC0
+}
+tfoot td{
+	border-top:solid 1px #ccc
+}
+th {
+	border-bottom:solid 1px #666
+}
+ul.mapasite {
+	border-bottom:solid 1px #448
+}
+.borda>div>hr {
+	border-bottom:solid 1px #cecece
+}
+.modular.borda>div {
+	border-left:solid 1px#cecece
+}
+.modular>div:first-child {
+	border-color:transparent
+}
+div#parcerias>div,div#menuar>ul.mapasite{
+	border:none
+}
+div#acessibilidade button,button#btpesquisa {
+	cursor:pointer
+}
+
+/*
+	[2.4.1]Acessibilidade - Alto contraste
+	_________________________________________________________
+*/
+div.menu div a.altocontraste.ativada,div.menu div a.altocontraste:active{
+	background-color:#fff!important
+}
+div.menu div a.altocontraste:hover {
+	background-color:#666!important
+}
+*.altocontraste,div.altocontraste,a.degrade.altocontraste{
+	background-color:#000!important
+}
+*.altocontraste {
+	border-color:#fff!important;
+	box-shadow:none!important;
+	-moz-box-shadow:none!important;
+	-webkit-box-shadow:none!important
+}
+
+/*
+	[3]Alturas,larguras,margens e paddings específicos
+	____________________________________________________________
+*/
+
+/*	[3.1]Cabeçalho
+__________________________________________________________________*/
+div#cabecalho {
+	padding:0 1px 0 23px;
+	height:100px;
+	max-width:949px
+}
+div#idiomas {
+	width: 100px;
+}
+a#logocabecalho {
+	width:425px;
+	height:59px
+}
+div#loginintegrado {
+	min-width:208px;
+	margin-top:-4px
+}
+div#loginintegrado a{
+	height:34px;
+
+	padding:0 10px
+}
+div#cabecalhodir {
+	margin:30px 0;
+	width:300px
+}
+div#acessibilidade {
+	margin:3px 0;
+	width:70px
+}
+div#acessibilidade button {
+	width:17px;
+	height:25px
+}
+div#acessibilidade li {
+	margin-left:8px
+}
+input#textoPesquisa {width:200px}
+button#btpesquisa {
+	margin:5px 0 0 -22px;
+	width:15px;
+	height:15px
+}
+
+/*	[3.2]Navegação Auxiliar
+__________________________________________________________________*/
+div#preconteudo {
+	height:30px
+}
+#subpagina div#preconteudo {
+	padding:0 1%;
+	width:98%;
+}
+div.aba ul li{
+	height:30px;
+}
+div.aba ul a{
+	width:165px;
+	height:30px
+}
+ul#breadcrumb {
+	margin:8px 10px 0
+}
+ul#breadcrumb li {
+	margin:0 10px
+}
+ul#breadcrumb li:first-child {
+	margin:0 10px 0 0
+}
+a#btnar {
+	padding:4px 10px
+}
+div#acessorapido>h1 {
+	width:207px;
+}
+div#menuar {
+	width:222px;
+	height:0;
+	opacity:0
+}
+div#menuar>ul.mapasite {
+	padding:0 0 20px
+}
+div#menuar>ul.mapasite>li {
+	padding:0 10px;
+	width:140px
+}
+div#menuar>ul.mapasite>li>ul>li {
+	margin:.5em 0
+}
+div#menuar>ul.mapasite>li>ul>li>a {
+	margin-left:.5em
+}
+div#menuar>ul.mapasite h1 {
+	margin:.8em 0 .5em
+}
+
+/*	[3.3]Conteúdo Principal
+__________________________________________________________________*/
+div#corpo {
+	min-height:500px;
+	padding:10px 0 20px
+}
+
+/*	[3.3.1]Modulos
+__________________________________________________________________*/
+div.grid {
+	width:98%;
+	max-width:960px;
+}
+div.grid>*{	
+	margin:.5em 0
+}
+.titulo {
+	margin:0 0 1em !important
+}
+#slider  {
+	margin:12px 5px 0
+}
+.borda h1,.degrade h1 {
+	margin:0 0 .75em
+}
+.borda img {
+    margin:0 10px 10px 0
+}
+#home .modular>div {
+	margin:15px 0;
+	padding:0 2%
+}
+#home .semborda>div {
+	margin:10px -9px 0
+}
+#home .semborda>div:first-child {
+	margin-top:-3px
+}
+.modular .modulo hr {
+    margin:1em 0 1.35em
+}
+#subpagina .semborda.modular {
+	width: 100%;
+	margin: .5em 0;
+	padding: 0
+}
+#subpagina .semborda.modular>.largura2{
+	width:50%
+}
+#subpagina .semborda.modular>.largura1{
+	width:23.5%
+}
+#subpagina .semborda.modular>div>div{
+	margin:0 0 1em
+}
+#subpagina .menu>div {
+	padding-top: 8px!important	
+}
+#subpagina .semborda.modular>div p,
+#subpagina .semborda.modular>.largura3 h1,
+article.noticia .datapub{
+	margin:0 0 .75em
+}
+#subpagina .semborda.modular>div h1{
+	margin:.75em 0 .5em
+}
+#subpagina .semborda.modular>div h1:first-child {
+	margin-top:0
+}
+#subpagina .semborda.modular>.largura1>div{
+    width:100%
+}
+#subpagina .semborda.modular>.largura2 .largura1{
+    width:48%
+}
+#subpagina .semborda.modular>.largura3{
+    width:73%;
+    padding:0 1%
+}
+#subpagina .semborda.modular>.largura3>article.noticia h1{
+	margin:0 0 .25em
+}
+
+#subpagina .semborda.modular>.largura3 p,#subpagina .semborda.modular>.largura2 .largura2{
+    width:99.5%
+}
+#subpagina .semborda.modular>.largura4 h1{
+	margin-top:0;
+}
+#subpagina .semborda.modular>.largura4>p,
+#subpagina .semborda.modular>.largura4>h1,
+#subpagina .semborda.modular>.largura4>h2,
+#subpagina .semborda.modular>.largura4>h3{
+	margin-left:20px;
+	margin-right:0
+}
+#subpagina div.menu {
+	margin-right:.5%	
+}
+
+div#loginintegrado {
+	margin-top:-4px
+}
+#slider {
+	z-index:1
+}
+#slider ul {
+	width:1500px
+}
+.textholder {
+	text-align:left;
+	padding:6px
+}
+
+/*	[3.3.2]Exeções de modulos
+	
+	[3.3.2.1]Redes sociais
+__________________________________________________________________*/
+#tituloredes {
+	margin:1em 0 .75em
+}
+#listaredes li {
+	margin:0 5px
+}
+#listaredes li:first-child {
+	margin-left:0
+}
+#listaredes a {
+	width:30px;
+	height:30px
+}
+#noticias li {
+	margin-bottom:.5em;
+}
+/*	[3.3.2.2]Parcerias
+__________________________________________________________________*/
+
+div#parcerias {
+	margin:12px 0 0;
+	min-height:10px;
+	padding-bottom:10px
+}
+div#parcerias>div{
+	margin:0 0 -10px;
+	padding-top:15px;
+	height:30px
+}
+div#parcerias h1{
+	padding:14px 15px 15px;
+	margin:-15px;
+	margin-right:10px
+}
+
+/*	[3.3.2.3]Menu unidades
+__________________________________________________________________*/
+
+div.menu a{
+	margin:0 0 0 -18px;
+	padding:5px 5px 5px 15px
+}
+div.menu li {
+	margin:0 0 0 20px
+}
+
+/*	[3.4]Conteúdo Final
+
+	[3.4.1]Pré-Rodapé
+__________________________________________________________________*/
+
+div#fundoazul {
+	margin:20px 0 0
+}
+div#prerodape {
+	padding:10px 0
+}
+div#prerodape h1{
+	margin:.875em 0 .8em
+}
+
+/*	[3.4.1.1]Mapa do site
+__________________________________________________________________*/
+ul.mapasite {
+	padding:0 0 20px
+}
+ul.mapasite>li {
+	padding:0 10px;
+	width:140px
+}
+ul.mapasite>li>ul>li {
+	margin:.5em 0
+}
+
+/*	[3.4.1.2]Sobre o portal
+__________________________________________________________________*/
+div#sobre nav{
+	margin:0 10px
+}
+div#sobre li:before,div#idiomas li:before {
+	content:"| "
+}
+div#sobre li:first-child:before,div#idiomas li:first-child:before {
+	content:normal
+}
+
+/*	[3.4.2]rodapé
+__________________________________________________________________*/
+div#parcerias li{margin:-7px 10px 0}
+a#logofooter {
+	margin:9px 0 0;
+	width:207px;
+	height:35px
+}
+p#contato {
+	height:50px;
+	padding:0 50px
+}
+
+/*	[5]Media querries
+__________________________________________________________________*/
+@media screen and (max-width:945px) {
+	div#parcerias>div{height:auto}
+	div#parcerias ul{margin-left:100px}
+	div#parcerias li {margin:7px 10px}
+	div#cabecalho {padding:0}
+	div#parcerias h1 {padding:45px 15px}
+	#home div#preconteudo {height:66px}
+	#home div#acessorapido {
+		float:none;
+		width:100%;
+		margin:0 auto 10px	
+	}
+	p#contato,div#cabecalho>div {padding:0 10px}
+	a#logofooter {margin:9px 7px 0}
+	.altura1,.altura2 {min-height:130px}
+}
+@media screen and (max-width:780px) {
+	#home .largura1 {width:49%}
+	#home .altura4.largura1,#home .largura2,#home .largura3 {width:99.7%}
+	.altura4.largura1{max-height:none}
+	div#parcerias h1 {
+			float:none !important;
+			padding:15px;
+			margin:-15px -15px 15px
+		}
+	div#parcerias ul {margin-left:-5px;text-align:center!important}
+	a#logocabecalho {width:315px;height:44px;margin-top:8px;background-size:731px 342px;background-position:-412px -91px}
+	div#cabecalho {height:120px;background-position:0 0}
+	div#cabecalhodir {margin:10px 0;width:230px;text-align:right;float:right}
+	div#cabecalhodir div,div#cabecalhodir nav{display:inline-block}
+	div#acessibilidade {float:none}
+	#home div#preconteudo {height: 110px}
+	div.aba ul li{
+			margin:2px .5%;
+			width:49%;
+		}
+	div.aba ul a{
+			display:block;
+			height:auto;
+			padding:5px 0;
+			width:100%;
+			z-index:0;		
+		}
+	#textoPesquisa {border:solid 1px}
+}
+@media screen and (max-width:590px) {
+	#home .modular.largura3>div,#home .modular.largura3>div{width:90%;border:none}
+    a#logocabecalho {width:75px;height:55px;margin-top:6px;background-size:975px 456px;background-position:-548px -121px}
+}
+@media screen and (max-width:440px) {
+	#home div#preconteudo {height:175px}
+	div.aba ul li{
+			margin:1px 0;
+			width:99%;
+		}
+	#home .largura1 {width:100%}
+	.altura1,.altura2 {min-height:0}
+	.borda>div,.degrade>div,.borda>span,.degrade>span {
+			padding: 16px 8px 20px
+		}
+	input#textoPesquisa {width:175px}
+	div#cabecalhodir {width:205px}
+	div#loginintegrado {min-width: 200px}
+}
+
+/*	[6]Adaptação para navegadores mais antigos
+__________________________________________________________________*/
+div.aba ul a{ 
+	behavior:url(tcu/css/PIE.htc);
+}
+
+/*	[7]Estilos adicionais de plugins
+	
+	[7.1]Frame "minha página
+_________________________________________________________
+*/
+#toppanel {position:relative;top:0; left:0; width:100%; z-index:999; text-align:center; margin-left:auto; margin-right:auto; }
+#panel { width:100%; height:340px; color:#999999; background:#F2F3F7; overflow:hidden; position:relative; z-index:3; display:none; }
+#panel .content {width:960px; margin:0 auto; padding:0; text-align:left; font-size:0.85em;}
+#mp_header {height:28px; background-color:#91aac4;}
+#mp_header .header_content{width:960px; margin:0 auto; padding:0;}
+#mp_titulo {width:730px; color:#fff; font-size:18px; font-weight:bold; margin:2px 0 0 0; float:left; text-align:left;}
+#mp_fechar {width:150px; color:#fff; font-size:12px; font-weight:bold; margin:5px 0 0 0; float:right; text-align:right;}
+#mp_fechar img {margin:0 0 0 5px;}
+#mp_footer {height:17px; background-color:#91aac4; margin:0;}
+
+/*	[7.2]Agenda de eventos
+__________________________________________________________________*/
+
+div.events-pop-calendar .tit {
+	color: #193991 !important;
+}
+.hasEvent a {
+	color:#343434 !important;
+}
+.hasEvent span.time {
+	color:#7EB5EB !important;
+}
+a.jq-pop-close {
+	color: #fff !important;
+}
+.events-list-calendar {
+	border: 1px solid #dad2dd;
+}
+div.events-control-bar {
+	background: none repeat scroll 0 0 #CAD2DD !important;
+	height: 40px;
+	padding: 0px 8px 0 0 !important;
+}
+div.events-control-bar ul.bts-filter .calendar-selectors {
+	background: url("../../portaltcu/css/img/bg_calendarfilterbt_tcu_off.jpg") repeat-x scroll 0 0 #CAD2DD !important;
+	border: 1px solid #6a7a9a !important;
+	border-radius: 3px 3px 3px 3px;
+	height: 20px !important;
+	line-height: 20px !important;
+	padding: 0px !important;
+}
+.bts-hoje {
+	float: left;
+	margin-left: 8px;
+	width: 80px;
+}
+.bts-hoje li {
+	list-style:none;
+	background: url("../../portaltcu/css/img/bg_calendarfilterbt_tcu_off.jpg") repeat-x scroll 0 0 transparent;
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	list-style: none outside none;
+	margin-top: 5px;
+	padding: 0 15px;
+	width: 20px;
+	border: 1px solid #6A7A9A;
+	border-radius: 3px 3px 3px 3px;
+}
+#liDay {
+	border-right: 1px solid #B2BDCF;
+}
+#liMonth {
+	border-left: 1px solid #B2BDCF;
+}
+div.events-control-bar ul.bts-filter {
+	float:right !important;
+}
+div.events-control-bar ul.bts-filter li {
+	margin-right: 0 !important;
+}
+.bts-hoje li a {
+	color:#fff !important;
+	font-size:0.95em;
+}
+.bts-hoje li a:hover { 
+	text-decoration:none !important;
+}
+ul.bts-calendarview {
+	height:20px !important;
+	border-left: none !important;
+}
+div.events-control-bar ul.bts-filter .calendar-selectors ul.bts-calendarview li a {
+	color: #fff!important;
+}
+div.events-control-bar ul.bts-filter .calendar-selectors ul.bts-calendarview li.selected a {
+	background: url("../../portaltcu/css/img/bg_calendarfilterbt_tcu_off.jpg") repeat-x scroll 0 0 #CAD2DD !important;
+	cursor: default;
+	text-decoration: none;
+}
+div.events-control-bar ul.bts-filter a {
+	background: url("../../portaltcu/css/img/bg_calendarfilterbt_tcu_off.jpg") repeat-x scroll 0 0 #404549 !important;
+	border: 1px solid #596066;
+	border-radius: 3px 3px 3px 3px;
+	color: #FFFFFF;
+	display: block;
+	font-size: 0.95em;
+	height: 20px !important;
+	line-height: 20px !important;
+	padding: 0 12px;
+}
+/* .other-month .day-box {
+	display:none;
+}
+*/
+div.events-list-calendar .calendar-tab .day-box .jq-pop-calendar .day-num {
+	color: #474747 !important;
+}
+div.events-list-calendar .calendar-tab .today .day-num {
+	 color: #fff!important;
+}
+div.events-list-calendar .calendar-tab .today .day-box {
+	border-color: #64739e !important;
+}
+p.msg-duvidas {
+	color:#5b5b5b;
+	font-size: 12px;
+}
+div.events-list-calendar {
+	padding: 0px !important; 
+}
+.hoje {
+	background-color: #64739e !important;
+	border-color: #64739e !important;
+	padding:21px 4px 4px;
+}
+.semana {
+	border: 1px solid #DFDFDF;
+	height: 108px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	width: 93px !important;
+}
+div.events-pop-calendar {
+	border:0 !important;
+	border-radius: 0 !important;
+	position:absolute; 
+	left:60%;
+}
+div.events-list-calendar .calendar-tab .other-month .day-num {
+	color: #A09E9E;
+}
+div.events-pop-calendar span.ico-calendar {
+	background: url("../../portaltcu/css/img/calendar.png") no-repeat scroll 0 0 transparent;
+	display: block;
+	float: left;
+	font-size: 17px;
+	height: 17px;
+	margin: 0;
+	padding: 7px;
+	width: 18px;
+}
+div.aux {
+	position:relative; 
+	top:-124px; 
+	left:170px;
+	display:block;
+}
+div.events-pop-calendar .header {
+	background-color: #e5e8ed ;
+	width:100%;
+	height:20px;
+	margin-bottom: 10px;
+}
+div.events-pop-calendar .header ul {
+	height:20px;
+	padding:2px 2px 2px 20px;
+	width:300px;
+}
+div.events-pop-calendar .header ul li{ 
+	display:inline-block;
+	width:90px;
+	float:left;
+}
+div.events-pop-calendar .tit {
+	border-bottom: 0 !important;
+	color: #666666;
+	font-size: 1.2em;
+	font-weight: bold;
+	line-height: 38px !important;
+	margin: 0 !important;
+	text-align: right !important;
+	padding: 0 !important;
+}
+div.events-list-calendar .subtit {
+	color: #193991 !important;
+}
+div.events-pop-calendar .list a {
+	color:#585858 !important;
+	font-weight: bold;
+}
+div.events-pop-calendar .list p {
+	background: none !important;
+	margin: 0 0 6px;
+	padding: 0 0 0 7px;
+}
+div.events-pop-calendar .list ul {
+	border-bottom: 1px solid #c0c0c0;
+	margin-bottom: 10px;
+	padding-bottom: 6px;
+}
+div.events-pop-calendar .list ul li {
+	min-width: 112px;
+	list-style:none;
+}
+div.events-list-calendar .subtit .pag a.prev {
+	background: url("../../portaltcu/css/img/ico_pag_prev.png") no-repeat scroll 0 0 transparent !important;
+	left: 20px !important;
+	top: 4px;
+}
+div.events-list-calendar .subtit .pag a.next {
+	background: url("../../portaltcu/css/img/ico_pag_next.png") no-repeat scroll 0 0 transparent !important;
+	right: 0px !important;
+	top: 4px;
+}
+.detalhesEvento {
+	float: left;
+	width: 690px;
+}
+.detalhesEvento h4 {
+	font-size:16px;
+}
+.detalhesEvento p {
+	margin:0;
+}
+.listaEventos {
+	width: 690px;
+}
+.listaEventos h4 {
+	font-weight:bold;
+	font-size: 13px;
+}
+.listaEventos li{
+	list-style: none;
+}
+#calMes {
+	width: 700px; 
+	margin: 12px 0px 0px 0px;
+}
+span.local {
+	color: #999999;
+	font-size: 0.9em;
+	font-style: italic;
+}
+/*	[7.4]Painel Lumis
+__________________________________________________________________*/
+
+.lum-button-primary {
+	filter: none;
+	background: #ff7311;
+	border-top: 1px solid #ff7311;
+	border-right: 1px solid #ff7311;
+	border-left: 1px solid #ff7311;
+	border-bottom: 1px solid #cd0001;
+	color: #fff!important;
+	text-shadow: #AA5519 0 0.1em 0;
+	text-transform: uppercase;
+}
