@@ -127,7 +127,7 @@ form legend, #acoespg .contentList h3,#accordion h3
 {font-size:1.5em}
 h3,h4,#destaque p, .obs
 {font-size:1.25em}
-#home .card h2, #destaque h1, .social h1, #sendbtn
+#home .card h2, #destaque h1, .social h1, #sendbtn, #home #contactCard span
 {font-size:1.125em}
 h5,h6,#featuredCtrl h2, #searchCtrl h2, #searchCtrl h3
 {font-size:1em}
@@ -137,7 +137,7 @@ table,span,div,input,select,textarea,td,a,pre
 #featured p
 {line-height:1.6}
 
-h1,h2,h3,h4,h5,h6,h1 *,h2 *,h3 *,h4 *,h5 *,h6 *, body>header .menu li a,.card h2 a span, #acessBtn a, #mainMenu a,#siteMap span, #featured h2,#home #acoes h2, form legend, #contact form td:first-child label, #contact form td:first-child span, .obs, #contact input[type=button],span.type
+h1,h2,h3,h4,h5,h6,h1 *,h2 *,h3 *,h4 *,h5 *,h6 *, body>header .menu li a,.card h2 a span, #acessBtn a, #mainMenu a,#siteMap span, #featured h2,#home #acoes h2, form legend, #contact form td:first-child label, #contact form td:first-child span, .obs, #contact input[type=button],span.type, #home #contactCard span
 {font-weight:700}
 .leiamais,.card h1,.card h2 a,#destaque p, #linguas a, #searchCtrl h2, #searchCtrl h3, #searchCtrl h2 span,#accordion .fisc h5
 {font-weight:400}
@@ -162,7 +162,7 @@ h4
 {margin:.8em 0}
 #contact .card>h2
 {padding:1em 0 0}
-.single.card>.deck
+.single.card>.deck, #home #contactCard a, #home #cadastrese
 {margin:2em 0 0}
 nav ul, nav li,#featured ul,#featured li, #featuredCtrl li, #home div[role=main] p, .contentList header h3, #topo .auxNav #loginBtn,#siteMap ul li ul li, .contentList a>p, #searchCtrl p,#searchFilter ul, #acoespg .photoList p,#accordion .fisc p,#accordion .fisc .fisc h5,.single.card>.deck:first-child
 {margin:0}
@@ -194,7 +194,7 @@ __________________________________________________________________*/
 #home .deck.encap>div>h1,#topo .auxNav *,#menuEncap #search,.contentList .type, div[role=main] h1,#accordion h3,#accordion .fisc .def {
 	color:#122051
 }
-#menuEncap *, body>footer *, #contact input[type=button]  {
+#menuEncap *, body>footer *, #contact input[type=button], #home #contactCard span,#home #cadastrese input[type=submit]  {
 	color:#fff
 }
 #home .card a,#home #acoesMap li, div[role=main] h2, form legend, .contentList .leiaMais, #searchCtrl p, #searchCtrl h2, #searchCtrl h3, #searchFilter li, #searchCtrl span, .contentList h3,.contentTerm,#acoespg .type,#accordion h4, .fisc .smallDiv a{
@@ -208,10 +208,10 @@ __________________________________________________________________*/
 
 	[2.x]Displays
 __________________________________________________________________*/
-#menuEncap, #siteMap li, #fontSize.active,#acoes .card .vejaMais,#home #acoes h2 span, .charcount,#acoespg .leiaMais, #accordion>div.active,#accordion>h3 span {
+#menuEncap, #siteMap li, #fontSize.active,#acoes .card .vejaMais,#home #acoes h2 span, .charcount,#acoespg .leiaMais, #accordion>div.active,#accordion>h3 span, #home #contactCard a{
 	display:block
 }
-#langSelect, #langSelect li,#loginBtn span,#topo .auxNav div, #menuEncap>div div, .credits li, .credits span, #mainMenu li, body>footer .encap>div>div, .social *,.deck .smallDiv,.deck .largeDiv,.deck hr, #featuredCtrl *,.vejaMais span, #destaques .smallDiv .card, form li, .celspace, #searchCtrl h2, #searchCtrl h3,#searchCtrl>div, #searchFilter ul, #searchFilter li, .photoList li {
+#langSelect, #langSelect li,#loginBtn span,#topo .auxNav div, #menuEncap>div div, .credits li, .credits span, #mainMenu li, body>footer .encap>div>div, .social *,.deck .smallDiv,.deck .largeDiv,.deck hr, #featuredCtrl *,.vejaMais span, #destaques .smallDiv .card, form li, .celspace, #searchCtrl h2, #searchCtrl h3,#searchCtrl>div, #searchFilter ul, #searchFilter li, .photoList li, #home #contactCard span {
 	display:inline-block /*Spacing adjust*/
 }
 #langSelect .selected, #fontSize, #accordion>div {
@@ -320,7 +320,7 @@ __________________________________________________________________*/
 #acessibility, .deck>div, #destaques .smallDiv{
 	text-align:justify	
 }
-#acessibility, #acessBtn {
+#acessibility, #acessBtn, #home #contactCard a {
 	text-align:center	
 }
 .credits ul, #menuEncap .auxNav form, .social,#acoes .card .vejaMais, #contact form td:first-child, #searchCtrl form, .contentList .leiaMais, #searchFilter {
@@ -339,10 +339,10 @@ __________________________________________________________________*/
 #menuEncap>div div, #siteMap ul li, .encap>div>div, #contact form td, .deck>div, .photoList li{
 	vertical-align:text-top	
 }
-.credits li {
+.credits li, div[role=main] input[type=button], div[role=main] input[type=submit] {
 	vertical-align:middle	
 }
-#featuredCtrl span, div[role=main] input[type=button], div[role=main] input[type=submit], #searchFilter,.vejaMais span {
+#featuredCtrl span, #searchFilter,.vejaMais span {
 	vertical-align:bottom	
 }
 #contact div[role=main] input[type=button], #contact div[role=main] input[type=submit] {
@@ -357,7 +357,7 @@ __________________________________________________________________*/
 #contact input[type=button] {
     background:#4ec6f8
 }
-#contact #sendbtn{
+#contact #sendbtn, #home #contactCard span,#home #cadastrese input[type=submit]{
 	background:#01437d
 }
 #menuEncap, body>footer {
@@ -581,18 +581,21 @@ __________________________________________________________________*/
 	margin: 1em 0
 }
 #home #acoesMap li {
+	margin: 0 0 .5em;
 	padding:0 0 0 1em	
 }
 #home #pub img {
 	margin: 0 1em 1em 0;	
 }
-
 #home #acoes h2 span {
 	width:11px;
 	height:22px
 }	
 #home #acoes .card p {
 	margin: .75em 0 0
+}
+#home #cadastrese input[type=text] {
+	width:60%	
 }
 /* AÇÕES */
 #acoespg .vejaMais span {
@@ -668,7 +671,7 @@ __________________________________________________________________*/
 #contact div[role=main] input[type=button]  {
 	padding:.5em 1.75em;
 }
-#contact #sendbtn  {
+#contact #sendbtn, #home #contactCard span  {
 	padding:.5em 3em;
 }
 
