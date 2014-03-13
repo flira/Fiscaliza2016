@@ -214,7 +214,7 @@ __________________________________________________________________*/
 #langSelect, #langSelect li,#loginBtn span,#topo .auxNav div, #menuEncap>div div, .credits li, .credits span, #mainMenu li, body>footer .encap>div>div, .social *,.deck .smallDiv,.deck .largeDiv,.deck hr, #featuredCtrl *,.vejaMais span, #destaques .smallDiv .card, form li, .celspace, #searchCtrl h2, #searchCtrl h3,#searchCtrl>div, #searchFilter ul, #searchFilter li, .photoList li, #home #contactCard span {
 	display:inline-block /*Spacing adjust*/
 }
-#langSelect .selected, #fontSize, #accordion>div {
+#langSelect .selected, #accordion>div, #fontSize {
 	display:none
 }
 
@@ -233,6 +233,10 @@ __________________________________________________________________*/
 
 .xLargeDiv, .deck>h2,#acoespg #accordion>h3 {
 	width:98%	
+}
+#acessibility .card {
+	width:95%;
+	padding:2em 2.5%;
 }
 .largeDiv {
 	width:68%	
@@ -269,13 +273,11 @@ __________________________________________________________________*/
 #searchCtrl h3, #destaques .data {
 	margin-right:.3em	
 }
-
 .encap>div {
 	max-width:960px;
 	width:97.5%;
 	padding:0 1.25%
 }
-
 #acessibility>div {
 	width:75%;
 	max-width:540px;
@@ -297,10 +299,10 @@ div[role=main] input[type=text], div[role=main] select {
 
 /*	[2.x]Posições,z-index,alinhamentos e floats
 __________________________________________________________________*/
-#acessibility, #acessBtn, #acessList, #fontSize{
+#acessibility, #acessBtn{
 	position:absolute	
 }
-#menuEncap .auxNav [type=submit],body>header #menuEncap, #accordion .active {
+#acessibility .card,#menuEncap .auxNav [type=submit],body>header #menuEncap, #accordion .active {
 	position:relative	
 }
 
@@ -315,6 +317,10 @@ __________________________________________________________________*/
 }
 #acessibility {
 	top:5%
+}
+
+#acessibility .card {
+	z-index:9999;	
 }
 
 #acessibility, .deck>div, #destaques .smallDiv{

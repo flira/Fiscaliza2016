@@ -1,300 +1,244 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR">
 <head>
-    <title>Resultado da pesquisa</title>
-    <link rel="shortcut icon" href="http://portal2.tcu.gov.br/portal/page/portal/TCU/imagens/0_001.ico" type="image/x-icon"/>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link type="text/css" rel="stylesheet" href="tcu/css/estilo.css" media="all"/>
-    <![if !(lt IE 9)]>
-        <link type="text/css" rel="stylesheet" href="tcu/css/fonts.css" media="screen"/>
-    <![endif]>
-    <!--[if lt IE 9]>
+<title>Resultado da pesquisa</title>
+<link rel="shortcut icon" href="http://portal2.tcu.gov.br/portal/page/portal/TCU/imagens/0_001.ico" type="image/x-icon"/>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link type="text/css" rel="stylesheet" href="tcu/css/estilo.css" media="all"/>
+<![if !(lt IE 9)]>
+<link type="text/css" rel="stylesheet" href="tcu/css/fonts.css" media="screen"/>
+<![endif]>
+<!--[if lt IE 9]>
         <link type="text/css" rel="stylesheet" href="tcu/css/ie/iefix.css" media="screen">
         <link type="text/css" rel="stylesheet" href="tcu/css/ie/fonts/fonts.css" media="screen">
     <![endif]-->
-    <script src="tcu/js/jquery1.js" type="text/javascript"></script>
-    <script src="tcu/js/modernizr.js" type="text/javascript"></script>
-    <!--[if lt IE 9]>
+<script src="tcu/js/jquery1.js" type="text/javascript"></script>
+<script src="tcu/js/modernizr.js" type="text/javascript"></script>
+<!--[if lt IE 9]>
         <script src="tcu/js/pollyfills.js" type="text/javascript"></script>
     <![endif]-->
 </head>
 <body id="searchpg">
-    <!--Cabeçalho-->
-    <header>
-      <div id="acessibility" class="encap">
+<!--Cabeçalho-->
+<header role="banner">
+  <div id="acessibility" class="encap">
+    <div>
+      <div id="acessList" class="card">
         <div>
-          <div id="acessList" class="card">
-            <div>
-              <h1>Pular para<sup>1</sup>:</h1>
-              <ul>
-                <li><a href="#sc1">Mapa do site</a><sup>2</sup></li>
-                <li><a href="#search">Busca</a></li>
-                <li><a href="#sc1">Conteúdo principal</a></li>
-              </ul>
-              <p>1 &ndash; Esta janela fechará automaticamente se nenhum item estiver focado.</p>
-              <p>2 &ndash; Equivale ao menu principal.</p>
-            </div>
-          </div>
-          <div id="fontSize" class="card">
-            <div>
-              <h1>Ajuste de tamanho da fonte</h1>
-              <ul>
-                <li>
-                  <h2>Aumentar fonte</h2>
-                  "<span class="zoomkey">ctrl</span>" + "+" </li>
-                <li>
-                  <h2>Diminuir fonte</h2>
-                  "<span class="zoomkey">ctrl</span>" + "-" </li>
-                <li>
-                  <h2>Voltar ao tamanho padrão</h2>
-                  "<span class="zoomkey">ctrl</span>" + "0" </li>
-              </ul>
-              <p>Também é possível ajustar o tamanho da fonte pressionando
-                "<span class="zoomkey">ctrl</span>" enquanto gira a rolagem do mouse.</p>
-            </div>
-          </div>
+          <h1>Pular para<sup>1</sup>:</h1>
+          <nav role="navigation">
+            <ul>
+              <li><a href="#sc1">Mapa do site</a><sup>2</sup></li>
+              <li><a href="#search">Busca</a></li>
+              <li><a href="#sc1">Conteúdo principal</a></li>
+            </ul>
+          </nav>
+          <p>1 &ndash; Esta janela fechará automaticamente se nenhum item estiver focado.</p>
+          <p>2 &ndash; Equivale ao menu principal.</p>
         </div>
       </div>
-      <div class="encap" id="topo">
-        <div class="auxNav">
-          <ul id="langSelect">
-            <li class="selected"><a href="#pt" lang="pt">Português</a></li>
-            <li class="noBorder"><a href="#en" lang="en">English</a></li>
-            <li><a href="#es" lang="es">Español</a></li>
+      <div id="fontSize" class="card" aria-hidden="true">
+        <div>
+          <h1>Ajuste de tamanho da fonte</h1>
+          <ul>
+            <li>
+              <h2>Aumentar fonte</h2>
+              "<span class="zoomkey">ctrl</span>" + "+" </li>
+            <li>
+              <h2>Diminuir fonte</h2>
+              "<span class="zoomkey">ctrl</span>" + "-" </li>
+            <li>
+              <h2>Voltar ao tamanho padrão</h2>
+              "<span class="zoomkey">ctrl</span>" + "0" </li>
           </ul>
-          <div id="acessBtn"> <a href="#acessibilidade" title="Tamanho da letra" id="fontBtn"><small>a</small> / A</a> </div>
-          <div id="loginBtn"> <a href="#login"><span title="login"></span></a> </div>
+          <p>Também é possível ajustar o tamanho da fonte pressionando
+            "<span class="zoomkey">ctrl</span>" enquanto gira a rolagem do mouse.</p>
         </div>
       </div>
-      <div class="encap" id="menuEncap">
-        <div>
-          <div class="largeDiv" id="mainMenu">
-            <h1><span title="mostrar menu" id="menuBtn"></span><a href="index.html">Fiscaliza Rio 2016</a></h1>
-            <nav>
-              <ul>
-                <li><a href="#">Entenda a fiscalização</a></li>
-                <li><a href="#">Ações de controle</a></li>
-                <li><a href="#">Notícias</a></li>
-                <li><a href="#">Publicações</a></li>
-                <li><a href="#">Rio 2016</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="auxNav smallDiv">
-            <nav class="credits">
-              <ul>
-                <li><a href="#" class="TCU"><span title="Tribunal de Contas da União"></span></a></li>
-                <li><a href="#" class="TCERJ"><span title="Tribunal de Contas do Estado do Rio de Janeiro"></span></a></li>
-                <li><a href="#" class="TCMRJ"><span title="Tribunal de Contas do Município do Rio de Janeiro"></span></a></li>
-              </ul>
-            </nav>
-            <form>
-              <input type="text" id="search" name="q" title="busca"/>
-              <input type="submit" value="" title="enviar busca"/>
-            </form>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!--Fim do cabeçalho--> 
-    
-    <!--Área principal da página-->
-    <div role="main" id="main">
-        <div class="encap">
-            <div>
-                <h1>Resultados da pesquisa</h1>
-            </div>
-            <div>
-                <div class="single card">
-                    <div id="searchCtrl">
-                    	<div>
-                            <h2>
-                                Resultado para o termo <span class="contentTerm">2016 e Transcarioca</span>
-                            </h2>
-                            <p>Resultados de <span class="visibleItens">1 a 10</span> de <span class="total">256</span></p>
-                        </div>
-                        <div id="searchFilter">
-                        	<h3>Ordenar por:</h3>
-                            <ul>
-                                <li>Relevância</li>
-                                <!-- Usar classe "least" para inverter o filtro -->
-                                <li class="selected most">Data</li>
-                                <li>Tipo</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <ul class="contentList">
-                        <li>
-                        	<a href="">
-                                <header>
-                                    <p><span class="type">Notícia</span></p>
-                                    <p class="sign"><span class="publisher">TCU</span> &ndash; <span class="date">01/10/2014</span></p>
-                                    <h3>Levantamento sobre Olimpíadas deve ser julgado hoje</h3>
-                                </header>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget accumsan turpis. Fusce tristique rutrum purus vitae blandit. Integer sed iaculis turpis. Curabitur fermentum ultricies nulla, nec viverra mi hendrerit quis.</p>
-                                <p class="leiaMais">[leia mais]</p>
-                            </a>
-                        </li>
-                        <li>
-                        	<a href="">
-                                <header>
-                                    <p><span class="type">Notícia</span></p>
-                                    <p class="sign"><span class="publisher">TCU</span> &ndash; <span class="date">01/10/2014</span></p>
-                                    <h3>Levantamento sobre Olimpíadas deve ser julgado hoje</h3>
-                                </header>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget accumsan turpis. Fusce tristique rutrum purus vitae blandit. Integer sed iaculis turpis. Curabitur fermentum ultricies nulla, nec viverra mi hendrerit quis.</p>
-                                <p class="leiaMais">[leia mais]</p>
-                            </a>
-                        </li>                        
-                        <li>
-                        	<a href="">
-                                <header>
-                                    <p><span class="type">Notícia</span></p>
-                                    <p class="sign"><span class="publisher">TCU</span> &ndash; <span class="date">01/10/2014</span></p>
-                                    <h3>Levantamento sobre Olimpíadas deve ser julgado hoje</h3>
-                                </header>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget accumsan turpis. Fusce tristique rutrum purus vitae blandit. Integer sed iaculis turpis. Curabitur fermentum ultricies nulla, nec viverra mi hendrerit quis.</p>
-                                <p class="leiaMais">[leia mais]</p>
-                            </a>
-                        </li>                        
-                        <li class="photoList">
-                            <header>
-                                <p><span class="type">Foto</span></p>
-                                <p class="sign"><span class="publisher">TCU</span> &ndash; <span class="date">01/10/2014</span></p>
-                                <h3>transCarioca</h3>
-                            </header>
-                            <ul>
-                            	<li>
-                                	<a href="">
-                                        <img src="temp/Vila-Olimpica.png" alt=""/>
-                                    </a>
-                                </li>   
-                            	<li>
-                                	<a href="">
-                                        <img src="temp/Vila-Olimpica.png" alt=""/>
-                                    </a>
-                                </li>   
-                            	<li>
-                                	<a href="">
-                                        <img src="temp/Vila-Olimpica.png" alt=""/>
-                                    </a>
-                                </li>   
-                            	<li>
-                                	<a href="">
-                                        <img src="temp/Vila-Olimpica.png" alt=""/>
-                                    </a>
-                                </li>   
-                            	<li>
-                                	<a href="">
-                                        <img src="temp/Vila-Olimpica.png" alt=""/>
-                                    </a>
-                                </li>   
-                            	<li>
-                                	<a href="">
-                                        <img src="temp/Vila-Olimpica.png" alt=""/>
-                                    </a>
-                                </li>   
-                            	<li>
-                                	<a href="">
-                                        <img src="temp/Vila-Olimpica.png" alt=""/>
-                                    </a>
-                                </li>   
-                            	<li>
-                                	<a href="">
-                                        <img src="temp/Vila-Olimpica.png" alt=""/>
-                                    </a>
-                                </li>   
-                            	<li>
-                                	<a href="">
-                                        <img src="temp/Vila-Olimpica.png" alt=""/>
-                                    </a>
-                                </li>   
-                            	<li>
-                                	<a href="">
-                                        <img src="temp/Vila-Olimpica.png" alt=""/>
-                                    </a>
-                                </li>   
-                            	<li>
-                                	<a href="">
-                                        <img src="temp/Vila-Olimpica.png" alt=""/>
-                                    </a>
-                                </li>   
-                            	<li>
-                                	<a href="">
-                                        <img src="temp/Vila-Olimpica.png" alt=""/>
-                                    </a>
-                                </li>   
-                            </ul>
-                        </li>
-                        <li>
-                        
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </div>
-    <!--Fim da área principal da página--> 
-    
-    <!--Rodapé-->
-    <footer>
-      <div class="encap">
-        <div>
-          <div class="largeDiv" id="siteMap">
-            <nav title="Mapa do Portal">
-              <ul>
-                <li class="wSub"><span>Entenda a fiscalização</span>
-                  <ul>
-                    <li><a href="#" id="sc1">Papel dos tribunais</a></li>
-                    <li><a href="#">Matriz de responsabilidades</a></li>
-                    <li><a href="#">Protocolo de intenções</a></li>
-                    <li><a href="#">Onde estão as ações</a></li>
-                  </ul>
-                </li>
-                <li class="wSub"><span>Ações de controle</span>
-                  <ul>
-                    <li><a href="#">Instações esportivas</a></li>
-                    <li><a href="#">Infraestrutura</a></li>
-                    <li><a href="#">Mobilidade urbana</a></li>
-                    <li><a href="#">Segurança</a></li>
-                    <li><a href="#">Educação e cultura</a></li>
-                    <li><a href="#">Tecnologia e comunicação</a></li>
-                    <li><a href="#">Governança e gestão</a></li>
-                    <li><a href="#">Despesas com organização</a></li>
-                    <li><a href="#">Legados para a sociedade</a></li>
-                  </ul>
-                </li>
-                <li><a href="#"><span>Notícias</span></a></li>
-                <li><a href="#"><span>Publicações</span></a></li>
-                <li><a href="#"><span>Rio 2016</span></a></li>
-              </ul>
-            </nav>
+  </div>
+  <div class="encap" id="topo">
+    <div class="auxNav">
+      <ul id="langSelect">
+        <li class="selected"><a href="#pt" lang="pt">Português</a></li>
+        <li class="noBorder"><a href="#en" lang="en">English</a></li>
+        <li><a href="#es" lang="es">Español</a></li>
+      </ul>
+      <div id="acessBtn"> <a href="#acessibilidade" title="Tamanho da letra" id="fontBtn"><small>a</small> / A</a> </div>
+      <div id="loginBtn"> <a href="#login"><span title="login"></span></a> </div>
+    </div>
+  </div>
+  <div class="encap" id="menuEncap">
+    <div>
+      <div class="largeDiv" id="mainMenu">
+        <h1><span title="mostrar menu" id="menuBtn"></span><a href="index.html">Fiscaliza Rio 2016</a></h1>
+        <nav>
+          <ul>
+            <li><a href="#">Entenda a fiscalização</a></li>
+            <li><a href="#">Ações de controle</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Publicações</a></li>
+            <li><a href="#">Rio 2016</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="auxNav smallDiv">
+        <nav class="credits">
+          <ul>
+            <li><a href="#" class="TCU"><span title="Tribunal de Contas da União"></span></a></li>
+            <li><a href="#" class="TCERJ"><span title="Tribunal de Contas do Estado do Rio de Janeiro"></span></a></li>
+            <li><a href="#" class="TCMRJ"><span title="Tribunal de Contas do Município do Rio de Janeiro"></span></a></li>
+          </ul>
+        </nav>
+        <form role="search">
+          <input type="text" id="search" name="q" title="busca"/>
+          <input type="submit" value="" title="enviar busca"/>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+<!--Fim do cabeçalho--> 
+
+<!--Área principal da página-->
+<div role="main" id="main">
+  <div class="encap">
+    <div>
+      <h1>Resultados da pesquisa</h1>
+    </div>
+    <div>
+      <div class="single card">
+        <div id="searchCtrl">
+          <div>
+            <h2> Resultado para o termo <span class="contentTerm">2016 e Transcarioca</span> </h2>
+            <p>Resultados de <span class="visibleItens">1 a 10</span> de <span class="total">256</span></p>
           </div>
-          <div class="smallDiv" id="footerCrdt">
-            <nav class="credits">
-              <ul>
-                <li><a href="#" class="TCU"><span title="Tribunal de Contas da União"></span></a></li>
-                <li><a href="#" class="TCERJ"><span title="Tribunal de Contas do Estado do Rio de Janeiro"></span></a></li>
-                <li><a href="#" class="TCMRJ"><span title="Tribunal de Contas do Município do Rio de Janeiro"></span></a></li>
-              </ul>
-            </nav>
-            <div class="social">
-              <h1>Mídias Sociais:</h1>
-              <nav>
-                <ul>
-                  <li><a href="#" class="facebook"><span></span></a></li>
-                  <li><a href="#" class="twitter"><span></span></a></li>
-                  <li><a href="#" class="instagram"><span></span></a></li>
-                  <li><a href="#" class="youtube"><span></span></a></li>
-                </ul>
-              </nav>
-            </div>
+          <div id="searchFilter">
+            <h3>Ordenar por:</h3>
+            <ul>
+              <li>Relevância</li>
+              <!-- Usar classe "least" para inverter o filtro -->
+              <li class="selected most">Data</li>
+              <li>Tipo</li>
+            </ul>
           </div>
         </div>
+        <ul class="contentList">
+          <li> <a href="">
+            <header>
+              <p><span class="type">Notícia</span></p>
+              <p class="sign"><span class="publisher">TCU</span> &ndash; <span class="date">01/10/2014</span></p>
+              <h3>Levantamento sobre Olimpíadas deve ser julgado hoje</h3>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget accumsan turpis. Fusce tristique rutrum purus vitae blandit. Integer sed iaculis turpis. Curabitur fermentum ultricies nulla, nec viverra mi hendrerit quis.</p>
+            <p class="leiaMais">[leia mais]</p>
+            </a> </li>
+          <li> <a href="">
+            <header>
+              <p><span class="type">Notícia</span></p>
+              <p class="sign"><span class="publisher">TCU</span> &ndash; <span class="date">01/10/2014</span></p>
+              <h3>Levantamento sobre Olimpíadas deve ser julgado hoje</h3>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget accumsan turpis. Fusce tristique rutrum purus vitae blandit. Integer sed iaculis turpis. Curabitur fermentum ultricies nulla, nec viverra mi hendrerit quis.</p>
+            <p class="leiaMais">[leia mais]</p>
+            </a> </li>
+          <li> <a href="">
+            <header>
+              <p><span class="type">Notícia</span></p>
+              <p class="sign"><span class="publisher">TCU</span> &ndash; <span class="date">01/10/2014</span></p>
+              <h3>Levantamento sobre Olimpíadas deve ser julgado hoje</h3>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget accumsan turpis. Fusce tristique rutrum purus vitae blandit. Integer sed iaculis turpis. Curabitur fermentum ultricies nulla, nec viverra mi hendrerit quis.</p>
+            <p class="leiaMais">[leia mais]</p>
+            </a> </li>
+          <li class="photoList">
+            <header>
+              <p><span class="type">Foto</span></p>
+              <p class="sign"><span class="publisher">TCU</span> &ndash; <span class="date">01/10/2014</span></p>
+              <h3>transCarioca</h3>
+            </header>
+            <ul>
+              <li> <a href=""> <img src="temp/Vila-Olimpica.png" alt=""/> </a> </li>
+              <li> <a href=""> <img src="temp/Vila-Olimpica.png" alt=""/> </a> </li>
+              <li> <a href=""> <img src="temp/Vila-Olimpica.png" alt=""/> </a> </li>
+              <li> <a href=""> <img src="temp/Vila-Olimpica.png" alt=""/> </a> </li>
+              <li> <a href=""> <img src="temp/Vila-Olimpica.png" alt=""/> </a> </li>
+              <li> <a href=""> <img src="temp/Vila-Olimpica.png" alt=""/> </a> </li>
+              <li> <a href=""> <img src="temp/Vila-Olimpica.png" alt=""/> </a> </li>
+              <li> <a href=""> <img src="temp/Vila-Olimpica.png" alt=""/> </a> </li>
+              <li> <a href=""> <img src="temp/Vila-Olimpica.png" alt=""/> </a> </li>
+              <li> <a href=""> <img src="temp/Vila-Olimpica.png" alt=""/> </a> </li>
+              <li> <a href=""> <img src="temp/Vila-Olimpica.png" alt=""/> </a> </li>
+              <li> <a href=""> <img src="temp/Vila-Olimpica.png" alt=""/> </a> </li>
+            </ul>
+          </li>
+          <li> </li>
+        </ul>
       </div>
-    </footer>
-    <!--/Rodapé-->
+    </div>
+  </div>
+</div>
+<!--Fim da área principal da página--> 
+
+<!--Rodapé-->
+<footer>
+  <div class="encap">
+    <div>
+      <div class="largeDiv" id="siteMap">
+        <nav title="Mapa do Portal">
+          <ul>
+            <li class="wSub"><span>Entenda a fiscalização</span>
+              <ul>
+                <li><a href="#" id="sc1">Papel dos tribunais</a></li>
+                <li><a href="#">Matriz de responsabilidades</a></li>
+                <li><a href="#">Protocolo de intenções</a></li>
+                <li><a href="#">Onde estão as ações</a></li>
+              </ul>
+            </li>
+            <li class="wSub"><span>Ações de controle</span>
+              <ul>
+                <li><a href="#">Instações esportivas</a></li>
+                <li><a href="#">Infraestrutura</a></li>
+                <li><a href="#">Mobilidade urbana</a></li>
+                <li><a href="#">Segurança</a></li>
+                <li><a href="#">Educação e cultura</a></li>
+                <li><a href="#">Tecnologia e comunicação</a></li>
+                <li><a href="#">Governança e gestão</a></li>
+                <li><a href="#">Despesas com organização</a></li>
+                <li><a href="#">Legados para a sociedade</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><span>Notícias</span></a></li>
+            <li><a href="#"><span>Publicações</span></a></li>
+            <li><a href="#"><span>Rio 2016</span></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="smallDiv" id="footerCrdt">
+        <nav class="credits">
+          <ul>
+            <li><a href="#" class="TCU"><span title="Tribunal de Contas da União"></span></a></li>
+            <li><a href="#" class="TCERJ"><span title="Tribunal de Contas do Estado do Rio de Janeiro"></span></a></li>
+            <li><a href="#" class="TCMRJ"><span title="Tribunal de Contas do Município do Rio de Janeiro"></span></a></li>
+          </ul>
+        </nav>
+        <div class="social">
+          <h1>Mídias Sociais:</h1>
+          <nav>
+            <ul>
+              <li><a href="#" class="facebook"><span></span></a></li>
+              <li><a href="#" class="twitter"><span></span></a></li>
+              <li><a href="#" class="instagram"><span></span></a></li>
+              <li><a href="#" class="youtube"><span></span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--/Rodapé-->
 </body>
 </html>
