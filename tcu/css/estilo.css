@@ -38,7 +38,7 @@ __________________________________________________________________*/
 	padding:0
 }
 html {
-	background:#eef3f6;
+	background:#0a1737;
 	font:1em/1.35 'lato', sans-serif;
 	min-width:340px;
 	-ms-text-size-adjust:100%;
@@ -116,7 +116,7 @@ img {
 	border:0
 }
 svg:not(:root) {
-overflow:hidden
+	overflow:hidden
 }
 figure {
 	margin:0
@@ -155,7 +155,7 @@ input[type=search] {
 	box-sizing:content-box
 }
 input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
--webkit-appearance:none
+	-webkit-appearance:none
 }
 textarea {
 	overflow:auto;
@@ -166,8 +166,8 @@ table {
 	border-spacing:0
 }
 legend, button::-moz-focus-inner, input::-moz-focus-inner {
-border:0;
-padding:0
+	border:0;
+	padding:0
 }
 :focus {
 	border-bottom:2px solid red
@@ -191,7 +191,7 @@ body, .sign {
 h1, #destaque h2 {
 	font-size:3em
 }
-body>header .titulo h1, div[role=main] h1 {
+body>header .titulo h1, #main h1 {
 	font-size:2.5em
 }
 h2, #home .deck.encap>div>h1, #home #featured h2 {
@@ -224,20 +224,20 @@ h1, h2, h3, h4, h5, h6, h1 *, h2 *, h3 *, h4 *, h5 *, h6 *, body>header .menu li
 .leiamais, .card h1, .card h2 a, #destaque p, #linguas a, #searchCtrl h2, #searchCtrl h3, #searchCtrl h2 span, #accordion .fisc h5 {
 	font-weight:400
 }
-#contact div[role=main] ul li {
+#contact #main ul li {
 	margin: .5em 0 .5em 1em;
 	text-indent: -.9em;
 }
 body>header h1 {
 	margin:-.3em 0 .3em
 }
-div[role=main] h1 {
-	margin:.5em 0
+#main h1 {
+	padding:.5em 1.25%
 }
-#home .deck.encap>div>h1, div[role=main] .contentList header p {
+#home .deck.encap>div>h1, #main .contentList header p {
 	margin:.5em 0 0
 }
-div[role=main] ul, div[role=main] p {
+#main ul, #main p {
 	margin:1em 0
 }
 h2, #contact h2, #contact legend {
@@ -255,7 +255,7 @@ h4 {
 .single.card>.deck, #home #contactCard a, #home #cadastrese {
 	margin:2em 0 0
 }
-nav ul, nav li, #featured ul, #featured li, .featuredCtrl li, #home div[role=main] p, .contentList header h3, #topo .auxNav #loginBtn, #siteMap ul li ul li, .contentList a>p, #searchCtrl p, #searchFilter ul, #acoespg .photoList p, #accordion .fisc p, #accordion .fisc .fisc h5, .single.card>.deck:first-child, #accordion .featuredCtrl p, #accordion .featuredCtrl ul {
+nav ul, nav li, #featured ul, #featured li, .featuredCtrl li, #home #main p, .contentList header h3, #topo .auxNav #loginBtn, #siteMap ul li ul li, .contentList a>p, #searchCtrl p, #searchFilter ul, #acoespg .photoList p, #accordion .fisc p, #accordion .fisc .fisc h5, .single.card>.deck:first-child, #accordion .featuredCtrl p, #accordion .featuredCtrl ul {
 	margin:0
 }
 nav li, #featured ul, #featured li, .featuredCtrl li {
@@ -276,25 +276,25 @@ ul {
 #home #acoesMap ul {
 	list-style:disc inside
 }
-#contact div[role=main] ul li:before {
+#contact #main ul li:before {
 	content:"–	"
 }
-#contact div[role=main] form li:before {
+#contact #main form li:before {
 	content:none
 }
 /*	[1.2]cor
 __________________________________________________________________*/
-#home .deck.encap>div>h1, #topo .auxNav *, #menuEncap #search, .contentList .type, div[role=main] h1, #accordion h3, #accordion .fisc .def {
+#home .deck.encap>div>h1, #topo .auxNav *, #menuEncap #search, .contentList .type, #main h1, #accordion h3, #accordion .fisc .def {
 	color:#122051
 }
 #menuEncap *, body>footer *, #contact input[type=button], #home #contactCard span, #home #cadastrese input[type=submit] {
 	color:#fff
 }
-#home .card a, #home #acoesMap li, div[role=main] h2, form legend, .contentList .leiaMais, #searchCtrl p, #searchCtrl h2, #searchCtrl h3, #searchFilter li, #searchCtrl span, .contentList h3, .contentTerm, #acoespg .type, #accordion h4, .fisc .smallDiv a {
+#home .card a, #home .smallDiv .card a p,#home #acoesMap li, #main h2, form legend, .contentList .leiaMais, #searchCtrl p, #searchCtrl h2, #searchCtrl h3, #searchFilter li, #searchCtrl span, .contentList h3, .contentTerm, #acoespg .type, #accordion h4, .fisc .smallDiv a {
 	color:#004179
 }
 .obs {
-	color:#fd0100;
+	color:#fd0100
 }
 /*	[2]Especificações gerais
 
@@ -304,7 +304,10 @@ __________________________________________________________________*/
 	display:block
 }
 #langSelect, #langSelect li, #loginBtn span, #topo .auxNav div, #menuEncap>div div, .credits li, .credits span, #mainMenu li, body>footer .encap>div>div, .social *, .deck .smallDiv, .deck .largeDiv, .deck hr, .featuredCtrl *, .vejaMais span, #destaques .smallDiv .card, form li, .celspace, #searchCtrl h2, #searchCtrl h3, #searchCtrl>div, #searchFilter ul, #searchFilter li, .photoList li, #home #contactCard span, .sumario span, .relatorio span {
-	display:inline-block /*Spacing adjust*/
+	display:inline-block
+}
+#acessBtn figure {
+	display:inline
 }
 #langSelect .selected, #accordion>div, #fontSize {
 	display:none
@@ -350,35 +353,40 @@ __________________________________________________________________*/
 	width:30px;
 	height:30px
 }
-#acessibility>div, .encap>div {
+#acessibility>div, .encap>div, #main h1 {
 	margin:auto
 }
-#langSelect, #langSelect li, #topo .auxNav div, #menuEncap>div div, .credits li, .credits span, #mainMenu li, body>footer .encap>div>div {
+#langSelect, #langSelect li, #topo .auxNav div, #menuEncap>div div, .credits li, .credits span, #mainMenu li, body>footer .encap>div>div, #home #cadEmail {
 	margin-right: -.3em /*Inline-block adjust*/
 }
-#contact div[role=main] input[type=text], #contact div[role=main] input[type=button], #searchCtrl select, #accordion .fisc .smallDiv span {
+#contact #main input[type=text], #contact #main input[type=button], #searchCtrl select, #accordion .fisc .smallDiv span {
 	margin-right:1em;
 }
 #searchCtrl h3, #destaques .data {
 	margin-right:.3em
 }
-.encap>div {
+.encap>div, #main h1 {
 	max-width:960px;
 	width:97.5%;
-	padding:0 1.25%
+}
+#main .encap>div {
+	padding:0 1.25% .75em
 }
 #acessibility>div {
 	width:75%;
 	max-width:540px;
 	padding:2.5%
 }
-div[role=main] input[type=button], div[role=main] input[type=submit] {
+.card>div, #langSelect li, #destaques .smallDiv p {
+	padding:0 1em;
+}
+#main input[type=button], #main input[type=submit] {
 	padding:.4em .7em
 }
-div[role=main] input[type=text], div[role=main] select {
+#main input[type=text], #main select {
 	padding:.3em
 }
-#searchCtrl {
+#searchCtrl, #home #main h1 {
 	padding:0;
 }
 #featured, .photoList li {
@@ -416,7 +424,7 @@ p, #acessibility, .deck>div, #destaques .smallDiv {
 .credits ul, #menuEncap .auxNav form, .social, #acoes .card .vejaMais, #contact form td:first-child, #searchCtrl form, .contentList .leiaMais, #searchFilter {
 	text-align:right
 }
-#contact form td[colspan="2"], #acoespg .vejaMais, #home div[role=main] p {
+#contact form td[colspan="2"], #acoespg .vejaMais, #home #main p {
 	text-align:left!important;
 }
 .wSub, #featured li, #home #pub img {
@@ -428,7 +436,7 @@ p, #acessibility, .deck>div, #destaques .smallDiv {
 #menuEncap>div div, #siteMap ul li, .encap>div>div, #contact form td, .deck>div, .photoList li {
 	vertical-align:text-top
 }
-.credits li, div[role=main] input[type=button], div[role=main] input[type=submit] {
+.credits li, #main input[type=button], #main input[type=submit] {
 	vertical-align:middle
 }
 .featuredCtrl span, #searchFilter, .vejaMais span {
@@ -437,7 +445,7 @@ p, #acessibility, .deck>div, #destaques .smallDiv {
 .relatorio span, .sumario span {
 	vertical-align:text-bottom
 }
-#contact div[role=main] input[type=button], #contact div[role=main] input[type=submit] {
+#contact #main input[type=button], #contact #main input[type=submit] {
 	vertical-align:baseline
 }
 /*	[2.x]Fundos,sombras,bordas e cursores
@@ -457,7 +465,7 @@ __________________________________________________________________*/
 #destaques, #acoesMap {
 	background:#cee2ee
 }
-#acoes {
+#main, #acoes {
 	background:#eef3f6
 }
 #sociais {
@@ -554,7 +562,7 @@ body>footer {
 input[type=text], select, textarea {
 	border:#bebec0 solid 1px
 }
-.noBorder, fieldset, #searchFilter li:first-child, #acoespg .contentList>li, #acoespg #accordion>h3.active {
+.noBorder, fieldset, #searchFilter li:first-child, #acoespg .contentList>li, #acoespg #accordion>h3.active, .auxNav input {
 	border:none!important
 }
 /*	[3]Definições específicas
@@ -566,14 +574,8 @@ __________________________________________________________________*/
 	padding:10px 0;
 	min-height:16px;
 }
-#langSelect li {
-	padding:0 1em
-}
 #langSelect .noBorder {
 	padding-left:0
-}
-.card>div {
-	padding:0 1em;
 }
 #acessBtn {
 	height:0
@@ -617,12 +619,12 @@ __________________________________________________________________*/
 }
 #search {
 	width:96%;
-	padding:.2em 2%
+	padding:.3em 2%
 }
 #menuEncap .auxNav [type=submit] {
 	width:15px;
 	height:15px;
-	top:-18px;
+	top:-17px;
 	right:.5em
 }
 /*	[3.x]Principal
@@ -682,8 +684,9 @@ __________________________________________________________________*/
 #home #acoes .card p {
 	margin: .75em 0 0
 }
-#home #cadastrese input[type=text] {
-	width:60%
+#home #cadEmail {
+	width:60%;
+	padding:.3em .3em .4em
 }
 /* AÇÕES */
 #acoespg .vejaMais span {
@@ -717,7 +720,7 @@ __________________________________________________________________*/
 	width:22px;
 	height:22px
 }
-div[role=main] .fisc {
+#main .fisc {
 	margin:0 0 1em;
 }
 .fisc li {
@@ -740,28 +743,28 @@ div[role=main] .fisc {
 #contact form td {
 	padding:.3em;
 }
-#contact div[role=main] input[type=text], #contact div[role=main] select, #contact div[role=main] textarea {
+#contact #main input[type=text], #contact #main select, #contact #main textarea {
 	width:80%
 }
-#contact div[role=main] input[type=radio] {
+#contact #main input[type=radio] {
 	margin:0 .5em 0 1em;
 }
-#contact div[role=main] li:first-child input[type=radio] {
+#contact #main li:first-child input[type=radio] {
 	margin-left:0;
 }
-#contact div[role=main] fieldset:first-child input[type=text] {
+#contact #main fieldset:first-child input[type=text] {
 	width:20em;
 }
-#contact div[role=main] fieldset:first-child select {
+#contact #main fieldset:first-child select {
 	width:21.2em;
 }
-#contact div[role=main] input[type=text], #contact div[role=main] input[type=button] {
+#contact #main input[type=text], #contact #main input[type=button] {
 	margin-right:1em;
 }
-#contact div[role=main] input[type=text], #contact div[role=main] select, #contact div[role=main] textarea {
+#contact #main input[type=text], #contact #main select, #contact #main textarea {
 	padding:.5em
 }
-#contact div[role=main] input[type=button] {
+#contact #main input[type=button] {
 	padding:.5em 1.75em;
 }
 #contact #sendbtn, #home #contactCard span {
@@ -838,7 +841,13 @@ __________________________________________________________________*/
 		 top:0;
 		 left:-33%;
 	}
-	 #mainMenu li {
+	#mainMenu nav:before {
+		content:"Menu";
+		font: 2.5em 'open sans condensed';
+		margin-left: .2em;
+		padding-bottom: .5em;
+	}
+	 #mainMenu li,#mainMenu nav:before {
 		 display:block;
 	}
 	 #menuBtn {
@@ -867,9 +876,6 @@ __________________________________________________________________*/
 	}
 	 body>header .smallDiv {
 		 width:40%
-	}
-	 #acoes .card, #acoesMap .card {
-		 min-height:0
 	}
 	 #mainMenu h1 {
 		 font-size:2.5em;
@@ -927,6 +933,10 @@ __________________________________________________________________*/
 	}
 	 #mainMenu h1 {
 		 margin: -.3em 0 1em;
+	}
+	 #mainMenu nav {
+		 width:80%;
+		 left:-80%;
 	}
 	 #search {
 		 width: 65%;
