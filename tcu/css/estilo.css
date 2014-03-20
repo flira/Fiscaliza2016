@@ -20,7 +20,7 @@
 	[4]Media Querries
 		[4.x]Screens < 900
 		
-	[5]Acessibility
+	[5]accessibility
 		[5.x]Aural
 __________________________________________________________________*/
 
@@ -179,13 +179,13 @@ input:focus, select:focus, textarea:focus {
 	
 	[1.1]tamanho, margens e transformações
 __________________________________________________________________*/
-div>h1, .contentList h3 {
+div>h1, .contentList h3, #ulacoes span {
 	font-family:'open sans condensed'
 }
 body, .sign {
 	font-size:.8125em
 }
-#topo .auxNav {
+#topo .auxNav,#ulacoes .noBorder {
 	font-size:.85em
 }
 h1, #destaque h2 {
@@ -197,13 +197,13 @@ body>header .titulo h1, #main h1 {
 h2, #home .deck.encap>div>h1, #home #featured h2 {
 	font-size:2em
 }
-.contentList h3 {
+.contentList h3, #ulacoes span {
 	font-size:1.75em
 }
-form legend, #acoespg .contentList h3, #accordion h3 {
+form legend, #acoespg .contentList h3, #accordion h3, #ulacoes .nomeAcao {
 	font-size:1.5em
 }
-h3, h4, #destaque p, .obs {
+h3, h4, #destaque p, .obs, #ulacoes {
 	font-size:1.25em
 }
 #home .card h2, #destaque h1, .social h1, #sendbtn, #home #contactCard span {
@@ -218,7 +218,7 @@ table, span, div, input, select, textarea, td, a, pre {
 #featured p {
 	line-height:1.6
 }
-h1, h2, h3, h4, h5, h6, h1 *, h2 *, h3 *, h4 *, h5 *, h6 *, body>header .menu li a, .card h2 a span, #acessBtn a, #mainMenu a, #siteMap span, #featured h2, #home #acoes h2, form legend, #contact form td:first-child label, #contact form td:first-child span, .obs, #contact input[type=button], span.type, #home #contactCard span {
+h1, h2, h3, h4, h5, h6, h1 *, h2 *, h3 *, h4 *, h5 *, h6 *, body>header .menu li a, .card h2 a span, #accessBtn a, #mainMenu a, #siteMap span, #featured h2, #home #acoes h2, form legend, #contact form td:first-child label, #contact form td:first-child span, .obs, #contact input[type=button], span.type, #home #contactCard span {
 	font-weight:700
 }
 .leiamais, .card h1, .card h2 a, #destaque p, #linguas a, #searchCtrl h2, #searchCtrl h3, #searchCtrl h2 span, #accordion .fisc h5 {
@@ -255,13 +255,13 @@ h4 {
 .single.card>.deck, #home #contactCard a, #home #cadastrese {
 	margin:2em 0 0
 }
-nav ul, nav li, #featured ul, #featured li, .featuredCtrl li, #home #main p, .contentList header h3, #topo .auxNav #loginBtn, #siteMap ul li ul li, .contentList a>p, #searchCtrl p, #searchFilter ul, #acoespg .photoList p, #accordion .fisc p, #accordion .fisc .fisc h5, .single.card>.deck:first-child, #accordion .featuredCtrl p, #accordion .featuredCtrl ul {
+nav ul, nav li, #featured ul, #featured li, .featuredCtrl li, #home #main p, .contentList header h3, #topo .auxNav #loginBtn, #siteMap ul li ul li, .contentList a>p, #searchCtrl p, #searchFilter ul, #acoespg .photoList p, #accordion .fisc p, #accordion .fisc .fisc h5, .single.card>.deck:first-child, #accordion .featuredCtrl p, #accordion .featuredCtrl ul, #ulacoes ul,#ulacoes .vejaMais span {
 	margin:0
 }
 nav li, #featured ul, #featured li, .featuredCtrl li {
 	text-indent:0
 }
-.sectionTitle, #acessBtn a, #siteMap span, #home .deck.encap>div>h1 {
+.sectionTitle, #accessBtn a, #siteMap span, #home .deck.encap>div>h1 {
 	text-transform:uppercase
 }
 body>header .titulo h1, #destaque h1, #destaque h2, .card h1, .card h2 {
@@ -284,13 +284,13 @@ ul {
 }
 /*	[1.2]cor
 __________________________________________________________________*/
-#home .deck.encap>div>h1, #topo .auxNav *, #menuEncap #search, .contentList .type, #main h1, #accordion h3, #accordion .fisc .def {
+#home .deck.encap>div>h1, #topo .auxNav *, #menuEncap #search, .contentList .type, #main h1, #accordion h3, #accordion .fisc .def, #ulacoes span {
 	color:#122051
 }
-#menuEncap *, body>footer *, #contact input[type=button], #home #contactCard span, #home #cadastrese input[type=submit] {
+#menuEncap *, body>footer *, #contact input[type=button], #home #contactCard span, #home #cadastrese input[type=submit], #searchLink {
 	color:#fff
 }
-#home .card a, #home .smallDiv .card a p,#home #acoesMap li, #main h2, form legend, .contentList .leiaMais, #searchCtrl p, #searchCtrl h2, #searchCtrl h3, #searchFilter li, #searchCtrl span, .contentList h3, .contentTerm, #acoespg .type, #accordion h4, .fisc .smallDiv a {
+#home .card a, #home .smallDiv .card a p,#home #acoesMap li, #main h2, form legend, .contentList .leiaMais, #searchCtrl p, #searchCtrl h2, #searchCtrl h3, #searchFilter li, #searchCtrl span, .contentList h3, .contentTerm, #acoespg .type, #accordion h4, .fisc .smallDiv a, #ulacoes a {
 	color:#004179
 }
 .obs {
@@ -300,33 +300,41 @@ __________________________________________________________________*/
 
 	[2.x]Displays
 __________________________________________________________________*/
-#menuEncap, #siteMap li, #fontSize.active, #acoes .card .vejaMais, #home #acoes h2 span, .charcount, #acoespg .leiaMais, #accordion>div.active, #accordion>h3 span, #home #contactCard a {
+#menuEncap, #siteMap li, #fontSize.active, #acoes .card .vejaMais, #home #acoes h2 span, .charcount, #acoespg .leiaMais, #accordion>div.active, #accordion>h3 span, #home #contactCard a, #mapEncap a, #ulacoes .nomeAcao {
 	display:block
 }
 #langSelect, #langSelect li, #loginBtn span, #topo .auxNav div, #menuEncap>div div, .credits li, .credits span, #mainMenu li, body>footer .encap>div>div, .social *, .deck .smallDiv, .deck .largeDiv, .deck hr, .featuredCtrl *, .vejaMais span, #destaques .smallDiv .card, form li, .celspace, #searchCtrl h2, #searchCtrl h3, #searchCtrl>div, #searchFilter ul, #searchFilter li, .photoList li, #home #contactCard span, .sumario span, .relatorio span {
 	display:inline-block
 }
-#acessBtn figure {
+#accessBtn figure {
 	display:inline
 }
 #langSelect .selected, #accordion>div, #fontSize {
 	display:none
 }
+
+.accessLink {
+	opacity:0	
+}
+.accessLink:active, .accessLink:focus,.accessLink:hover {
+	opacity:100!important
+}
+
 #searchFilter li, #accordion h3 {
 	cursor:pointer;
 }
 /*	[2.x]Alturas,larguras,margens,paddings e overflows
 __________________________________________________________________*/
-#acessibility, .encap, #acessBtn, .deck hr, .smallDiv .card, .largeDiv .card, #home #destaques img, #home #acoes img, #contact form table, #contact legend, #accordion .active {
+#accessibility, .encap, #accessBtn, .deck hr, .smallDiv .card, .largeDiv .card, #home #destaques img, #home #acoes img, #contact form table, #contact legend, #accordion .active, #mapEncap a, #ulacoes .nomeAcao {
 	width:100%
 }
-#acessibility, .encap, img, #siteMap ul li ul li {
+#accessibility, .encap, img, #siteMap ul li ul li {
 	max-width:100%
 }
 .xLargeDiv, .deck>h2, #acoespg #accordion>h3 {
 	width:98%
 }
-#acessibility .card {
+#accessibility .card {
 	width:95%;
 	padding:2em 2.5%;
 }
@@ -353,7 +361,7 @@ __________________________________________________________________*/
 	width:30px;
 	height:30px
 }
-#acessibility>div, .encap>div, #main h1 {
+#accessibility>div, .encap>div, #main h1 {
 	margin:auto
 }
 #langSelect, #langSelect li, #topo .auxNav div, #menuEncap>div div, .credits li, .credits span, #mainMenu li, body>footer .encap>div>div, #home #cadEmail {
@@ -362,8 +370,11 @@ __________________________________________________________________*/
 #contact #main input[type=text], #contact #main input[type=button], #searchCtrl select, #accordion .fisc .smallDiv span {
 	margin-right:1em;
 }
-#searchCtrl h3, #destaques .data {
+#searchCtrl h3, #destaques .data,#ulacoes .vejaMais span {
 	margin-right:.3em
+}
+.accessLink {
+	margin-left:-.85em	
 }
 .encap>div, #main h1 {
 	max-width:960px;
@@ -372,7 +383,7 @@ __________________________________________________________________*/
 #main .encap>div {
 	padding:0 1.25% .75em
 }
-#acessibility>div {
+#accessibility>div {
 	width:75%;
 	max-width:540px;
 	padding:2.5%
@@ -394,31 +405,31 @@ __________________________________________________________________*/
 }
 /*	[2.x]Posições,z-index,alinhamentos e floats
 __________________________________________________________________*/
-#acessibility, #acessBtn {
+#accessibility, #accessBtn, #searchLink {
 	position:absolute
 }
-#acessibility .card, #menuEncap .auxNav [type=submit], body>header #menuEncap, #accordion .active {
+#accessibility .card, #menuEncap .auxNav [type=submit], body>header #menuEncap, #accordion .active {
 	position:relative
 }
-#acessBtn, #acessibility.active {
+#accessBtn, #accessibility.active {
 	left:0
 }
-#acessibility .active {
+#accessibility .active {
 	left:auto
 }
-#acessibility, #acessList, #fontSize {
+#accessibility, #accessList, #fontSize {
 	left:-200%
 }
-#acessibility {
+#accessibility {
 	top:5%
 }
-#acessibility .card {
-	z-index:9999;
+#accessibility .card {
+	z-index:9999
 }
-p, #acessibility, .deck>div, #destaques .smallDiv {
+p, #accessibility, .deck>div, #destaques .smallDiv {
 	text-align:justify
 }
-#acessibility, #acessBtn, #home #contactCard a {
+#accessibility, #accessBtn, #home #contactCard a, #mapEncap a {
 	text-align:center
 }
 .credits ul, #menuEncap .auxNav form, .social, #acoes .card .vejaMais, #contact form td:first-child, #searchCtrl form, .contentList .leiaMais, #searchFilter {
@@ -433,7 +444,7 @@ p, #acessibility, .deck>div, #destaques .smallDiv {
 #loginBtn, #menuEncap .auxNav [type=submit], #home #acoes h2 span, #searchFilter, #accordion>h3 span {
 	float:right
 }
-#menuEncap>div div, #siteMap ul li, .encap>div>div, #contact form td, .deck>div, .photoList li {
+#menuEncap>div div, #siteMap ul li, .encap>div>div, #contact form td, .deck>div, .photoList li, .smallDiv, .largeDiv {
 	vertical-align:text-top
 }
 .credits li, #main input[type=button], #main input[type=submit] {
@@ -550,7 +561,7 @@ body>header #menuEncap {
 body>footer {
 	border-bottom:#98d3e1 solid 20px
 }
-#contact legend, #searchCtrl, .contentList>li, #accordion h3 {
+#contact legend, #searchCtrl, .contentList>li, #accordion h3, #ulacoes li li, #ulacoes .nomeAcao {
 	border-bottom:#bebec0 solid 1px
 }
 #langSelect li, #searchFilter li {
@@ -577,7 +588,7 @@ __________________________________________________________________*/
 #langSelect .noBorder {
 	padding-left:0
 }
-#acessBtn {
+#accessBtn {
 	height:0
 }
 #loginBtn span {
@@ -621,6 +632,11 @@ __________________________________________________________________*/
 	width:96%;
 	padding:.3em 2%
 }
+#searchLink {
+	width: .5em;
+	margin-left:-1.5em;
+	padding: 1.2em .2em .2em
+}
 #menuEncap .auxNav [type=submit] {
 	width:15px;
 	height:15px;
@@ -636,6 +652,7 @@ __________________________________________________________________*/
 	margin: 0 0 4em;
 	padding: 2em 2%;
 }
+
 /* HOME */
 #home .encap.deck {
 	padding: .5em 0
@@ -674,6 +691,9 @@ __________________________________________________________________*/
 	margin: 0 0 .5em;
 	padding:0 0 0 1em
 }
+#mapEncap img {
+	padding:3% 0;	
+}
 #home #pub img {
 	margin: 0 1em 1em 0;
 }
@@ -688,6 +708,7 @@ __________________________________________________________________*/
 	width:60%;
 	padding:.3em .3em .4em
 }
+
 /* AÇÕES */
 #acoespg .vejaMais span {
 	margin-left:0
@@ -732,6 +753,17 @@ __________________________________________________________________*/
 #accordion .fisc .sumario {
 	margin-bottom:.3em
 }
+/* TODAS AS AÇÕES */
+#ulacoes>li {
+	margin:0 0 2em	
+}
+#ulacoes li li, #ulacoes .nomeAcao{
+	padding:.5em 0	
+}
+#ulacoes li:first-child .nomeAcao {
+	padding:0 0 .5em	
+}
+
 /* CONTATOS */
 #sendencap {
 	margin:1em 0;
@@ -770,6 +802,7 @@ __________________________________________________________________*/
 #contact #sendbtn, #home #contactCard span {
 	padding:.5em 3em;
 }
+
 /* BUSCA */
 .contentTerm:before {
 	content:open-quote
@@ -803,6 +836,7 @@ __________________________________________________________________*/
 	min-width:128px;
 	margin:0 0 1% 1%
 }
+
 /*	[3.x]Rodapé
 __________________________________________________________________*/
 body>footer {
@@ -962,15 +996,15 @@ __________________________________________________________________*/
 	}
 }
 
-/*	[5]Acessibility
+/*	[5]accessibility
 	[5.x]Aural
 __________________________________________________________________*/
 
 @media aural {
-#fontSize {
-	display:none;
-}
-.aural {
-	display:auto;
-}
+	#fontSize {
+		display:none;
+	}
+	.aural {
+		display:auto;
+	}
 }

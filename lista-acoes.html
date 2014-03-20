@@ -21,7 +21,7 @@
 <![endif]-->
 <link rel="shortcut icon" href="http://portal2.tcu.gov.br/portal/page/portal/TCU/imagens/0_001.ico" type="image/x-icon"/>
 </head>
-<body id="contact">
+<body id="listacoes">
 <!--Cabeçalho-->
 <header role="banner">
 	<div id="accessibility" class="encap">
@@ -108,123 +108,105 @@
 <!--Área principal da página-->
 <div role="main" id="main">
 	<div class="encap">
-		<h1><a href="#accessItem1" id="main1" class="accessLink" title="Abrir lista de atalhos">#</a> Fale conosco</h1>
+		<h1><a href="#accessItem1" id="main1" class="accessLink" title="Abrir lista de atalhos">#</a> Resultados da pesquisa</h1>
 		<div>
 			<div class="single card">
-				<div>
-					<h2>Registre sua manifestação</h2>
-					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-					<ul>
-						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-						<li>Aliquam tincidunt mauris eu risus.</li>
-						<li>Vestibulum auctor dapibus neque.</li>
-					</ul>
-					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-					<form>
-						<fieldset>
-							<legend>Dados pessoais</legend>
-							<table>
-								<tr>
-									<td><label for="pron">Pronome de tratamento:</label></td>
-									<td><select id="pron">
-											<option value="default">Selecione um pronemo de tratamento</option>
-											<option value="senhor">Senhor</option>
-											<option value="senhora">Senhora</option>
-										</select></td>
-								</tr>
-								<tr>
-									<td><label for="name">nome:</label></td>
-									<td><input type="text" id="name" name="nome"/></td>
-								</tr>
-								<tr>
-									<td><label for="uf">UF:</label></td>
-									<td><select id="uf">
-											<option value="default">Selecione UF</option>
-											<option value="UF1">UF1</option>
-											<option value="UF2">UF2</option>
-										</select></td>
-								</tr>
-								<tr>
-									<td><label for="muni">Município:</label></td>
-									<td><select id="muni">
-											<option value="default">Selecione o município</option>
-											<option value="Município1">Município 1</option>
-											<option value="Município2">Município 2</option>
-										</select></td>
-								</tr>
-								<tr>
-									<td><label for="email">e-mail:</label></td>
-									<td><input type="text" id="email" name="email"/></td>
-								</tr>
-								<tr>
-									<td><label for="tel">nome:</label></td>
-									<td><input type="text" id="tel"/>
-										<span>preencha apenas com números</span></td>
-								</tr>
-								<tr>
-									<td><span id="rsvp">Deseja resposta para esta manifestação?<a href="#obs1" class="obs" title="Este campo é obrigatório">*</a>:</span></td>
-									<td><ul role="radiogroup" aria-required="true" aria-labelledby="rsvp">
-											<li><span>
-												<input type="radio" id="simres" name="queroresposta" value="sim"/>
-												<label for="simres">Sim</label>
-												</span></li>
-											<li><span>
-												<input type="radio" id="naores" name="queroresposta" value="não" aria-required="true"/>
-												<label for="naores">Não</label>
-												</span></li>
-										</ul></td>
-								</tr>
-							</table>
-						</fieldset>
-						<fieldset>
-							<legend>Manifestação</legend>
-							<table>
-								<tr>
-									<td><label for="hmanifes">Título<a href="#obs1" class="obs" title="Este campo é obrigatório">*</a>:</label></td>
-									<td><input type="text" id="hmanifes" name="tmanifestacao" value="Digite aqui um título" aria-required="true"/></td>
-								</tr>
-								<tr>
-									<td><label for="manifes">Manifestação<a href="#obs1" class="obs" title="Este campo é obrigatório">*</a>:</label></td>
-									<td><textarea id="manifes" rows="4" aria-required="true">Digite aqui sua manifestação</textarea>
-										<span id="charcount1" class="charcount">0 de 2000 carecteres</span></td>
-								</tr>
-							</table>
-						</fieldset>
-						<fieldset>
-							<legend>Anexar arquivo</legend>
-							<table>
-								<tr>
-									<td><label for="enviar">Selecione o arquivo:</label></td>
-									<td><input type="button" value="Escolher arquivo" id="enviar" name="enviar"/>
-										<span id="qtdarq">Nenhum arquivo selecionado.</span> <span>Tamanho máximo do anexo: 5Mb</span></td>
-								</tr>
-								<tr>
-									<td><label for="filedescrip">Descrição do Arquivo</label></td>
-									<td><textarea id="filedescrip" rows="4">Digite aqui sua manifestação</textarea>
-										<span id="charcount2" class="charcount">0 de 2000 carecteres</span></td>
-								</tr>
-								<tr>
-									<td><span>Digite os caracteres da imagem abaixo</span></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td colspan="2"><span class="celspace"></span>
-										<input type="button" value="Anexar arquivo"/></td>
-								</tr>
-							</table>
-						</fieldset>
-						<div id="sendencap"> <span class="celspace"></span>
-							<input type="button" value="Enviar" id="sendbtn"/>
-						</div>
-					</form>
-					<p><a name="obs1" class="obs">*</a> - Campos obrigatórios</p>
-				</div>
+				<ul id="ulacoes">
+					<li><span class="nomeAcao">Instalações esportivas</span>
+						<ul>
+							<li><a href="">Ação 1</a></li>
+							<li><a href="">Ação 2</a></li>
+							<li><a href="">Ação 3</a></li>
+							<li><a href="">Ação 4</a></li>
+							<li><a href="">Ação 5</a></li>
+							<li class="noBorder"><a href="" class="vejaMais"><span></span> Ações</a></li>
+						</ul>
+					</li>
+					<li><span class="nomeAcao">Infraestrutura</span>
+						<ul>
+							<li><a href="">Ação 1</a></li>
+							<li><a href="">Ação 2</a></li>
+							<li><a href="">Ação 3</a></li>
+							<li><a href="">Ação 4</a></li>
+							<li><a href="">Ação 5</a></li>
+							<li class="noBorder"><a href="" class="vejaMais"><span></span> Ações</a></li>
+						</ul>
+					</li>
+					<li><span class="nomeAcao">Mobilidade urbana</span>
+						<ul>
+							<li><a href="">Ação 1</a></li>
+							<li><a href="">Ação 2</a></li>
+							<li><a href="">Ação 3</a></li>
+							<li><a href="">Ação 4</a></li>
+							<li><a href="">Ação 5</a></li>
+							<li class="noBorder"><a href="" class="vejaMais"><span></span> Ações</a></li>
+						</ul>
+					</li>					
+					<li><span class="nomeAcao">Segurança</span>
+						<ul>
+							<li><a href="">Ação 1</a></li>
+							<li><a href="">Ação 2</a></li>
+							<li><a href="">Ação 3</a></li>
+							<li><a href="">Ação 4</a></li>
+							<li><a href="">Ação 5</a></li>
+							<li class="noBorder"><a href="" class="vejaMais"><span></span> Ações</a></li>
+						</ul>
+					</li>
+					<li><span class="nomeAcao">Educação e cultura</span>
+						<ul>
+							<li><a href="">Ação 1</a></li>
+							<li><a href="">Ação 2</a></li>
+							<li><a href="">Ação 3</a></li>
+							<li><a href="">Ação 4</a></li>
+							<li><a href="">Ação 5</a></li>
+							<li class="noBorder"><a href="" class="vejaMais"><span></span> Ações</a></li>
+						</ul>
+					</li>					
+					<li><span class="nomeAcao">Tecnologia e comunicação</span>
+						<ul>
+							<li><a href="">Ação 1</a></li>
+							<li><a href="">Ação 2</a></li>
+							<li><a href="">Ação 3</a></li>
+							<li><a href="">Ação 4</a></li>
+							<li><a href="">Ação 5</a></li>
+							<li class="noBorder"><a href="" class="vejaMais"><span></span> Ações</a></li>
+						</ul>
+					</li>					
+					<li><span class="nomeAcao">Governança e gestão</span>
+						<ul>
+							<li><a href="">Ação 1</a></li>
+							<li><a href="">Ação 2</a></li>
+							<li><a href="">Ação 3</a></li>
+							<li><a href="">Ação 4</a></li>
+							<li><a href="">Ação 5</a></li>
+							<li class="noBorder"><a href="" class="vejaMais"><span></span> Ações</a></li>
+						</ul>
+					</li>					
+					<li><span class="nomeAcao">Despesas com organização</span>
+						<ul>
+							<li><a href="">Ação 1</a></li>
+							<li><a href="">Ação 2</a></li>
+							<li><a href="">Ação 3</a></li>
+							<li><a href="">Ação 4</a></li>
+							<li><a href="">Ação 5</a></li>
+							<li class="noBorder"><a href="" class="vejaMais"><span></span> Ações</a></li>
+						</ul>
+					</li>					
+					<li><span class="nomeAcao">Legados para a sociedade</span>
+						<ul>
+							<li><a href="">Ação 1</a></li>
+							<li><a href="">Ação 2</a></li>
+							<li><a href="">Ação 3</a></li>
+							<li><a href="">Ação 4</a></li>
+							<li><a href="">Ação 5</a></li>
+							<li class="noBorder"><a href="" class="vejaMais"><span></span> Ações</a></li>
+						</ul>
+					</li>					
+				</ul>
 			</div>
 		</div>
 	</div>
 </div>
-
 <!--Fim da área principal da página--> 
 
 <!--Rodapé-->

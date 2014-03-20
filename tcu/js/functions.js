@@ -52,10 +52,10 @@ function hideMenu( ) {
 
 function toggleFontAdjust( ) {
 	if (!$('#fontSize').hasClass('active')) {
-		activeAcessibilityPanel( );
+		activeaccessibilityPanel( );
 		showFontHelp( );
 	}	else {
-		deactiveAcessibilityPanel( );
+		deactiveaccessibilityPanel( );
 		hideFontHelp( );
 	}
 }
