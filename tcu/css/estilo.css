@@ -206,7 +206,7 @@ form legend, #acoespg .contentList h3, #accordion h3, #ulacoes .nomeAcao {
 h3, h4, #destaque p, .obs, #ulacoes {
 	font-size:1.25em
 }
-#home .card h2, #destaque h1, .social h1, #sendbtn, #home #contactCard span {
+#home .card h2, #destaque h1, .social h1, #sendbtn, #home #contactCard span, .fisc h5 {
 	font-size:1.125em
 }
 h5, h6, .featuredCtrl h2, #searchCtrl h2, #searchCtrl h3 {
@@ -221,7 +221,7 @@ table, span, div, input, select, textarea, td, a, pre {
 h1, h2, h3, h4, h5, h6, h1 *, h2 *, h3 *, h4 *, h5 *, h6 *, body>header .menu li a, .card h2 a span, #accessBtn a, #mainMenu a, #siteMap span, #featured h2, #home #acoes h2, form legend, #contact form td:first-child label, #contact form td:first-child span, .obs, #contact input[type=button], span.type, #home #contactCard span {
 	font-weight:700
 }
-.leiamais, .card h1, .card h2 a, #destaque p, #linguas a, #searchCtrl h2, #searchCtrl h3, #searchCtrl h2 span, #accordion .fisc h5 {
+.leiamais, .card h1, .card h2 a, #destaque p, #linguas a, #searchCtrl h2, #searchCtrl h3, #searchCtrl h2 span, #accordion .fisc h5, #accordion .fisc h5 span {
 	font-weight:400
 }
 #contact #main ul li {
@@ -247,7 +247,7 @@ h2, #contact h2, #contact legend {
 	margin:.35em 0
 }
 h4 {
-	margin:1.5em 0 0
+	margin:1.5em 0
 }
 #contact .card>h2 {
 	padding:1em 0 0
@@ -255,7 +255,7 @@ h4 {
 .single.card>.deck, #home #contactCard a, #home #cadastrese {
 	margin:2em 0 0
 }
-nav ul, nav li, #featured ul, #featured li, .featuredCtrl li, #home #main p, .contentList header h3, #topo .auxNav #loginBtn, #siteMap ul li ul li, .contentList a>p, #searchCtrl p, #searchFilter ul, #acoespg .photoList p, #accordion .fisc p, #accordion .fisc .fisc h5, .single.card>.deck:first-child, #accordion .featuredCtrl p, #accordion .featuredCtrl ul, #ulacoes ul,#ulacoes .vejaMais span {
+nav ul, nav li, #featured ul, #featured li, .featuredCtrl li, #home #main p, .contentList header h3, #topo .auxNav #loginBtn, #siteMap ul li ul li, .contentList a>p, #searchCtrl p, #searchFilter ul, #acoespg .photoList p, #accordion .fisc p, #accordion .fisc .fisc h5, .single.card>.deck:first-child, #accordion .featuredCtrl p, #accordion .featuredCtrl ul, #ulacoes ul,#ulacoes .vejaMais span, #main .featuredCtrl {
 	margin:0
 }
 nav li, #featured ul, #featured li, .featuredCtrl li {
@@ -284,7 +284,7 @@ ul {
 }
 /*	[1.2]cor
 __________________________________________________________________*/
-#home .deck.encap>div>h1, #topo .auxNav *, #menuEncap #search, .contentList .type, #main h1, #accordion h3, #accordion .fisc .def, #ulacoes span {
+#home .deck.encap>div>h1, #topo .auxNav *, #menuEncap #search, .contentList .type, #main h1, #accordion h3, #ulacoes span {
 	color:#122051
 }
 #menuEncap *, body>footer *, #contact input[type=button], #home #contactCard span, #home #cadastrese input[type=submit], #searchLink {
@@ -561,7 +561,7 @@ body>header #menuEncap {
 body>footer {
 	border-bottom:#98d3e1 solid 20px
 }
-#contact legend, #searchCtrl, .contentList>li, #accordion h3, #ulacoes li li, #ulacoes .nomeAcao {
+#contact legend, #searchCtrl, .contentList>li, #accordion h3,#main .fisc>li, #ulacoes li li, #ulacoes .nomeAcao {
 	border-bottom:#bebec0 solid 1px
 }
 #langSelect li, #searchFilter li {
@@ -734,8 +734,8 @@ __________________________________________________________________*/
 	padding: 1em 4.5% 0;
 	margin: 0 1%
 }
-#acoespg #accordion .fisc .largeDiv {
-	max-width:320px
+#accordion .fisc .featuredCtrl li:first-child span {
+	margin-left:0
 }
 #accordion>h3 span {
 	width:22px;
@@ -745,7 +745,10 @@ __________________________________________________________________*/
 	margin:0 0 1em;
 }
 .fisc li {
-	padding:1em 0;
+	margin:1em 0 1.5em;
+}
+.fisc li li {
+	margin:.5em 0 1.5em;
 }
 .single.card .fisc .deck>.largeDiv {
 	padding:0 2% 0 0;
