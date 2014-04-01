@@ -203,7 +203,7 @@ h2, #home .deck.encap>div>h1, #home #featured h2 {
 form legend, #acoespg .contentList h3, #accordion h3, #ulacoes .nomeAcao {
 	font-size:1.5em
 }
-h3, h4, #destaque p, .obs, #ulacoes {
+h3, h4, #destaque p, .obs, #ulacoes, #lista-noticias .contentList h2,.pgCtrl button {
 	font-size:1.25em
 }
 #home .card h2, #destaque h1, .social h1, #sendbtn, #home #contactCard span, .fisc h5 {
@@ -218,7 +218,7 @@ table, span, div, input, select, textarea, td, a, pre {
 #featured p {
 	line-height:1.6
 }
-h1, h2, h3, h4, h5, h6, h1 *, h2 *, h3 *, h4 *, h5 *, h6 *, body>header .menu li a, .card h2 a span, #accessBtn a, #mainMenu a, #siteMap span, #featured h2, #home #acoes h2, form legend, #contact form td:first-child label, #contact form td:first-child span, .obs, #contact input[type=button], span.type, #home #contactCard span {
+h1, h2, h3, h4, h5, h6, h1 *, h2 *, h3 *, h4 *, h5 *, h6 *, body>header .menu li a, .card h2 a span, #accessBtn a, #mainMenu a, #siteMap span, #featured h2, #home #acoes h2, form legend, #contact form td:first-child label, #contact form td:first-child span, .obs, #contact input[type=button], span.type, #home #contactCard span,.pgCtrl span[role="img"] {
 	font-weight:700
 }
 .leiamais, .card h1, .card h2 a, #destaque p, #linguas a, #searchCtrl h2, #searchCtrl h3, #searchCtrl h2 span, #accordion .fisc h5, #accordion .fisc h5 span {
@@ -232,7 +232,10 @@ body>header h1 {
 	margin:-.3em 0 .3em
 }
 #main h1 {
-	padding:.5em 1.25%
+	padding: 1em 0 .5em
+}
+#main h1:first-child {
+	padding:.5em 0
 }
 #home .deck.encap>div>h1, #main .contentList header p {
 	margin:.5em 0 0
@@ -255,7 +258,7 @@ h4 {
 .single.card>.deck, #home #contactCard a, #home #cadastrese {
 	margin:2em 0 0
 }
-nav ul, nav li, #featured ul, #featured li, .featuredCtrl li, #home #main p, .contentList header h3, #topo .auxNav #loginBtn, #siteMap ul li ul li, .contentList a>p, #searchCtrl p, #searchFilter ul, #acoespg .photoList p, #accordion .fisc p, #accordion .fisc .fisc h5, .single.card>.deck:first-child, #accordion .featuredCtrl p, #accordion .featuredCtrl ul, #ulacoes ul,#ulacoes .vejaMais span, #main .featuredCtrl {
+nav ul, nav li, #featured ul, #featured li, .featuredCtrl li, #home #main p, .contentList header h3, #topo .auxNav #loginBtn, #siteMap ul li ul li, #main .contentList a>p, #searchCtrl p, #searchFilter ul, #main .photoList p, #accordion .fisc p, #accordion .fisc .fisc h5, .single.card>.deck:first-child, #accordion .featuredCtrl p, #accordion .featuredCtrl ul, #ulacoes ul,#ulacoes .vejaMais span, #main #acoespg .featuredCtrl, #lista-noticias .card, #lista-noticias .contentList, #lista-noticias #main .sign{
 	margin:0
 }
 nav li, #featured ul, #featured li, .featuredCtrl li {
@@ -270,6 +273,9 @@ body>header .titulo h1, #destaque h1, #destaque h2, .card h1, .card h2 {
 a {
 	text-decoration:none
 }
+.pgCtrl span[role="img"] {
+	text-shadow:0 1px #fff;	
+}
 ul {
 	list-style:none
 }
@@ -282,6 +288,7 @@ ul {
 #contact #main form li:before {
 	content:none
 }
+
 /*	[1.2]cor
 __________________________________________________________________*/
 #home .deck.encap>div>h1, #topo .auxNav *, #menuEncap #search, .contentList .type, #main h1, #accordion h3, #ulacoes span {
@@ -290,11 +297,14 @@ __________________________________________________________________*/
 #menuEncap *, body>footer *, #contact input[type=button], #home #contactCard span, #home #cadastrese input[type=submit], #searchLink {
 	color:#fff
 }
-#home .card a, #home .smallDiv .card a p,#home #acoesMap li, #main h2, form legend, .contentList .leiaMais, #searchCtrl p, #searchCtrl h2, #searchCtrl h3, #searchFilter li, #searchCtrl span, .contentList h3, .contentTerm, #acoespg .type, #accordion h4, .fisc .smallDiv a, #ulacoes a {
+article a, #home .card a, #home .smallDiv .card a p,#home #acoesMap li, #main h2, form legend, .contentList .leiaMais, #searchCtrl p, #searchCtrl h2, #searchCtrl h3, #searchFilter li, #searchCtrl span, .contentList h3, .contentTerm,.type, #accordion h4, .fisc .smallDiv a, #ulacoes a {
 	color:#004179
 }
 .obs {
 	color:#fd0100
+}
+.pgCtrl span[role="img"], .pgCtrl #frCtrl:before,.pgCtrl #ffCtrl:after {
+	color:#02369b;
 }
 /*	[2]Especificações gerais
 
@@ -303,7 +313,7 @@ __________________________________________________________________*/
 #menuEncap, #siteMap li, #fontSize.active, #acoes .card .vejaMais, #home #acoes h2 span, .charcount, #acoespg .leiaMais, #accordion>div.active, #accordion>h3 span, #home #contactCard a, #mapEncap a, #ulacoes .nomeAcao {
 	display:block
 }
-#langSelect, #langSelect li, #loginBtn span, #topo .auxNav div, #menuEncap>div div, .credits li, .credits span, #mainMenu li, body>footer .encap>div>div, .social *, .deck .smallDiv, .deck .largeDiv, .deck hr, .featuredCtrl *, .vejaMais span, #destaques .smallDiv .card, form li, .celspace, #searchCtrl h2, #searchCtrl h3, #searchCtrl>div, #searchFilter ul, #searchFilter li, .photoList li, #home #contactCard span, .sumario span, .relatorio span {
+#langSelect, #langSelect li, #loginBtn span, #topo .auxNav div, #menuEncap>div div, .credits li, .credits span, #mainMenu li, body>footer .encap>div>div, .social *, .deck .smallDiv, .deck .largeDiv, .deck hr, .featuredCtrl *, .vejaMais span, #destaques .smallDiv .card, form li, .celspace, #searchCtrl h2, #searchCtrl h3, #searchCtrl>div, #searchFilter ul, #searchFilter li, .photoList li, #home #contactCard span, .sumario span, .relatorio span, article figure, [role="menuitem"], .pgCtrl #frCtrl:before,.pgCtrl #ffCtrl:after {
 	display:inline-block
 }
 #accessBtn figure {
@@ -353,7 +363,7 @@ __________________________________________________________________*/
 .smallDiv {
 	width:32%
 }
-.featuredCtrl span, .vejaMais span, .sumario span, .relatorio span {
+.featuredCtrl span, .vejaMais span, .sumario span, .relatorio span,.pgCtrl button  {
 	width:20px;
 	height:20px
 }
@@ -378,10 +388,10 @@ __________________________________________________________________*/
 }
 .encap>div, #main h1 {
 	max-width:960px;
-	width:97.5%;
 }
-#main .encap>div {
-	padding:0 1.25% .75em
+.encap>div {
+	padding:0 1.25% .75em;
+	width:97.5%
 }
 #accessibility>div {
 	width:75%;
@@ -405,11 +415,14 @@ __________________________________________________________________*/
 }
 /*	[2.x]Posições,z-index,alinhamentos e floats
 __________________________________________________________________*/
-#accessibility, #accessBtn, #searchLink {
+#accessBtn, #searchLink {
 	position:absolute
 }
 #accessibility .card, #menuEncap .auxNav [type=submit], body>header #menuEncap, #accordion .active {
 	position:relative
+}
+#accessibility {
+	position:fixed	
 }
 #accessBtn, #accessibility.active {
 	left:0
@@ -421,15 +434,15 @@ __________________________________________________________________*/
 	left:-200%
 }
 #accessibility {
-	top:5%
+	top:0
 }
-#accessibility .card {
+#accessibility ,#accessibility .card {
 	z-index:9999
 }
 p, #accessibility, .deck>div, #destaques .smallDiv {
 	text-align:justify
 }
-#accessibility, #accessBtn, #home #contactCard a, #mapEncap a {
+#accessibility, #accessBtn, #home #contactCard a, #mapEncap a, .figencap, .pgCtrl,.pgCtrl button {
 	text-align:center
 }
 .credits ul, #menuEncap .auxNav form, .social, #acoes .card .vejaMais, #contact form td:first-child, #searchCtrl form, .contentList .leiaMais, #searchFilter {
@@ -450,7 +463,7 @@ p, #accessibility, .deck>div, #destaques .smallDiv {
 .credits li, #main input[type=button], #main input[type=submit] {
 	vertical-align:middle
 }
-.featuredCtrl span, #searchFilter, .vejaMais span {
+.featuredCtrl span, #searchFilter, .vejaMais span,.pgCtrl #frCtrl:before,.pgCtrl #ffCtrl:after {
 	vertical-align:bottom
 }
 .relatorio span, .sumario span {
@@ -552,8 +565,8 @@ body>header #menuEncap {
 .card {
 	box-shadow:0 0 10px -2px #666
 }
-#home #acoesMap {
-	box-shadow:none
+.card {
+	box-shadow:0 0 10px -2px #666
 }
 #sendencap {
 	border-top:#bebec0 solid 1px
@@ -561,7 +574,7 @@ body>header #menuEncap {
 body>footer {
 	border-bottom:#98d3e1 solid 20px
 }
-#contact legend, #searchCtrl, .contentList>li, #accordion h3,#main .fisc>li, #ulacoes li li, #ulacoes .nomeAcao {
+#contact legend, #searchCtrl, .contentList>li, #accordion h3,#main .fisc>li, #ulacoes li li, #ulacoes .nomeAcao, #lista-noticias .largeDiv .contentList {
 	border-bottom:#bebec0 solid 1px
 }
 #langSelect li, #searchFilter li {
@@ -570,11 +583,16 @@ body>footer {
 #footerCrdt {
 	border-left:#ffffff solid 1px
 }
-input[type=text], select, textarea {
+input[type=text], select, textarea,.pgCtrl button {
 	border:#bebec0 solid 1px
 }
-.noBorder, fieldset, #searchFilter li:first-child, #acoespg .contentList>li, #acoespg #accordion>h3.active, .auxNav input {
+.noBorder, fieldset, #searchFilter li:first-child, #acoespg .contentList>li, #acoespg #accordion>h3.active, .auxNav input, #lista-noticias .contentList li {
 	border:none!important
+}
+.pgCtrl button {
+	border-radius:3px;	
+	box-shadow:0 0 0 1px #fff inset;
+	background:linear-gradient(#FFFFFF, #e4e6e3);
 }
 /*	[3]Definições específicas
 __________________________________________________________________*/
@@ -650,7 +668,10 @@ __________________________________________________________________*/
 }
 .single.card {
 	margin: 0 0 4em;
-	padding: 2em 2%;
+	padding: 2em 2%
+}
+.vejaMais span {
+	margin:0 .5em 0 0
 }
 
 /* HOME */
@@ -675,7 +696,7 @@ __________________________________________________________________*/
 #featured li {
 	width:25%
 }
-.featuredCtrl span, .vejaMais span {
+.featuredCtrl span, .featuredNews .vejaMais span {
 	margin:0 .5em 0 1em
 }
 .vejaMais {
@@ -695,7 +716,7 @@ __________________________________________________________________*/
 	padding:3% 0;	
 }
 #home #pub img {
-	margin: 0 1em 1em 0;
+	margin: 0 1em 1em 0
 }
 #home #acoes h2 span {
 	width:11px;
@@ -710,12 +731,9 @@ __________________________________________________________________*/
 }
 
 /* AÇÕES */
-#acoespg .vejaMais span {
-	margin-left:0
-}
-#acoespg .photoList li {
+.photoList li {
 	width:48%;
-	margin:0 0 1% 1%
+	margin:0 1% 1% 0
 }
 #acoespg .mediaList>div {
 	margin: 0 0 2.5em;
@@ -742,16 +760,16 @@ __________________________________________________________________*/
 	height:22px
 }
 #main .fisc {
-	margin:0 0 1em;
+	margin:0 0 1em
 }
 .fisc li {
-	margin:1em 0 1.5em;
+	margin:1em 0 1.5em
 }
 .fisc li li {
-	margin:.5em 0 1.5em;
+	margin:.5em 0 1.5em
 }
 .single.card .fisc .deck>.largeDiv {
-	padding:0 2% 0 0;
+	padding:0 2% 0 0
 }
 #accordion .fisc .sumario {
 	margin-bottom:.3em
@@ -770,40 +788,40 @@ __________________________________________________________________*/
 /* CONTATOS */
 #sendencap {
 	margin:1em 0;
-	padding:1em .3em 0;
+	padding:1em .3em 0
 }
 #contact form td:first-child, .celspace {
-	width:33%;
+	width:33%
 }
 #contact form td {
-	padding:.3em;
+	padding:.3em
 }
 #contact #main input[type=text], #contact #main select, #contact #main textarea {
 	width:80%
 }
 #contact #main input[type=radio] {
-	margin:0 .5em 0 1em;
+	margin:0 .5em 0 0
 }
 #contact #main li:first-child input[type=radio] {
-	margin-left:0;
+	margin-left:0
 }
 #contact #main fieldset:first-child input[type=text] {
-	width:20em;
+	width:20em
 }
 #contact #main fieldset:first-child select {
-	width:21.2em;
+	width:21.2em
 }
 #contact #main input[type=text], #contact #main input[type=button] {
-	margin-right:1em;
+	margin-right:1em
 }
 #contact #main input[type=text], #contact #main select, #contact #main textarea {
 	padding:.5em
 }
 #contact #main input[type=button] {
-	padding:.5em 1.75em;
+	padding:.5em 1.75em
 }
 #contact #sendbtn, #home #contactCard span {
-	padding:.5em 3em;
+	padding:.5em 3em
 }
 
 /* BUSCA */
@@ -812,6 +830,9 @@ __________________________________________________________________*/
 }
 .contentTerm:after {
 	content:close-quote
+}
+#searchpg .accessLink {
+	margin-left: -.6em
 }
 #searchFilter {
 	width:50%
@@ -838,6 +859,21 @@ __________________________________________________________________*/
 	width:18.5%;
 	min-width:128px;
 	margin:0 0 1% 1%
+}
+/* LISTA DE NOTÍCIAS */
+#lista-noticias .card>div{
+	padding:1.5em 1em;
+}
+#lista-noticias .photoList {
+	margin:0 0 1em;	
+}
+.pgCtrl #frCtrl:before,.pgCtrl #ffCtrl:after {
+	content: "|";
+	font-size: .8em;
+	margin: 0 -.075em .2em 0;
+}
+.pgCtrl #rCtrl {
+	margin-right:.5em	
 }
 
 /*	[3.x]Rodapé
