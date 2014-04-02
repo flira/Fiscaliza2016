@@ -240,7 +240,7 @@ body>header h1 {
 #home .deck.encap>div>h1, #main .contentList header p {
 	margin:.5em 0 0
 }
-#main ul, #main p {
+#main ul, #main p, #acessNotes {
 	margin:1em 0
 }
 h2, #contact h2, #contact legend {
@@ -297,7 +297,7 @@ __________________________________________________________________*/
 #menuEncap *, body>footer *, #contact input[type=button], #home #contactCard span, #home #cadastrese input[type=submit], #searchLink {
 	color:#fff
 }
-article a, #home .card a, #home .smallDiv .card a p,#home #acoesMap li, #main h2, form legend, .contentList .leiaMais, #searchCtrl p, #searchCtrl h2, #searchCtrl h3, #searchFilter li, #searchCtrl span, .contentList h3, .contentTerm,.type, #accordion h4, .fisc .smallDiv a, #ulacoes a {
+article a, #home .card a,#accessibility a, #home .smallDiv .card a p,#home #acoesMap li, #main h2, form legend, .contentList .leiaMais, #searchCtrl p, #searchCtrl h2, #searchCtrl h3, #searchFilter li, #searchCtrl span, .contentList h3, .contentTerm,.type, #accordion h4, .fisc .smallDiv a, #ulacoes a {
 	color:#004179
 }
 .obs {
@@ -370,6 +370,9 @@ __________________________________________________________________*/
 .social span, #menuBtn {
 	width:30px;
 	height:30px
+}
+#accessibility {
+	height:100%	
 }
 #accessibility>div, .encap>div, #main h1 {
 	margin:auto
@@ -500,6 +503,9 @@ __________________________________________________________________*/
 }
 .card {
 	background:#fff
+}
+#accessibility {
+	background:rgba(0,0,0,.75);
 }
 .credits span, #loginBtn span, #menuEncap .auxNav [type=submit], .social span, .featuredCtrl span, .vejaMais span, #home #acoes .card h2 span, #menuBtn, #accordion>h3 span, .relatorio span, .sumario span {
 	background:url(img/sprites.png) no-repeat;
@@ -672,6 +678,12 @@ __________________________________________________________________*/
 }
 .vejaMais span {
 	margin:0 .5em 0 0
+}
+#accessibility {
+	padding-top:15%	
+}
+#fontSize {
+	margin-top:-16.5em	
 }
 
 /* HOME */
@@ -1040,10 +1052,11 @@ __________________________________________________________________*/
 __________________________________________________________________*/
 
 @media aural {
-	#fontSize {
+	#fontSize, #acessList sup, #acessNotes {
 		display:none;
 	}
 	.aural {
 		display:auto;
 	}
+	
 }

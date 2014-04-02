@@ -2,6 +2,7 @@ $(init( ));
 
 function init ( ) {
 	addClickFunctions( );
+	addKeyboardFunctions( );
 	addResizeFunction( );
 }
 
@@ -11,6 +12,7 @@ function addClickFunctions( ) {
 	
 	$('#menuBtn').click(function(){toggleMainMenu ( );});
 	$('#fontBtn').click(function(){toggleFontAdjust( );});
+	$('#accessibility').click(function(){closeAcess( );});
 }
 
 function toggleMainMenu ( ) {
@@ -40,8 +42,7 @@ function hideMenu( ) {
 	$('body').finish( ).animate({
 		'left': 0
 	},function() {
-		clearInlines(['body']);
-		
+		$('body').removeAttr('style');
 	});
 	$('#mainMenu nav').finish( ).animate({
 		'left': - $('#mainMenu nav').width()
@@ -51,33 +52,31 @@ function hideMenu( ) {
 }
 
 function toggleFontAdjust( ) {
-	if (!$('#fontSize').hasClass('active')) {
-		activeaccessibilityPanel( );
-		showFontHelp( );
-	}	else {
-		deactiveaccessibilityPanel( );
-		hideFontHelp( );
+	if (!$('#fontSize').hasClass('active')){
+		$('#accessibility, #fontSize').addClass('active');
+	} else {
+		closeAcess( );
 	}
 }
 
-function showFontHelp( ) {
-	
+function closeAcess( ) {
+	$('#accessibility, #fontSize, #accessList').removeClass('active');
 }
 
-function hideFontHelp( ) {
-
+function addKeyboardFunctions( ) {
+	//bloqueia o link original
+	$('#accessList a').focusin(function( ){
+		$('#accessibility, #accessList').addClass('active');
+	});
+	$('#accessList a').focusout(function( ){
+		$('#accessibility, #accessList').removeClass('active');
+	});
 }
 
 function addResizeFunction( ) {
 	//reseta o menu principal se ele estiver expandido
 	$(window).resize(function(){
-		clearInlines(['body','#mainMenu nav']);
+		$('body, #mainMenu nav').removeAttr('style');
 		$('#mainMenu nav').removeClass('active');
 	});
-}
-
-function clearInlines(elements) {
-	for (var i=0;i<elements.length;i++) {
-		$(elements[i]).removeAttr('style');
-	}
 }
