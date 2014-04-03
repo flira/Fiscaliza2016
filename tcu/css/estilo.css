@@ -20,7 +20,7 @@
 	[4]Media Querries
 		[4.x]Screens < 900
 		
-	[5]accessibility
+	[5]Acessibility
 		[5.x]Aural
 __________________________________________________________________*/
 
@@ -28,277 +28,189 @@ __________________________________________________________________*/
 
     [0.1]reset de navegador
 __________________________________________________________________*/
-* {
-	border:none;
-	color:#6d6d6d;
-	font-style:normal;
-	font-weight:300;
-	text-align:left;
-	margin:0;
-	padding:0
-}
-html {
-	background:#0a1737;
-	font:1em/1.35 'lato', sans-serif;
-	min-width:340px;
-	-ms-text-size-adjust:100%;
-	-webkit-text-size-adjust:100%
-}
-article, aside, details, figcaption, figure, body>footer, body>header, hgroup, main, nav, section, summary {
-	display:block
-}
-audio, canvas, video {
-	display:inline-block
-}
-audio:not([controls]) {
-	display:none;
-	height:0
-}
-[hidden], template {
-	display:none
-}
-script {
-	display:none!important
-}
-a {
-	background:transparent
-}
-a:focus {
-	outline:thin dotted
-}
-a:active, a:hover {
-	outline:0
-}
-b, strong {
-	font-weight:700
-}
-dfn, i, em {
-	font-style:italic
-}
-fieldset {
-	border:none!important;
-	margin:0!important;
-	padding:0!important
-}
-hr {
-	-moz-box-sizing:content-box;
-	box-sizing:content-box;
-	height:0
-}
-mark {
-	background:#ff0;
-	color:#000
-}
-code, kbd, pre, samp {
-	font-family:monospace, serif;
-	font-size:1em
-}
-pre {
-	white-space:pre-wrap
-}
-q {
-	quotes:\201C \201D \2018 \2019
-}
-small {
-	font-size:80%
-}
-sub, sup {
-	font-size:.75em;
-	line-height:0
-}
-sup {
-	top:-.5em
-}
-sub {
-	bottom:-.25em
-}
-img {
-	border:0
-}
-svg:not(:root) {
-	overflow:hidden
-}
-figure {
-	margin:0
-}
-fieldset {
-	border:1px solid silver;
-	margin:0 2px;
-	padding:.35em .625em .75em
-}
-button, input, select, textarea {
-	font-family:inherit;
-	font-size:100%;
-	margin:0
-}
-button, input {
-	line-height:normal
-}
-button, select {
-	text-transform:none
-}
-button, html input[type=button], input[type=reset], input[type=submit] {
-	-webkit-appearance:button;
-	cursor:pointer
-}
-button[disabled], html input[disabled] {
-	cursor:default
-}
-input[type=checkbox], input[type=radio] {
-	box-sizing:border-box;
-	padding:0
-}
-input[type=search] {
-	-webkit-appearance:textfield;
-	-moz-box-sizing:content-box;
-	-webkit-box-sizing:content-box;
-	box-sizing:content-box
-}
-input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
-	-webkit-appearance:none
-}
-textarea {
-	overflow:auto;
-	vertical-align:top
-}
-table {
-	border-collapse:collapse;
-	border-spacing:0
-}
-legend, button::-moz-focus-inner, input::-moz-focus-inner {
-	border:0;
-	padding:0
-}
-:focus {
-	border-bottom:2px solid red
-}
-input:focus, select:focus, textarea:focus {
-	border-bottom:none
-}
+*
+{border:none;color:#6d6d6d;font-style:normal;font-weight:300;text-align:left;margin:0;padding:0}
+html
+{background:#eef3f6;font:1em/1.35 'lato', sans-serif;min-width:340px;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+article,aside,details,figcaption,figure,body>footer,body>header,hgroup,main,nav,section,summary
+{display:block}
+audio,canvas,video
+{display:inline-block}
+audio:not([controls])
+{display:none;height:0}
+[hidden],template
+{display:none}
+script
+{display:none!important}
+a
+{background:transparent}
+a:focus
+{outline:thin dotted;border:none}
+a:active,a:hover
+{outline:0;border:none}
+b,strong
+{font-weight:700}
+dfn,i,em
+{font-style:italic}
+fieldset
+{border:none!important;margin:0!important;padding:0!important}
+hr
+{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark
+{background:#ff0;color:#000}
+code,kbd,pre,samp
+{font-family:monospace,serif;font-size:1em}
+pre
+{white-space:pre-wrap}
+q
+{quotes:\201C \201D \2018 \2019}
+small
+{font-size:80%}
+sub,sup
+{font-size:.75em;line-height:0}
+sup
+{top:-.5em}
+sub
+{bottom:-.25em}
+img
+{border:0}
+svg:not(:root)
+{overflow:hidden}
+figure
+{margin:0}
+fieldset
+{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+button,input,select,textarea
+{font-family:inherit;font-size:100%;margin:0}
+button,input
+{line-height:normal}
+button,select
+{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]
+{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]
+{cursor:default}
+input[type=checkbox],input[type=radio]
+{box-sizing:border-box;padding:0}
+input[type=search]
+{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration
+{-webkit-appearance:none}
+textarea
+{overflow:auto;vertical-align:top}
+table
+{border-collapse:collapse;border-spacing:0}
+legend,button::-moz-focus-inner,input::-moz-focus-inner
+{border:0;padding:0}
+/* :focus {border-bottom:2px solid red} */
+input:focus, select:focus, textarea:focus {border-bottom:none}
+
 /*	[1]Definições tipográficas
 	
 	[1.1]tamanho, margens e transformações
 __________________________________________________________________*/
-div>h1, .contentList h3, #ulacoes span {
-	font-family:'open sans condensed'
+div>h1, .contentList h3
+{font-family:'open sans condensed'}
+body
+{border-bottom:none !important;}
+:focus
+{border-bottom:none}
+body, .sign
+{font-size:.8125em}
+#topo .auxNav
+{font-size:.85em}
+h1, #destaque h2
+{font-size:3em}
+body>header .titulo h1, div[role=main] h1
+{font-size:2.5em}
+h2,#home .deck.encap>div>h1, #home #featured h2
+{font-size:2em}
+.contentList h3
+{font-size:1.75em}
+form legend, #acoespg .contentList h3,#accordion h3 
+{font-size:1.5em}
+h3,h4,#destaque p, .obs
+{font-size:1.25em}
+#home .card h2, #destaque h1, .social h1, #sendbtn, #home #contactCard span, #home .cadastrese input[type=submit]
+{font-size:1.125em}
+h5,h6,#featuredCtrl h2, #searchCtrl h2, #searchCtrl h3
+{font-size:1em}
+table,span,div,input,select,textarea,td,a,pre
+{font-size:inherit}
+
+#featured p
+{line-height:1.6}
+
+h1,h2,h3,h4,h5,h6,h1 *,h2 *,h3 *,h4 *,h5 *,h6 *, body>header .menu li a,.card h2 a span, #acessBtn a, #mainMenu a,#siteMap span, #featured h2,#home #acoes h2, form legend, #contact form td:first-child label, #contact form td:first-child span, .obs, #contact input[type=button],span.type, #home #contactCard span, #home .cadastrese input[type=submit]
+{font-weight:700}
+.leiamais,.card h1,.card h2 a,#destaque p, #linguas a, #searchCtrl h2, #searchCtrl h3, #searchCtrl h2 span,#accordion .fisc h5
+{font-weight:400}
+
+#contact div[role=main] ul li {
+    margin: .5em 0 .5em 1em;
+    text-indent: -.9em;
 }
-body, .sign {
-	font-size:.8125em
+body>header h1
+{margin:-.3em 0 .3em}
+div[role=main] h1
+{margin:.75em 0 .25em}
+#tituloPagina {
+	
 }
-#topo .auxNav,#ulacoes .noBorder {
-	font-size:.85em
-}
-h1, #destaque h2 {
-	font-size:3em
-}
-body>header .titulo h1, #main h1 {
-	font-size:2.5em
-}
-h2, #home .deck.encap>div>h1, #home #featured h2 {
-	font-size:2em
-}
-.contentList h3, #ulacoes span {
-	font-size:1.75em
-}
-form legend, #acoespg .contentList h3, #accordion h3, #ulacoes .nomeAcao {
-	font-size:1.5em
-}
-h3, h4, #destaque p, .obs, #ulacoes, #lista-noticias .contentList h2,.pgCtrl button {
-	font-size:1.25em
-}
-#home .card h2, #destaque h1, .social h1, #sendbtn, #home #contactCard span, .fisc h5 {
-	font-size:1.125em
-}
-h5, h6, .featuredCtrl h2, #searchCtrl h2, #searchCtrl h3 {
-	font-size:1em
-}
-table, span, div, input, select, textarea, td, a, pre {
-	font-size:inherit
-}
-#featured p {
-	line-height:1.6
-}
-h1, h2, h3, h4, h5, h6, h1 *, h2 *, h3 *, h4 *, h5 *, h6 *, body>header .menu li a, .card h2 a span, #accessBtn a, #mainMenu a, #siteMap span, #featured h2, #home #acoes h2, form legend, #contact form td:first-child label, #contact form td:first-child span, .obs, #contact input[type=button], span.type, #home #contactCard span,.pgCtrl span[role="img"] {
-	font-weight:700
-}
-.leiamais, .card h1, .card h2 a, #destaque p, #linguas a, #searchCtrl h2, #searchCtrl h3, #searchCtrl h2 span, #accordion .fisc h5, #accordion .fisc h5 span {
-	font-weight:400
-}
-#contact #main ul li {
-	margin: .5em 0 .5em 1em;
-	text-indent: -.9em;
-}
-body>header h1 {
-	margin:-.3em 0 .3em
-}
-#main h1 {
-	padding: 1em 0 .5em
-}
-#main h1:first-child {
-	padding:.5em 0
-}
-#home .deck.encap>div>h1, #main .contentList header p {
-	margin:.5em 0 0
-}
-#main ul, #main p, #acessNotes {
-	margin:1em 0
-}
-h2, #contact h2, #contact legend {
-	margin:.25em 0
-}
-#featured h2 {
-	margin:.35em 0
-}
-h4 {
-	margin:1.5em 0
-}
-#contact .card>h2 {
-	padding:1em 0 0
-}
-.single.card>.deck, #home #contactCard a, #home #cadastrese {
-	margin:2em 0 0
-}
-nav ul, nav li, #featured ul, #featured li, .featuredCtrl li, #home #main p, .contentList header h3, #topo .auxNav #loginBtn, #siteMap ul li ul li, #main .contentList a>p, #searchCtrl p, #searchFilter ul, #main .photoList p, #accordion .fisc p, #accordion .fisc .fisc h5, .single.card>.deck:first-child, #accordion .featuredCtrl p, #accordion .featuredCtrl ul, #ulacoes ul,#ulacoes .vejaMais span, #main #acoespg .featuredCtrl, #lista-noticias .card, #lista-noticias .contentList, #lista-noticias #main .sign{
-	margin:0
-}
-nav li, #featured ul, #featured li, .featuredCtrl li {
-	text-indent:0
-}
-.sectionTitle, #accessBtn a, #siteMap span, #home .deck.encap>div>h1 {
-	text-transform:uppercase
-}
-body>header .titulo h1, #destaque h1, #destaque h2, .card h1, .card h2 {
-	text-transform:none
-}
-a {
-	text-decoration:none
-}
-.pgCtrl span[role="img"] {
-	text-shadow:0 1px #fff;	
-}
-ul {
-	list-style:none
-}
-#home #acoesMap ul {
-	list-style:disc inside
-}
-#contact #main ul li:before {
-	content:"–	"
-}
-#contact #main form li:before {
-	content:none
-}
+#home .deck.encap>div>h1,div[role=main] .contentList header p
+{margin:.5em 0 0}
+div[role=main] ul, div[role=main] p
+{margin:1em 0}
+h2, #contact h2, #contact legend
+{margin:.25em 0}
+#featured h2
+{margin:.35em 0}
+h4
+{margin:.8em 0}
+#contact .card>h2
+{padding:1em 0 0}
+.single.card>.deck, #home #contactCard a, #home .cadastrese
+{margin:2em 0 0}
+nav ul, nav li,#featured ul,#featured li, #featuredCtrl li, #home div[role=main] p, .contentList header h3, #topo .auxNav #loginBtn,#siteMap ul li ul li, .contentList a>p, #searchCtrl p,#searchFilter ul, #acoespg .photoList p,#accordion .fisc p,#accordion .fisc .fisc h5,.single.card>.deck:first-child
+{margin:0}
+nav li,#featured ul,#featured li, #featuredCtrl li
+{text-indent:0}
+#featuredCtrl li
+{float:left}
+#featuredCtrl h2 {float: left;margin-top: 14px;}
+#featuredCtrl ul li a
+{height: 20px;display: inline-block;line-height: 1.6;}
+#contact .card>h2
+{padding:1em 0 0}
+
+.sectionTitle, #acessBtn a, #siteMap span, #home .deck.encap>div>h1
+{text-transform:uppercase}
+body>header .titulo h1 ,#destaque h1,#destaque h2,.card h1,.card h2
+{text-transform:none}
+
+a
+{text-decoration:none}
+
+ul
+{list-style:none}
+#home #acoesMap ul
+{list-style:disc inside}
+#contact div[role=main] ul li:before
+{content:"–	"}
+#contact div[role=main] form li:before
+{content:none}
+
 
 /*	[1.2]cor
 __________________________________________________________________*/
-#home .deck.encap>div>h1, #topo .auxNav *, #menuEncap #search, .contentList .type, #main h1, #accordion h3, #ulacoes span {
-	color:#122051
+#home .deck.encap>div>h1, #topo .auxNav *, #menuEncap #search, .contentList .type, #main h1,#acoespg #main h2, #accordion h4, .contentTerm, #ulacoes span {
+	color:#004179
 }
-#menuEncap *, body>footer *, #contact input[type=button], #home #contactCard span, #home #cadastrese input[type=submit], #searchLink {
+#menuEncap *, body>footer *, #contact input[type=button], #home #contactCard span, #home .cadastrese input[type=submit], #searchLink {
 	color:#fff
 }
-article a, #home .card a,#accessibility a, #home .smallDiv .card a p,#home #acoesMap li, #main h2, form legend, .contentList .leiaMais, #searchCtrl p, #searchCtrl h2, #searchCtrl h3, #searchFilter li, #searchCtrl span, .contentList h3, .contentTerm,.type, #accordion h4, .fisc .smallDiv a, #ulacoes a {
-	color:#004179
+article a, #home .card a,#accessibility a, #home .smallDiv .card a p,#home #acoesMap li, #accordion h3, #main h2, form legend, .contentList .leiaMais, #searchCtrl p, #searchCtrl h2, #searchCtrl h3, #searchFilter li, #searchCtrl span, .contentList h3,.type,.featuredCtrl a, #acoespg .vejaMais, .fisc .smallDiv a, #ulacoes a {
+	color:#1A62A2
 }
 .obs {
 	color:#fd0100
@@ -306,64 +218,56 @@ article a, #home .card a,#accessibility a, #home .smallDiv .card a p,#home #acoe
 .pgCtrl span[role="img"], .pgCtrl #frCtrl:before,.pgCtrl #ffCtrl:after {
 	color:#02369b;
 }
+
 /*	[2]Especificações gerais
 
 	[2.x]Displays
 __________________________________________________________________*/
-#menuEncap, #siteMap li, #fontSize.active, #acoes .card .vejaMais, #home #acoes h2 span, .charcount, #acoespg .leiaMais, #accordion>div.active, #accordion>h3 span, #home #contactCard a, #mapEncap a, #ulacoes .nomeAcao {
+#menuEncap, #siteMap li, #fontSize.active,#acoes .card .vejaMais,#home #acoes h2 span, .charcount,#acoespg .leiaMais, #accordion>div.active,#accordion>h3 span, #home #contactCard a{
 	display:block
 }
-#langSelect, #langSelect li, #loginBtn span, #topo .auxNav div, #menuEncap>div div, .credits li, .credits span, #mainMenu li, body>footer .encap>div>div, .social *, .deck .smallDiv, .deck .largeDiv, .deck hr, .featuredCtrl *, .vejaMais span, #destaques .smallDiv .card, form li, .celspace, #searchCtrl h2, #searchCtrl h3, #searchCtrl>div, #searchFilter ul, #searchFilter li, .photoList li, #home #contactCard span, .sumario span, .relatorio span, article figure, [role="menuitem"], .pgCtrl #frCtrl:before,.pgCtrl #ffCtrl:after {
-	display:inline-block
+#langSelect, #langSelect li,#loginBtn span,#topo .auxNav div, #menuEncap>div div, .credits li, .credits span, #mainMenu li, body>footer .encap>div>div, .social *,.deck .smallDiv,.deck .largeDiv,.deck hr, #featuredCtrl *,.vejaMais span, #destaques .smallDiv .card, form li, .celspace, #searchCtrl h2, #searchCtrl h3,#searchCtrl>div, #searchFilter ul, #searchFilter li, .photoList li, #home #contactCard span {
+	display:inline-block /*Spacing adjust*/
 }
-#accessBtn figure {
-	display:inline
-}
-#langSelect .selected, #accordion>div, #fontSize {
+#langSelect .selected, #fontSize, #accordion>div {
 	display:none
 }
-
-.accessLink {
-	opacity:0	
+#acoesMap form .lum-content-body li {
+	display:list-item	
 }
-.accessLink:active, .accessLink:focus,.accessLink:hover {
-	opacity:100!important
-}
-
 #searchFilter li, #accordion h3 {
 	cursor:pointer;
 }
+
+
 /*	[2.x]Alturas,larguras,margens,paddings e overflows
 __________________________________________________________________*/
-#accessibility, .encap, #accessBtn, .deck hr, .smallDiv .card, .largeDiv .card, #home #destaques img, #home #acoes img, #contact form table, #contact legend, #accordion .active, #mapEncap a, #ulacoes .nomeAcao {
-	width:100%
-}
-#accessibility, .encap, img, #siteMap ul li ul li {
-	max-width:100%
-}
-.xLargeDiv, .deck>h2, #acoespg #accordion>h3 {
-	width:98%
-}
-#accessibility .card {
-	width:95%;
-	padding:2em 2.5%;
+#acessibility, .encap, #acessBtn,.deck hr, .smallDiv .card, .largeDiv .card, #home #destaques img,#home #acoes img, #contact form table, #contact legend, #accordion .active
+{width:100%}
+
+#acessibility, .encap, img, #siteMap ul li ul li
+{max-width:100%}
+
+.xLargeDiv, .deck>h2,#acoespg #accordion>h3 {
+	width:98%	
 }
 .largeDiv {
-	width:68%
+	width:68%	
 }
 .deck .largeDiv {
-	width:66%
+	width:66%	
 }
 .single.card .deck .largeDiv {
-	width:62%
+	width:62%	
 }
-.single.card .deck>div, .xLargeDiv, .deck>h2 {
-	padding:0 1%
+.single.card .deck>div,.xLargeDiv, .deck>h2  {
+	padding:0 1%	
 }
 .smallDiv {
-	width:32%
+	width:32%;
+	max-width:307px
 }
-.featuredCtrl span, .vejaMais span, .sumario span, .relatorio span,.pgCtrl button  {
+#featuredCtrl span,.vejaMais span{
 	width:20px;
 	height:20px
 }
@@ -371,119 +275,107 @@ __________________________________________________________________*/
 	width:30px;
 	height:30px
 }
-#accessibility {
-	height:100%	
-}
-#accessibility>div, .encap>div, #main h1 {
-	margin:auto
-}
-#langSelect, #langSelect li, #topo .auxNav div, #menuEncap>div div, .credits li, .credits span, #mainMenu li, body>footer .encap>div>div, #home #cadEmail {
+
+#acessibility>div, .encap>div
+{margin:auto}
+#langSelect, #langSelect li,#topo .auxNav div, #menuEncap>div div, .credits li, .credits span, #mainMenu li, body>footer .encap>div>div{
 	margin-right: -.3em /*Inline-block adjust*/
 }
-#contact #main input[type=text], #contact #main input[type=button], #searchCtrl select, #accordion .fisc .smallDiv span {
-	margin-right:1em;
+#contact div[role=main] input[type=text], #contact div[role=main] input[type=button],#searchCtrl select {
+    margin-right:1em;
 }
-#searchCtrl h3, #destaques .data,#ulacoes .vejaMais span {
-	margin-right:.3em
+#searchCtrl h3, #destaques .data {
+	margin-right:.3em	
 }
-.accessLink {
-	margin-left:-.85em	
-}
-.encap>div, #main h1 {
-	max-width:960px;
-}
+
 .encap>div {
-	padding:0 1.25% .75em;
-	width:97.5%
+	max-width:960px;
+	width:97.5%;
+	padding:0 1.25%
 }
-#accessibility>div {
+
+#acessibility>div {
 	width:75%;
 	max-width:540px;
-	padding:2.5%
+	padding:2.5%	
 }
-.card>div, #langSelect li, #destaques .smallDiv p {
-	padding:0 1em;
+div[role=main] input[type=button], div[role=main] input[type=submit] {
+	padding:.4em .7em	
 }
-#main input[type=button], #main input[type=submit] {
-	padding:.4em .7em
+div[role=main] input[type=text], div[role=main] select {
+    padding:.3em
 }
-#main input[type=text], #main select {
-	padding:.3em
-}
-#searchCtrl, #home #main h1 {
+#searchCtrl {
 	padding:0;
 }
+
 #featured, .photoList li {
-	overflow:hidden;
+	overflow:hidden;	
 }
+
 /*	[2.x]Posições,z-index,alinhamentos e floats
 __________________________________________________________________*/
-#accessBtn, #searchLink {
-	position:absolute
+#acessibility, #acessBtn, #acessList, #fontSize{
+	position:absolute	
 }
-#accessibility .card, #menuEncap .auxNav [type=submit], body>header #menuEncap, #accordion .active {
-	position:relative
+#menuEncap .auxNav [type=submit],body>header #menuEncap, #accordion .active {
+	position:relative	
 }
-#accessibility {
-	position:fixed	
+
+#acessBtn, #acessibility.active {
+	left:0	
 }
-#accessBtn, #accessibility.active {
-	left:0
-}
-#accessibility .active {
+#acessibility .active {
 	left:auto
 }
-#accessibility, #accessList, #fontSize {
-	left:-200%
+#acessibility, #acessList, #fontSize {
+	left:-200%	
 }
-#accessibility {
-	top:0
+#acessibility {
+	top:5%
 }
-#accessibility ,#accessibility .card {
-	z-index:9999
+
+#acessibility, .deck>div, #destaques .smallDiv{
+	text-align:justify	
 }
-p, #accessibility, .deck>div, #destaques .smallDiv {
-	text-align:justify
+#acessibility, #acessBtn, #home #contactCard a, #home .cadastrese p {
+	text-align:center	
 }
-#accessibility, #accessBtn, #home #contactCard a, #mapEncap a, .figencap, .pgCtrl,.pgCtrl button {
-	text-align:center
+.credits ul, #menuEncap .auxNav form, .social,#acoes .card .vejaMais, #contact form td:first-child, #searchCtrl form, .contentList .leiaMais, #searchFilter {
+	text-align:right	
 }
-.credits ul, #menuEncap .auxNav form, .social, #acoes .card .vejaMais, #contact form td:first-child, #searchCtrl form, .contentList .leiaMais, #searchFilter {
-	text-align:right
+#contact form td[colspan="2"], #acoespg .vejaMais{
+    text-align:left!important;
 }
-#contact form td[colspan="2"], #acoespg .vejaMais, #home #main p {
-	text-align:left!important;
+
+.wSub, #featured li, #home #pub img  {
+	float:left	
 }
-.wSub, #featured li, #home #pub img {
-	float:left
+#loginBtn, #menuEncap .auxNav [type=submit],#home #acoes h2 span, #searchFilter,#accordion>h3 span {
+	float:right	
 }
-#loginBtn, #menuEncap .auxNav [type=submit], #home #acoes h2 span, #searchFilter, #accordion>h3 span {
-	float:right
+#menuEncap>div div, #siteMap ul li, .encap>div>div, #contact form td, .deck>div, .photoList li{
+	vertical-align:text-top	
 }
-#menuEncap>div div, #siteMap ul li, .encap>div>div, #contact form td, .deck>div, .photoList li, .smallDiv, .largeDiv {
-	vertical-align:text-top
+.credits li, div[role=main] input[type=button], div[role=main] input[type=submit] {
+	vertical-align:middle	
 }
-.credits li, #main input[type=button], #main input[type=submit] {
-	vertical-align:middle
+#featuredCtrl span, #searchFilter,.vejaMais span {
+	vertical-align:bottom	
 }
-.featuredCtrl span, #searchFilter, .vejaMais span,.pgCtrl #frCtrl:before,.pgCtrl #ffCtrl:after {
-	vertical-align:bottom
+#contact div[role=main] input[type=button], #contact div[role=main] input[type=submit] {
+	vertical-align:baseline	
 }
-.relatorio span, .sumario span {
-	vertical-align:text-bottom
-}
-#contact #main input[type=button], #contact #main input[type=submit] {
-	vertical-align:baseline
-}
+
 /*	[2.x]Fundos,sombras,bordas e cursores
 __________________________________________________________________*/
-#topo {
-	background:#98d3e1
+#topo{
+	background:#6ea6c8
 }
 #contact input[type=button] {
-	background:#4ec6f8
+    background:#4ec6f8
 }
-#contact #sendbtn, #home #contactCard span, #home #cadastrese input[type=submit] {
+#contact #sendbtn, #home #contactCard span,#home .cadastrese input[type=submit]{
 	background:#01437d
 }
 #menuEncap, body>footer {
@@ -492,28 +384,28 @@ __________________________________________________________________*/
 #destaques, #acoesMap {
 	background:#cee2ee
 }
-#main, #acoes {
+#acoes {
 	background:#eef3f6
 }
 #sociais {
 	background:#b8d6e9
 }
-#accordion .active {
+#accordion .active{
 	background:#f4f4f4
 }
 .card {
 	background:#fff
 }
-#accessibility {
-	background:rgba(0,0,0,.75);
-}
-.credits span, #loginBtn span, #menuEncap .auxNav [type=submit], .social span, .featuredCtrl span, .vejaMais span, #home #acoes .card h2 span, #menuBtn, #accordion>h3 span, .relatorio span, .sumario span {
+
+.credits span, #loginBtn span, #menuEncap .auxNav [type=submit], .social span, #featuredCtrl span,.vejaMais span,#home #acoes .card h2 span, #menuBtn, #accordion>h3 span,
+#mediaSmall .fotosMedia span, #mediaSmall .videosMedia span, #accordion p.sumario a span, #accordion p.relatorio a span, .filterAud span, #filterVid span, .icoText span,#filterPic span, .listaAudios span, .arrowDown, .arrowUp{
 	background:url(img/sprites.png) no-repeat;
 }
-.TCERJ span {
+
+.TCERJ span{
 	background-position:-48px 0
 }
-.TCMRJ span {
+.TCMRJ span{
 	background-position:-113px 9px
 }
 #loginBtn span {
@@ -522,7 +414,7 @@ __________________________________________________________________*/
 #menuEncap .auxNav [type=submit] {
 	background-position:0 -37px
 }
-.facebook span {
+.facebook span{
 	background-position:-47px -26px
 }
 .twitter span {
@@ -534,53 +426,60 @@ __________________________________________________________________*/
 .youtube span {
 	background-position:-152px -26px
 }
-.filterNews span {
+#filterNews span{
 	background-position:0 -61px
 }
-.filterPic span {
+#filterPic span {
 	background-position:-25px -61px
 }
-.filterVid span {
+#filterVid span {
 	background-position:-50px -61px
 }
-.filterAud span {
+#filterAud span {
 	background-position:-75px -61px
 }
+
+.filterAud span{
+	background-position: -75px -61px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+
 .vejaMais span {
 	background-position:-100px -61px
 }
 #menuBtn {
 	background-position:-125px -61px
 }
-#home #acoes h2 span {
+#home #acoes h2 span  {
 	background-position:-173px -59px!important
 }
-#accordion>h3 span {
+#accordion>h3 span{
 	background-position:0 -81px
 }
-#accordion>h3.active span {
+#accordion>h3.active span{
 	background-position:-27px -81px
 }
-.relatorio span, .sumario span {
-	background-size:121px 66px;
-	background-position:-82px -40px
-}
+
 body>header #menuEncap {
 	box-shadow:0 6px 10px -4px #666
 }
 .card {
 	box-shadow:0 0 10px -2px #666
 }
-.card {
-	box-shadow:0 0 10px -2px #666
+#home #acoesMap {
+	box-shadow:none	
 }
+
 #sendencap {
 	border-top:#bebec0 solid 1px
 }
 body>footer {
 	border-bottom:#98d3e1 solid 20px
 }
-#contact legend, #searchCtrl, .contentList>li, #accordion h3,#main .fisc>li, #ulacoes li li, #ulacoes .nomeAcao, #lista-noticias .largeDiv .contentList {
+#contact legend, #searchCtrl, .contentList>li, #acoespg .mediaList>div:first-child,#accordion h3 {
 	border-bottom:#bebec0 solid 1px
 }
 #langSelect li, #searchFilter li {
@@ -589,17 +488,13 @@ body>footer {
 #footerCrdt {
 	border-left:#ffffff solid 1px
 }
-input[type=text], select, textarea,.pgCtrl button {
-	border:#bebec0 solid 1px
+input[type=text], select, textarea {
+    border:#bebec0 solid 1px   
 }
-.noBorder, fieldset, #searchFilter li:first-child, #acoespg .contentList>li, #acoespg #accordion>h3.active, .auxNav input, #lista-noticias .contentList li {
+.noBorder, fieldset, #searchFilter li:first-child, #acoespg .contentList>li, #acoespg #accordion .mediaList>div:first-child,#acoespg #accordion>h3.active {
 	border:none!important
 }
-.pgCtrl button {
-	border-radius:3px;	
-	box-shadow:0 0 0 1px #fff inset;
-	background:linear-gradient(#FFFFFF, #e4e6e3);
-}
+
 /*	[3]Definições específicas
 __________________________________________________________________*/
 
@@ -609,16 +504,34 @@ __________________________________________________________________*/
 	padding:10px 0;
 	min-height:16px;
 }
+#langSelect li {
+	padding:0 1em
+}
 #langSelect .noBorder {
 	padding-left:0
 }
-#accessBtn {
+.card>div {
+	padding:0 1em;
+}
+#acessBtn {
 	height:0
 }
 #loginBtn span {
 	width:14px;
 	height:17px
 }
+
+#loginBtn {
+	min-width: 193px;
+	text-align: right;
+	right: 20px;
+	position: relative;
+}
+
+#loginBtn > div {
+	margin: 0 !important;
+}
+
 .credits {
 	margin-right:-.45em;
 }
@@ -628,17 +541,17 @@ __________________________________________________________________*/
 .credits li:first-child {
 	margin:0 1em 0 0
 }
-.TCU span {
+.TCU span{
 	width:42px;
 	height:34px
 }
-.TCERJ span {
+.TCERJ span{
 	width:60px;
-	height:19px
+	height:19px	
 }
-.TCMRJ span {
+.TCMRJ span{
 	width:71px;
-	height:30px
+	height:30px	
 }
 #menuEncap {
 	padding:3em 0 .75em
@@ -653,37 +566,33 @@ __________________________________________________________________*/
 	margin:1em 0 0
 }
 #search {
-	width:96%;
-	padding:.3em 2%
-}
-#searchLink {
-	width: .5em;
-	margin-left:-1.5em;
-	padding: 1.2em .2em .2em
+	width:95%;
+	padding:.2em 2%
 }
 #menuEncap .auxNav [type=submit] {
-	width:15px;
-	height:15px;
-	top:-17px;
-	right:.5em
+	width: 15px;
+	height: 15px;
+	top: 0;
+	right: 1.4em
+}
+
+/****** CORREÇÂO LUMIS ********/
+#menuEncap .auxNav .lum-content, #menuEncap .auxNav .lum-content-body {
+	width: 102.5%
+}
+#search {
+	width: 86.3%;
+	padding: .2em 6% .2em 2%
 }
 /*	[3.x]Principal
+
 __________________________________________________________________*/
 .deck .card {
-	margin:1.25em 0 0
+	margin:1.25em 0 0	
 }
 .single.card {
-	margin: 0 0 4em;
-	padding: 2em 2%
-}
-.vejaMais span {
-	margin:0 .5em 0 0
-}
-#accessibility {
-	padding-top:15%	
-}
-#fontSize {
-	margin-top:-16.5em	
+    margin: 0 0 4em;
+    padding: 2em 2%;
 }
 
 /* HOME */
@@ -693,13 +602,13 @@ __________________________________________________________________*/
 #destaques .smallDiv .card {
 	padding-bottom:.3em
 }
-#featured div {
+#featured div{
 	padding:1em 1em 2.5em
 }
-#acoes .card {
+#acoes .card{
 	min-height: 290px
 }
-#acoesMap .card {
+#acoesMap .card{
 	min-height: 220px
 }
 #featured ul {
@@ -708,55 +617,67 @@ __________________________________________________________________*/
 #featured li {
 	width:25%
 }
-.featuredCtrl span, .featuredNews .vejaMais span {
+#featuredCtrl span,.vejaMais span{
 	margin:0 .5em 0 1em
 }
-.vejaMais {
-	margin: .5em 0
+.vejaMais{
+	margin: .5em 0;
+	cursor: pointer;
 }
-.featuredCtrl div {
-	padding: 0.8em 1em 0.9em
+#featuredCtrl div {
+	/*padding: 0.8em 1em 0.9em*/
 }
 #acoes .card h2, #acoesMap .card h2 {
 	margin: 1em 0
 }
 #home #acoesMap li {
 	margin: 0 0 .5em;
-	padding:0 0 0 1em
-}
-#mapEncap img {
-	padding:3% 0;	
+	padding:0 0 0 1em	
 }
 #home #pub img {
-	margin: 0 1em 1em 0
+	margin: 0 1em 1em 0;	
 }
 #home #acoes h2 span {
 	width:11px;
 	height:22px
-}
+}	
 #home #acoes .card p {
 	margin: .75em 0 0
 }
-#home #cadEmail {
-	width:60%;
-	padding:.3em .3em .4em
+#home .cadastrese input[type=text] {
+	width:95%;
+	margin-bottom:2.25em
 }
-
+#home .cadastrese .inputEmailNewsletter{
+	margin-top: 25px
+}
 /* AÇÕES */
-.photoList li {
+#acoespg .single.card .deck>div {
+	padding:0
+}
+#acoespg .vejaMais span {
+	margin-left:0
+}
+#acoespg .vejaMais span {
+	margin-left:0	
+}
+#acoespg .photoList li {
 	width:48%;
-	margin:0 1% 1% 0
+	margin:0 0 1% 1%	
 }
 #acoespg .mediaList>div {
 	margin: 0 0 2.5em;
 	padding:0 0 1em
 }
+#acoespg .itemAcao .acoesControle {
+	padding-left:4em
+}
 #acoespg #accordion>h3 {
-	margin:0 1% .75em;
+	margin:0 1% .75em; 
 }
 #acoespg #accordion>div.active {
 	left: -3.5%;
-	padding: 1em 3.5% 2em;
+	padding: 0 3.5%;
 	margin:0 0 1.2em
 }
 #acoespg #accordion h3.active {
@@ -764,96 +685,71 @@ __________________________________________________________________*/
 	padding: 1em 4.5% 0;
 	margin: 0 1%
 }
-#accordion .fisc .featuredCtrl li:first-child span {
-	margin-left:0
-}
 #accordion>h3 span {
 	width:22px;
 	height:22px
 }
-#main .fisc {
-	margin:0 0 1em
-}
 .fisc li {
-	margin:1em 0 1.5em
+	padding:1em 0;	
 }
-.fisc li li {
-	margin:.5em 0 1.5em
-}
-.single.card .fisc .deck>.largeDiv {
-	padding:0 2% 0 0
-}
-#accordion .fisc .sumario {
-	margin-bottom:.3em
-}
-/* TODAS AS AÇÕES */
-#ulacoes>li {
-	margin:0 0 2em	
-}
-#ulacoes li li, #ulacoes .nomeAcao{
-	padding:.5em 0	
-}
-#ulacoes li:first-child .nomeAcao {
-	padding:0 0 .5em	
+ .single.card  .fisc .deck>.largeDiv {
+	padding:0 2% 0 0;	
 }
 
 /* CONTATOS */
 #sendencap {
-	margin:1em 0;
-	padding:1em .3em 0
+    margin:1em 0;
+	padding:1em .3em 0;
 }
 #contact form td:first-child, .celspace {
-	width:33%
+    width:33%;   
 }
 #contact form td {
-	padding:.3em
+    padding:.3em;   
 }
-#contact #main input[type=text], #contact #main select, #contact #main textarea {
-	width:80%
+#contact div[role=main] input[type=text], #contact div[role=main] select, #contact div[role=main] textarea {
+    width:80%
 }
-#contact #main input[type=radio] {
-	margin:0 .5em 0 0
+#contact div[role=main] input[type=radio] {
+	margin:0 .5em 0 1em;
 }
-#contact #main li:first-child input[type=radio] {
-	margin-left:0
+#contact div[role=main] li:first-child input[type=radio]{
+	margin-left:0;
 }
-#contact #main fieldset:first-child input[type=text] {
-	width:20em
+#contact div[role=main] fieldset:first-child input[type=text] {
+    width:20em;
 }
-#contact #main fieldset:first-child select {
-	width:21.2em
+#contact div[role=main] fieldset:first-child select{
+    width:21.2em;
 }
-#contact #main input[type=text], #contact #main input[type=button] {
-	margin-right:1em
+#contact div[role=main] input[type=text], #contact div[role=main] input[type=button]  {
+    margin-right:1em;
 }
-#contact #main input[type=text], #contact #main select, #contact #main textarea {
-	padding:.5em
+#contact div[role=main] input[type=text], #contact div[role=main] select, #contact div[role=main] textarea{
+    padding:.5em
 }
-#contact #main input[type=button] {
-	padding:.5em 1.75em
+#contact div[role=main] input[type=button]  {
+	padding:.5em 1.75em;
 }
-#contact #sendbtn, #home #contactCard span {
-	padding:.5em 3em
+#contact #sendbtn, #home #contactCard span, #home .cadastrese input[type=submit]  {
+	padding:.5em 3em;
 }
 
 /* BUSCA */
 .contentTerm:before {
-	content:open-quote
+	content:open-quote	
 }
 .contentTerm:after {
-	content:close-quote
-}
-#searchpg .accessLink {
-	margin-left: -.6em
+	content:close-quote	
 }
 #searchFilter {
-	width:50%
+	width:50%	
 }
-.contentList header {
+/* .contentList header {
 	margin-bottom:.5em
-}
+} */
 #searchCtrl h2 {
-	margin-bottom:.3em
+	margin-bottom:.3em	
 }
 #searchFilter li {
 	padding:0 .5em
@@ -864,28 +760,13 @@ __________________________________________________________________*/
 .contentList li, #searchCtrl {
 	padding-bottom:1em
 }
-.photoList ul {
-	margin-left:-1%
+.photoList ul{
+	margin-left:-1%	
 }
 #searchpg .photoList li {
 	width:18.5%;
 	min-width:128px;
-	margin:0 0 1% 1%
-}
-/* LISTA DE NOTÍCIAS */
-#lista-noticias .card>div{
-	padding:1.5em 1em;
-}
-#lista-noticias .photoList {
-	margin:0 0 1em;	
-}
-.pgCtrl #frCtrl:before,.pgCtrl #ffCtrl:after {
-	content: "|";
-	font-size: .8em;
-	margin: 0 -.075em .2em 0;
-}
-.pgCtrl #rCtrl {
-	margin-right:.5em	
+	margin:0 0 1% 1%	
 }
 
 /*	[3.x]Rodapé
@@ -903,10 +784,10 @@ body>footer {
 	padding:37% 0 0
 }
 .social span {
-	margin:0 2.5px;
+	margin:0 2.5px;	
 }
 .social h1 {
-	margin:0 .75em;
+	margin:0 .75em;	
 }
 
 /*	[4]Media Querries
@@ -915,76 +796,72 @@ body>footer {
 __________________________________________________________________*/
 
 @media screen and (max-width:900px) {
-	 #mainMenu nav {
-		 background:#0a1737;
-		 box-shadow:-45px 0 35px -40px #000 inset;
-		 height:999em;
-		 width:33%;
-		 overflow:hidden;
-		 padding-top:3em;
-		 position:fixed;
-		 top:0;
-		 left:-33%;
+	#mainMenu nav {
+		background:#0a1737;
+		box-shadow:-45px 0 35px -40px #000 inset;
+		width:33%;
+		overflow:hidden;
+		position: absolute;
+		top: 76px;
+		left: 1%;
+		z-index: 99999;
 	}
-	#mainMenu nav:before {
-		content:"Menu";
-		font: 2.5em 'open sans condensed';
-		margin-left: .2em;
-		padding-bottom: .5em;
+	#mainMenu li {
+		display:block;	
 	}
-	 #mainMenu li,#mainMenu nav:before {
-		 display:block;
+	#menuBtn {
+		display:inline-block;
+		margin-right:.5em;	
 	}
-	 #menuBtn {
-		 display:inline-block;
-		 margin-right:.5em;
-	}
-	 #mainMenu li, #mainMenu li:first-child {
-		 margin: .5em 0;
-		 padding: .5em;
-		 border-bottom:#46567C solid 1px
-	}
+	#mainMenu li, #mainMenu li:first-child{
+		margin: .5em 0;
+		padding: .5em;
+		border-bottom:#46567C solid 1px
+	}	
 }
 
 /*	[4.x]Screens < 760
 __________________________________________________________________*/
 
 @media screen and (max-width:760px) {
-	 .largeDiv, .deck .largeDiv, #destaques .smallDiv, body>footer .smallDiv, #acoesMap .smallDiv:first-child {
-		 width:100%
+	.largeDiv, .deck .largeDiv, #destaques .smallDiv, body>footer .smallDiv, #acoesMap .smallDiv:first-child{
+		width:100%	
 	}
-	 body>header .largeDiv {
-		 width:60%
+	body>header .largeDiv{
+		width:60%;
 	}
-	 .smallDiv, #destaques .smallDiv .card {
-		 width:49%
+	.smallDiv, #destaques .smallDiv .card{
+		width:100%;
 	}
-	 body>header .smallDiv {
-		 width:40%
+	body>header .smallDiv{
+		width:40%;
 	}
-	 #mainMenu h1 {
-		 font-size:2.5em;
+	#acoes .card,#acoesMap .card{
+		min-height:0
 	}
-	 body>header .auxNav {
-		 position:relative;
-		 right:0
+	#mainMenu h1 {
+		font-size:2.5em;
 	}
-	 .social {
-		 float: left;
-		 margin: -2.5em 0 0;
-		 padding: 0;
+	body>header .auxNav {
+		position:relative;
+		right:0	
 	}
-	 #footerCrdt {
-		 margin: 1em 0;
-		 padding: 1em 0 0;
-		 border-top:#ffffff solid 1px;
-		 border-left:none;
+	.social {
+		float: left;
+		margin: -2.5em 0 0;
+		padding: 0;
 	}
-	 .social h1 {
-		 margin: 0 .75em 0 0;
+	#footerCrdt {
+		margin: 1em 0;
+		padding: 1em 0 0;
+		border-top:#ffffff solid 1px;
+		border-left:none;
 	}
-	 #acoes .card .vejaMais {
-		 padding:0 0 1em;
+	.social h1 {
+		margin: 0 .75em 0 0;
+	}
+	#acoes .card .vejaMais {
+		padding:0 0 1em;	
 	}
 }
 
@@ -992,43 +869,39 @@ __________________________________________________________________*/
 __________________________________________________________________*/
 
 @media screen and (max-width:540px) {
-	 .credits, #footerCrdt {
-		 text-align:center
+	.credits,#footerCrdt {
+		text-align:center
 	}
-	 body>header .smallDiv, body>header .largeDiv {
-		 width:100%
+	body>header .smallDiv, body>header .largeDiv{
+		width:100%
+	}	
+	.social, .credits ul {
+		display:inline-block	
 	}
-	 .social, .credits ul {
-		 display:inline-block
+	#menuEncap .auxNav {
+		display: block;
 	}
-	 #menuEncap .auxNav {
-		 display: block;
+	.social,body>header .auxNav {
+		float: none;
 	}
-	 .social, body>header .auxNav {
-		 float: none;
+	.credits ul{
+		margin:auto;
 	}
-	 .credits ul {
-		 margin:auto;
+	body>footer .social {
+		margin: .5em auto 0;
 	}
-	 body>footer .social {
-		 margin: .5em auto 0;
+	body>header .credits, #menuEncap .auxNav, #menuEncap .auxNav form{ 
+		text-align:left;
 	}
-	 body>header .credits, #menuEncap .auxNav, #menuEncap .auxNav form {
-		 text-align:left;
+	#mainMenu h1 {
+		margin: -.3em 0 1em;
 	}
-	 #mainMenu h1 {
-		 margin: -.3em 0 1em;
+	#search {
+		width: 65%;
 	}
-	 #mainMenu nav {
-		 width:80%;
-		 left:-80%;
-	}
-	 #search {
-		 width: 65%;
-	}
-	 #menuEncap .auxNav [type=submit] {
-		 top: 3px;
-		 left: -33%;
+	#menuEncap .auxNav [type=submit] {
+		top: 3px;
+		left: -33%;
 	}
 }
 
@@ -1036,27 +909,337 @@ __________________________________________________________________*/
 __________________________________________________________________*/
 
 @media screen and (max-width:470px) {
-	 .smallDiv, #destaques .smallDiv .card {
-		 width:100%
+	.smallDiv, #destaques .smallDiv .card{
+		width:100%
 	}
-		 #home .featuredCtrl>div>*, #home .featuredCtrl li {
-		 display:block
+	#home #featuredCtrl>div>*, #home #featuredCtrl li {
+		display:block	
 	}
-	 #home .featuredCtrl li {
-		 margin:0 0 .75em;
+	#home #featuredCtrl li {
+		margin:0 0 .75em;	
 	}
 }
 
-/*	[5]accessibility
+/*	[5]Acessibility
 	[5.x]Aural
 __________________________________________________________________*/
 
 @media aural {
-	#fontSize, #acessList sup, #acessNotes {
+	#fontSize {
 		display:none;
 	}
 	.aural {
-		display:auto;
+		display:auto;	
 	}
-	
+}
+
+.acessibilidade {background: #2b2b2b;}
+.acessibilidade ul {padding:20px; width: 940px;height:100%;margin: 0 auto;text-align:left;position: relative;}
+.acessibilidade li {display: inline-block; float: left;margin-right:1px;}
+.acessibilidade li a { color:#fff; font-size:1.4em;padding:10px;background: #333;vertical-align: middle;display: block; height:auto;
+-moz-border-radius: 8px; -webkit-border-radius: 8px; -khtml-border-radius: 8px;border-radius: 8px;}
+.acessibilidade li a:hover {background: #4F4F4F;}
+
+
+
+
+/* ********* PAGINAÇÂO CUSTOMIZADO ********* */
+.paginacaoLumis {
+	clear: both;
+	top: 15px;
+	display: block;
+	position: relative;
+}
+
+.lum-pagination {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin: 4px 0;
+	font-size: 11px;
+	line-height: normal;
+}
+.lum-pagination .lum-pagination-range, .lum-pagination .lum-pagination-navigation {
+	display: inline-block;
+	width: 50%;
+}
+.lum-pagination-range-current {
+	font-weight: bold;
+}
+.lum-pagination-total-count {
+	font-weight: bold;
+}
+.lum-pagination-navigation {
+	text-align: right;
+}
+.lum-pagination-navigation-page {
+	display: inline;
+}
+.lum-pagination-navigation-buttons {
+	display: inline;
+	margin-left: 5px;
+}
+.lum-pagination-navigation input[type="text"] {
+	height: 22px;
+	line-height: 20px;
+	padding: 0 2px;
+	text-align: center;
+	vertical-align: middle;
+	width: 28px;
+	margin: 0 3px;
+}
+.lum-pagination-navigation-buttons .lum-prev.lum-disabled {
+	background: url(img/prev-page-disabled.gif) no-repeat center;
+}
+.lum-pagination-navigation-buttons .lum-next.lum-disabled {
+	background: url(img/next-page-disabled.gif) no-repeat center;
+}
+.lum-pagination-navigation-buttons .lum-button {
+	height: 20px;
+	padding: 0;
+	width: 23px;
+	margin-right: 5px;
+	filter: none;
+	vertical-align: middle;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.lum-button.lum-disabled {
+	box-shadow: none;
+	border-color: #e0e0e0;
+}
+.lum-pagination-navigation-buttons .lum-prev {
+	background: url(img/prev-page.gif) no-repeat center;
+}
+.lum-pagination-navigation-buttons .lum-next {
+	background: url(img/next-page.gif) no-repeat center;
+}
+.lum-pagination-navigation input[type='text']{
+	border: 1px solid #C0C0C0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 3px;
+	font-size: 12px;
+}
+.lum-button {
+	font-size: 11px;
+	font-weight: bold;
+	border: 1px solid #a6a6a6;
+	border-radius: 3px;
+	background-color: #f5f5f5;
+	background-image: -moz-linear-gradient(#ffffff,#f6f6f6);
+	background-image: -webkit-gradient(linear,0 top,0 bottom,from(#ffffff),to(#f6f6f6));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#f6f6f6));
+	box-shadow: 0px 1px 0px 0px #a6a6a6;
+	color: #b82a28;
+	text-decoration: none;
+	display: inline-block;
+	padding: 4px 15px;
+}
+
+#main {
+	overflow: hidden;
+}
+
+/* ALTERAÇÕES PARA A PÁGINA AÇÕES */
+#mediaSmall {
+	overflow: hidden;
+	margin-bottom: 35px;
+}
+#accordion h4 {
+	clear: left;
+}
+#mediaSmall a.fotosMedia,#mediaSmall a.videosMedia {
+	display: block;
+	width: 76px;
+	float: left;
+}
+#mediaSmall p span {
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+#mediaSmall .fotosMedia span {
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-position: -25px -61px;
+	float: left;
+	margin-right: 6px;
+}
+#mediaSmall .videosMedia span {
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-position: -50px -61px;
+	float: left;
+	margin-right: 6px;
+}
+#accordion p.sumario a span, #accordion p.relatorio a span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-position: -100px -83px;
+	float: left;
+	margin-right: 7px;
+}
+#accordion p.sumario a {
+	display: block;
+	height: 35px;
+}
+
+.mediaList {
+	float: left;
+	width: 34%;
+}
+.noticiasAcoes{
+	float: left;
+	width: 60%;
+}
+/* FIM DAS ALTERAÇÕES */
+
+/* Notícias - Lista Album  */
+
+.listaFotos, .listaVideos {
+	height: auto;
+	overflow: hidden;
+	width: 19%;
+}
+
+.albuns .itens {
+	overflow: hidden;
+}
+
+.albuns .itens li{
+	float:left; 
+	margin-right:10px;
+	margin-bottom:10px;
+	max-width: 127px;
+}
+
+.albuns .itens li a, .audios .itens li a {
+	color:#122051;
+}
+
+.listaFotos span, .listaVideos span {
+	margin: 0 .5em 0 0em;
+}
+
+.audios .itens li {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.lado-direito{
+	padding: 1em;
+	width: 100%;
+}
+
+.vejaMais {
+	color:#144d82 !important;
+	font-weight: bold;
+}
+
+.itemAcao {
+	margin-bottom: 30px;
+}
+
+ul.acoesControle {
+	margin-top: 0 !important;
+}
+
+ul.acoesControle li {
+	border-bottom:1px solid #eee; 
+	height:30px; 
+	padding-top:10px; 
+	display:block;
+}
+
+ul.acoesControle li a {
+	color: #004179;
+}
+.arrowDown {
+	background-position:-22px -81px;
+	display: block;
+	width: 30px;
+	height: 25px;
+	text-indent: -999999px;
+	cursor: pointer;
+	right: 20px;
+	position: relative;
+}
+.arrowUp {
+	background-position:5px -81px;
+	display: block;
+	width: 30px;
+	height: 25px;
+	text-indent: -999999px;
+	cursor: pointer;
+	right: 20px;
+	position: relative;
+}
+
+.listaFiscalizacoes li {
+	border-bottom:1px solid #a6a6a6; 
+	display:block;
+}
+
+.listaFiscalizacoes li a {
+	color:#004179;
+	display:inline-block;
+	margin-right:20px;
+	line-height: 20px;
+}
+
+.listaFiscalizacoes li .itensFiscalizacoes {
+	height:30px;
+}
+
+#filterPic span {
+	background-position: -25px -61px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 10px;
+}
+#filterVid span {
+	background-position:-50px -61px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 10px;
+}
+
+.icoText span {
+	background-position:-100px -83px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 10px;
+}
+
+h2.titPublicacoes {
+	margin-top:20px;
+}
+.listaPublicacoes {
+	border-bottom:1px solid #eee;
+	padding-bottom:10px !important;
+	margin-bottom:10px;
+}
+.listaPublicacoes p {
+	margin:0 0 2px 0 !important;
+	font-size:11px;
+}
+
+.tagCards {
+	font-size:11px;
+	color:#144d82 !important;
 }
