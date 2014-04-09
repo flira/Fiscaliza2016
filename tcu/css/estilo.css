@@ -20,7 +20,7 @@
 	[4]Media Querries
 		[4.x]Screens < 900
 		
-	[5]Acessibility
+	[5]accessibility
 		[5.x]Aural
 __________________________________________________________________*/
 
@@ -109,7 +109,7 @@ input:focus, select:focus, textarea:focus {border-bottom:none}
 	
 	[1.1]tamanho, margens e transformações
 __________________________________________________________________*/
-div>h1, .contentList h3
+div>h1, h3
 {font-family:'open sans condensed'}
 body
 {border-bottom:none !important;}
@@ -127,10 +127,10 @@ h2,#home .deck.encap>div>h1, #home #featured h2
 {font-size:2em}
 .contentList h3
 {font-size:1.75em}
-form legend, #acoespg .contentList h3,#accordion h3 
-{font-size:1.5em}
+form legend, #acoespg h3 
+{font-size:1.4em}
 h3,h4,#destaque p, .obs
-{font-size:1.25em}
+{font-size:1.35em}
 #home .card h2, #destaque h1, .social h1, #sendbtn, #home #contactCard span, #home .cadastrese input[type=submit]
 {font-size:1.125em}
 h5,h6,#featuredCtrl h2, #searchCtrl h2, #searchCtrl h3
@@ -143,7 +143,7 @@ table,span,div,input,select,textarea,td,a,pre
 
 h1,h2,h3,h4,h5,h6,h1 *,h2 *,h3 *,h4 *,h5 *,h6 *, body>header .menu li a,.card h2 a span, #acessBtn a, #mainMenu a,#siteMap span, #featured h2,#home #acoes h2, form legend, #contact form td:first-child label, #contact form td:first-child span, .obs, #contact input[type=button],span.type, #home #contactCard span, #home .cadastrese input[type=submit]
 {font-weight:700}
-.leiamais,.card h1,.card h2 a,#destaque p, #linguas a, #searchCtrl h2, #searchCtrl h3, #searchCtrl h2 span,#accordion .fisc h5
+.leiamais,.card h1,.card h2 a,#destaque p, #linguas a, #searchCtrl h2, #searchCtrl h3, #searchCtrl h2 span
 {font-weight:400}
 
 #contact div[role=main] ul li {
@@ -154,9 +154,6 @@ body>header h1
 {margin:-.3em 0 .3em}
 div[role=main] h1
 {margin:.75em 0 .25em}
-#tituloPagina {
-	
-}
 #home .deck.encap>div>h1,div[role=main] .contentList header p
 {margin:.5em 0 0}
 div[role=main] ul, div[role=main] p
@@ -203,14 +200,14 @@ ul
 
 /*	[1.2]cor
 __________________________________________________________________*/
-#home .deck.encap>div>h1, #topo .auxNav *, #menuEncap #search, .contentList .type, #main h1,#acoespg #main h2, #accordion h4, .contentTerm, #ulacoes span {
+#home .deck.encap>div>h1, #topo .auxNav *, #menuEncap #search, .contentList .type, #main h1,#acoespg #main h2, #accordion h4, .contentTerm, #ulacoes span, .tag {
 	color:#004179
 }
 #menuEncap *, body>footer *, #contact input[type=button], #home #contactCard span, #home .cadastrese input[type=submit], #searchLink {
 	color:#fff
 }
-article a, #home .card a,#accessibility a, #home .smallDiv .card a p,#home #acoesMap li, #accordion h3, #main h2, form legend, .contentList .leiaMais, #searchCtrl p, #searchCtrl h2, #searchCtrl h3, #searchFilter li, #searchCtrl span, .contentList h3,.type,.featuredCtrl a, #acoespg .vejaMais, .fisc .smallDiv a, #ulacoes a {
-	color:#1A62A2
+article a, #home .card a,#accessibility a, #home .smallDiv .card a p,#home #acoesMap li, #acoespg h3, #main h2, form legend, .contentList .leiaMais, #searchCtrl p, #searchCtrl h2, #searchCtrl h3, #searchFilter li, #searchCtrl span, .contentList h3,.type,.featuredCtrl a, #acoespg .vejaMais, .fisc .smallDiv a, #ulacoes a {
+	color:#336796
 }
 .obs {
 	color:#fd0100
@@ -227,7 +224,10 @@ __________________________________________________________________*/
 	display:block
 }
 #langSelect, #langSelect li,#loginBtn span,#topo .auxNav div, #menuEncap>div div, .credits li, .credits span, #mainMenu li, body>footer .encap>div>div, .social *,.deck .smallDiv,.deck .largeDiv,.deck hr, #featuredCtrl *,.vejaMais span, #destaques .smallDiv .card, form li, .celspace, #searchCtrl h2, #searchCtrl h3,#searchCtrl>div, #searchFilter ul, #searchFilter li, .photoList li, #home #contactCard span {
-	display:inline-block /*Spacing adjust*/
+	display:inline /* IE-fix */
+}
+#langSelect, #langSelect li,#loginBtn span,#topo .auxNav div, #menuEncap>div div, .credits li, .credits span, #mainMenu li, body>footer .encap>div>div, .social *,.deck .smallDiv,.deck .largeDiv,.deck hr, #featuredCtrl *,.vejaMais span, #destaques .smallDiv .card, form li, .celspace, #searchCtrl h2, #searchCtrl h3,#searchCtrl>div, #searchFilter ul, #searchFilter li, .photoList li, #home #contactCard span {
+	display:inline-block 
 }
 #langSelect .selected, #fontSize, #accordion>div {
 	display:none
@@ -242,10 +242,10 @@ __________________________________________________________________*/
 
 /*	[2.x]Alturas,larguras,margens,paddings e overflows
 __________________________________________________________________*/
-#acessibility, .encap, #acessBtn,.deck hr, .smallDiv .card, .largeDiv .card, #home #destaques img,#home #acoes img, #contact form table, #contact legend, #accordion .active
+#accessibility, .encap, #acessBtn,.deck hr, .smallDiv .card, .largeDiv .card, #home #destaques img,#home #featuredCtrl div ,#home #acoes img, #contact form table, #contact legend, #accordion .active
 {width:100%}
 
-#acessibility, .encap, img, #siteMap ul li ul li
+#accessibility, .encap, img, #siteMap ul li ul li
 {max-width:100%}
 
 .xLargeDiv, .deck>h2,#acoespg #accordion>h3 {
@@ -259,6 +259,9 @@ __________________________________________________________________*/
 }
 .single.card .deck .largeDiv {
 	width:62%	
+}
+#accessibility {
+	height: 100%;
 }
 .single.card .deck>div,.xLargeDiv, .deck>h2  {
 	padding:0 1%	
@@ -276,8 +279,9 @@ __________________________________________________________________*/
 	height:30px
 }
 
-#acessibility>div, .encap>div
-{margin:auto}
+#accessibility>div, .encap>div {
+	margin:auto
+}
 #langSelect, #langSelect li,#topo .auxNav div, #menuEncap>div div, .credits li, .credits span, #mainMenu li, body>footer .encap>div>div{
 	margin-right: -.3em /*Inline-block adjust*/
 }
@@ -287,17 +291,19 @@ __________________________________________________________________*/
 #searchCtrl h3, #destaques .data {
 	margin-right:.3em	
 }
-
 .encap>div {
 	max-width:960px;
 	width:97.5%;
 	padding:0 1.25%
 }
-
-#acessibility>div {
+#accessibility>div {
 	width:75%;
 	max-width:540px;
 	padding:2.5%	
+}
+#accessibility .card {
+	width: 95%;
+	padding: 2em 2.5%;
 }
 div[role=main] input[type=button], div[role=main] input[type=submit] {
 	padding:.4em .7em	
@@ -315,30 +321,32 @@ div[role=main] input[type=text], div[role=main] select {
 
 /*	[2.x]Posições,z-index,alinhamentos e floats
 __________________________________________________________________*/
-#acessibility, #acessBtn, #acessList, #fontSize{
+#accessibility, #acessBtn, #accessList, #fontSize{
 	position:absolute	
 }
-#menuEncap .auxNav [type=submit],body>header #menuEncap, #accordion .active {
+#accessibility .card, #menuEncap .auxNav [type=submit],body>header #menuEncap, #accordion .active {
 	position:relative	
 }
-
-#acessBtn, #acessibility.active {
+#accessibility {
+	position: fixed;
+}
+#acessBtn, #accessibility.active {
 	left:0	
 }
-#acessibility .active {
+#accessibility .active {
 	left:auto
 }
-#acessibility, #acessList, #fontSize {
+#accessibility, #accessList, #fontSize {
 	left:-200%	
 }
-#acessibility {
-	top:5%
+#accessibility {
+	top: 0;
 }
 
-#acessibility, .deck>div, #destaques .smallDiv{
+.deck>div, #destaques .smallDiv{
 	text-align:justify	
 }
-#acessibility, #acessBtn, #home #contactCard a, #home .cadastrese p {
+#accessibility, #acessBtn, #home #contactCard a, #home .cadastrese p {
 	text-align:center	
 }
 .credits ul, #menuEncap .auxNav form, .social,#acoes .card .vejaMais, #contact form td:first-child, #searchCtrl form, .contentList .leiaMais, #searchFilter {
@@ -366,7 +374,9 @@ __________________________________________________________________*/
 #contact div[role=main] input[type=button], #contact div[role=main] input[type=submit] {
 	vertical-align:baseline	
 }
-
+#accessibility, #accessibility .card {
+	z-index: 9999;
+}
 /*	[2.x]Fundos,sombras,bordas e cursores
 __________________________________________________________________*/
 #topo{
@@ -395,6 +405,9 @@ __________________________________________________________________*/
 }
 .card {
 	background:#fff
+}
+#accessibility {
+	background:rgba(0,0,0,.75);
 }
 
 .credits span, #loginBtn span, #menuEncap .auxNav [type=submit], .social span, #featuredCtrl span,.vejaMais span,#home #acoes .card h2 span, #menuBtn, #accordion>h3 span,
@@ -479,7 +492,7 @@ body>header #menuEncap {
 body>footer {
 	border-bottom:#98d3e1 solid 20px
 }
-#contact legend, #searchCtrl, .contentList>li, #acoespg .mediaList>div:first-child,#accordion h3 {
+#contact legend, #searchCtrl, .contentList>li {
 	border-bottom:#bebec0 solid 1px
 }
 #langSelect li, #searchFilter li {
@@ -500,6 +513,12 @@ __________________________________________________________________*/
 
 /*	[3.x]Topo
 __________________________________________________________________*/
+#accessibility {
+	padding-top: 15%;
+}
+#fontSize{
+	margin-top: -16.5em;
+}
 #topo {
 	padding:10px 0;
 	min-height:16px;
@@ -594,13 +613,17 @@ __________________________________________________________________*/
     margin: 0 0 4em;
     padding: 2em 2%;
 }
-
 /* HOME */
 #home .encap.deck {
 	padding: .5em 0
 }
 #destaques .smallDiv .card {
 	padding-bottom:.3em
+}
+#destaques .smallDiv .card a{
+    max-height: 130px;
+    overflow: hidden;
+    display: block;
 }
 #featured div{
 	padding:1em 1em 2.5em
@@ -652,9 +675,6 @@ __________________________________________________________________*/
 	margin-top: 25px
 }
 /* AÇÕES */
-#acoespg .single.card .deck>div {
-	padding:0
-}
 #acoespg .vejaMais span {
 	margin-left:0
 }
@@ -688,6 +708,14 @@ __________________________________________________________________*/
 #accordion>h3 span {
 	width:22px;
 	height:22px
+}
+#acoespg .itensFiscalizacoes span {
+    background: none!important;
+    width: 1px!important;
+    border-left: solid 1px #004179!important;
+}
+#acoespg .itensFiscalizacoes a:first-child span {
+	display:none!important;
 }
 .fisc li {
 	padding:1em 0;	
@@ -905,8 +933,162 @@ __________________________________________________________________*/
 	}
 }
 
+/*	[4]Media Querries
+	
+	[4.x]Screens < 900
+__________________________________________________________________*/
+
+@media screen and (max-width:900px) {
+	 #mainMenu nav {
+		 background:#0a1737;
+		 box-shadow:-45px 0 35px -40px #000 inset;
+		 height:999em;
+		 width:33%;
+		 overflow:hidden;
+		 padding-top:3em;
+		 position:fixed;
+		 top:0;
+		 left:-33%;
+	}
+	#mainMenu nav:before {
+		content:"Menu";
+		font: 2.5em 'open sans condensed';
+		margin-left: .2em;
+		padding-bottom: .5em;
+	}
+	 #mainMenu li,#mainMenu nav:before {
+		 display:block;
+	}
+	 #menuBtn {
+		 display:inline-block;
+		 margin-right:.5em;
+	}
+	 #mainMenu li, #mainMenu li:first-child {
+		 margin: .5em 0;
+		 padding: .5em;
+		 border-bottom:#46567C solid 1px
+	}
+}
+
+/*	[4.x]Screens < 760
+__________________________________________________________________*/
+
+@media screen and (max-width:760px) {
+	 .largeDiv, .deck .largeDiv, #destaques .smallDiv, body>footer .smallDiv, #acoesMap .smallDiv:first-child {
+		 width:100%
+	}
+	 body>header .largeDiv {
+		 width:60%
+	}
+	 .smallDiv, #destaques .smallDiv .card {
+		 width:49%
+	}
+	 body>header .smallDiv {
+		 width:40%
+	}
+	 #mainMenu h1 {
+		 font-size:2.5em;
+	}
+	 body>header .auxNav {
+		 position:relative;
+		 right:0
+	}
+	 .social {
+		 float: left;
+		 margin: -2.5em 0 0;
+		 padding: 0;
+	}
+	 #footerCrdt {
+		 margin: 1em 0;
+		 padding: 1em 0 0;
+		 border-top:#ffffff solid 1px;
+		 border-left:none;
+	}
+	 .social h1 {
+		 margin: 0 .75em 0 0;
+	}
+	 #acoes .card .vejaMais {
+		 padding:0 0 1em;
+	}
+}
+
+/*	[4.x]Screens < 540
+__________________________________________________________________*/
+
+@media screen and (max-width:540px) {
+	 .credits, #footerCrdt {
+		 text-align:center
+	}
+	 body>header .smallDiv, body>header .largeDiv {
+		 width:100%
+	}
+	 .social, .credits ul {
+		 display:inline-block
+	}
+	 #menuEncap .auxNav {
+		 display: block;
+	}
+	 .social, body>header .auxNav {
+		 float: none;
+	}
+	 .credits ul {
+		 margin:auto;
+	}
+	 body>footer .social {
+		 margin: .5em auto 0;
+	}
+	 body>header .credits, #menuEncap .auxNav, #menuEncap .auxNav form {
+		 text-align:left;
+	}
+	 #mainMenu h1 {
+		 margin: -.3em 0 1em;
+	}
+	 #mainMenu nav {
+		 width:80%;
+		 left:-80%;
+	}
+	 #search {
+		 width: 65%;
+	}
+	 #menuEncap .auxNav [type=submit] {
+		 top: 3px;
+		 left: -33%;
+	}
+}
+
 /*	[4.x]Screens < 400px
 __________________________________________________________________*/
+
+@media screen and (max-width:470px) {
+	 .smallDiv, #destaques .smallDiv .card {
+		 width:100%
+	}
+		 #home .featuredCtrl>div>*, #home .featuredCtrl li {
+		 display:block
+	}
+	 #home .featuredCtrl li {
+		 margin:0 0 .75em;
+	}
+}
+
+/*	[5]accessibility
+	[5.x]Aural
+__________________________________________________________________*/
+
+@media aural {
+	#fontSize, #acessList sup, #acessNotes {
+		display:none;
+	}
+	.aural {
+		display:auto;
+	}
+	
+}
+
+/* Querries antigas 
+
+	[4.x]Screens < 400px
+__________________________________________________________________
 
 @media screen and (max-width:470px) {
 	.smallDiv, #destaques .smallDiv .card{
@@ -920,9 +1102,9 @@ __________________________________________________________________*/
 	}
 }
 
-/*	[5]Acessibility
+/*	[5]accessibility
 	[5.x]Aural
-__________________________________________________________________*/
+__________________________________________________________________
 
 @media aural {
 	#fontSize {
@@ -932,6 +1114,7 @@ __________________________________________________________________*/
 		display:auto;	
 	}
 }
+*/
 
 .acessibilidade {background: #2b2b2b;}
 .acessibilidade ul {padding:20px; width: 940px;height:100%;margin: 0 auto;text-align:left;position: relative;}
@@ -1185,14 +1368,13 @@ ul.acoesControle li a {
 }
 
 .listaFiscalizacoes li {
-	border-bottom:1px solid #a6a6a6; 
 	display:block;
 }
 
 .listaFiscalizacoes li a {
 	color:#004179;
 	display:inline-block;
-	margin-right:20px;
+	margin-right:10px;
 	line-height: 20px;
 }
 
