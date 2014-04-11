@@ -625,6 +625,10 @@ __________________________________________________________________*/
     overflow: hidden;
     display: block;
 }
+.cameraSlide.cameraSlide_0.cameracurrent {
+    max-height: 380px;
+    overflow: hidden;
+}
 #featured div{
 	padding:1em 1em 2.5em
 }
@@ -981,6 +985,7 @@ __________________________________________________________________*/
 		 width:60%
 	}
 	 .smallDiv, #destaques .smallDiv .card {
+		 max-width:none;
 		 width:49%
 	}
 	 body>header .smallDiv {
@@ -1009,6 +1014,9 @@ __________________________________________________________________*/
 	}
 	 #acoes .card .vejaMais {
 		 padding:0 0 1em;
+	}
+	#home #acoesMap .card.smallDiv {
+		min-height:220px;
 	}
 }
 
@@ -1063,10 +1071,12 @@ __________________________________________________________________*/
 	 .smallDiv, #destaques .smallDiv .card {
 		 width:100%
 	}
-		 #home .featuredCtrl>div>*, #home .featuredCtrl li {
-		 display:block
+	#home #featuredCtrl h2, #home #featuredCtrl li {
+		display:block;
+		float:none;
+
 	}
-	 #home .featuredCtrl li {
+	 #home #featuredCtrl li {
 		 margin:0 0 .75em;
 	}
 }
