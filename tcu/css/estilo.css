@@ -33,7 +33,7 @@ __________________________________________________________________*/
 html
 {background:#eef3f6;font:1em/1.35 'lato', sans-serif;min-width:340px;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 article,aside,details,figcaption,figure,body>footer,body>header,hgroup,main,nav,section,summary
-{display:block}'
+{display:block}
 audio,canvas,video
 {display:inline-block}
 audio:not([controls])
