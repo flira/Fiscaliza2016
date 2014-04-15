@@ -29,11 +29,11 @@ __________________________________________________________________*/
     [0.1]reset de navegador
 __________________________________________________________________*/
 *
-{border:none;color:#6d6d6d;font-style:normal;font-weight:300;text-align:left;margin:0;padding:0}
+{border:none;color:#6d6d6d;font-style:normal;font-weight:300;text-align:left;text-indent:0;margin:0;padding:0}
 html
 {background:#eef3f6;font:1em/1.35 'lato', sans-serif;min-width:340px;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 article,aside,details,figcaption,figure,body>footer,body>header,hgroup,main,nav,section,summary
-{display:block}
+{display:block}'
 audio,canvas,video
 {display:inline-block}
 audio:not([controls])
@@ -266,7 +266,7 @@ __________________________________________________________________*/
 .single.card .deck>div,.xLargeDiv, .deck>h2  {
 	padding:0 1%	
 }
-.smallDiv {
+.smallDiv{
 	width:32%;
 	max-width:307px
 }
@@ -490,7 +490,7 @@ body>header #menuEncap {
 	border-top:#bebec0 solid 1px
 }
 body>footer {
-	border-bottom:#98d3e1 solid 20px
+	border-bottom:#6ea6c8 solid 20px
 }
 #contact legend, #searchCtrl, .contentList>li {
 	border-bottom:#bebec0 solid 1px
@@ -625,6 +625,12 @@ __________________________________________________________________*/
     overflow: hidden;
     display: block;
 }
+#destaques .smallDiv .card div{
+    margin:.3em 0 0;
+}
+#destaques .smallDiv .card div a{
+    display: inline;
+}
 .cameraSlide.cameraSlide_0.cameracurrent {
     max-height: 380px;
     overflow: hidden;
@@ -651,9 +657,9 @@ __________________________________________________________________*/
 	margin: .5em 0;
 	cursor: pointer;
 }
-#featuredCtrl div {
-	/*padding: 0.8em 1em 0.9em*/
-}
+/*#featuredCtrl div {
+	padding: 0.8em 1em 0.9em
+}*/
 #acoes .card h2, #acoesMap .card h2 {
 	margin: 1em 0
 }
@@ -662,6 +668,7 @@ __________________________________________________________________*/
 	padding:0 0 0 1em	
 }
 #home #pub img {
+	max-width: 33%;
 	margin: 0 1em 1em 0;	
 }
 #home #acoes h2 span {
@@ -677,6 +684,10 @@ __________________________________________________________________*/
 }
 #home .cadastrese .inputEmailNewsletter{
 	margin-top: 25px
+}
+#carousel .cameraSlide{
+	max-height:348px;
+	overflow:hidden;
 }
 /* AÇÕES */
 #acoespg .vejaMais span {
