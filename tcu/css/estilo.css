@@ -635,6 +635,9 @@ __________________________________________________________________*/
     max-height: 380px;
     overflow: hidden;
 }
+.cameraSlide .imgLoaded {
+	margin-left:0!important;	
+}
 #featured div{
 	padding:1em 1em 2.5em
 }
@@ -1446,3 +1449,70 @@ h2.titPublicacoes {
 	font-size:11px;
 	color:#144d82 !important;
 }
+
+/************** MODAL NEWSLETEER *************/
+
+.opaco{
+	background-color: #000000; 
+	position: fixed; 
+	top: 0px; 
+	left: 0px; 
+	width: 100%; 
+	height: 100%; 
+	opacity: 0.5;
+	filter: alpha(opacity=30);
+	-moz-opacity: 0.5;
+	z-index: 200;
+	float:left; 
+}
+#cxAlerta{
+	padding: 10px 4px 4px 4px;
+	width: 390px;
+	min-height: 200px;
+	position: fixed;
+	top: 200px;
+	left:100px;
+	z-index: 201;
+	background-color: #ffffff;
+	left: 50%;
+	margin-left: -175px;
+	border: 3px solid #01437d;
+}
+.thnx{
+	width:100%;
+	text-align:center;
+	display: block;
+	text-align: center;
+	padding-left: 0;
+	margin-top: 15px;
+}
+.close {
+	display:block;
+	color:#004179;
+	background:#c4c4c4;
+	padding: 8px 0;
+	height: 18px;
+	width: 370px;
+	padding-left: 20px;
+	font-weight: 700;
+}
+.close a:hover {color:#000;}
+.close a {
+	display: block;
+	padding: 0px 4px;
+	text-decoration: none;
+	width: 17px;
+	height: 24px;
+	margin-top: -3px;
+	line-height: 1;
+	margin-right: 9px;
+	float: right;
+	background: url('img/fecharModal.png') no-repeat;
+	text-indent: -99999px;
+}
+
+.lum-validation-message {
+	margin-top: -25px !important;
+}
+
+/************** FIM MODAL NEWSLETEER *************/
