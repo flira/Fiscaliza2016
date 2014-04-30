@@ -613,6 +613,9 @@ __________________________________________________________________*/
     margin: 0 0 4em;
     padding: 2em 2%;
 }
+.single.card.dNoticia {
+	min-height: 208px;
+}
 /* HOME */
 #home .encap.deck {
 	padding: .5em 0
