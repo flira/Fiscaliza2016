@@ -80,3 +80,9 @@ function addResizeFunction( ) {
 		$('#mainMenu nav').removeClass('active');
 	});
 }
+
+function clearInlines(elements) {
+	for (var i=0;i<elements.length;i++) {
+		$(elements[i]).removeAttr('style');
+	}
+}
