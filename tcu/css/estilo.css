@@ -613,7 +613,7 @@ __________________________________________________________________*/
     margin: 0 0 4em;
     padding: 2em 2%;
 }
-.single.card img {
+.single.card.dNoticia img {
 	max-height:300px;
 }
 /* HOME */
