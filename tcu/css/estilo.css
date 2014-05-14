@@ -118,7 +118,7 @@ body
 body, .sign
 {font-size:.8125em}
 #topo .auxNav
-{font-size:.85em}s
+{font-size:.85em}
 h1, #destaque h2
 {font-size:3em}
 body>header .titulo h1, div[role=main] h1
@@ -362,7 +362,7 @@ __________________________________________________________________*/
 #loginBtn, #menuEncap .auxNav [type=submit],#home #acoes h2 span, #searchFilter,#accordion>h3 span {
 	float:right	
 }
-#menuEncap>div div, #siteMap ul li, .encap>div>div, #contact form td, .deck>div, .photoList li, .contentList li{
+#menuEncap>div div, #siteMap ul li, .encap>div>div, #contact form td, .deck>div, .photoList li{
 	vertical-align:text-top	
 }
 .credits li, div[role=main] input[type=button], div[role=main] input[type=submit] {
